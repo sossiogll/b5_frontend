@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angular-file-saver": "^1.1.3",
+    "angular-recaptcha": "^4.2.0"
+  }
+}
