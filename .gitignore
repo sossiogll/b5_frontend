@@ -52,4 +52,9 @@ fabric.properties
 # *.iml
 # modules.xml
 
-/admin/wp-config.php
+#Git
+.git
+
+#Modules
+package-lock.json
+node_modules
