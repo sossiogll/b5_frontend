@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app" lang="en">
+<html ng-app="app" lang="{{ lang }}">
 
     <head>
 	    
@@ -15,7 +15,7 @@
 		
 	</head>
 
-    <body>
+    <body ng-controller="Ctrl">
 
     <div data-ng-controller="NavController" ng-include="'nav/nav.view.html'"></div>
 
@@ -31,22 +31,29 @@
     <div data-ng-controller="FooterController" ng-include="'footer/footer.view.html'"></div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="//code.angularjs.org/1.8.2/angular.min.js"></script>
-    <script src="//code.angularjs.org/1.8.2/angular-route.min.js"></script>
-    <script src="//code.angularjs.org/1.8.2/angular-cookies.min.js"></script>
-    <script src="node_modules/angular-recaptcha/release/angular-recaptcha.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.8.2/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-recaptcha/release/angular-recaptcha.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.18.3/angular-translate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.18.3/angular-translate-loader-static-files.min.js"></script>
 
 
     <script src="app.js"></script>
+    <script src="app.controller.js"></script>
 
 
     <script src="nav/nav.controller.js"></script>
     <script src="home/home.controller.js"></script>
     <script src="footer/footer.controller.js"></script>
     <script src="privacy-policy/privacy-policy.controller.js"></script>
+    <script src="works/works.controller.js"></script>
+    <script src="magazine/magazine.controller.js"></script>
+    <script src="find-us/find-us.controller.js"></script>
+
 
 
     <!-- Iubenda
