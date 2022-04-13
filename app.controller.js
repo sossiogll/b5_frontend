@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .controller('Ctrl', Ctrl);
+        .controller('AppController', AppController);
 
-    Ctrl.$inject = ['$scope', '$rootScope', '$translate'];
-    function Ctrl($scope, $rootScope, $translate){
+    AppController.$inject = ['$scope', '$rootScope', '$translate'];
+    function AppController($scope, $rootScope, $translate){
 
         var apiURL = $rootScope.APIUrl;
 
