@@ -3,7 +3,11 @@
     "_comment": "---------------------- NAVBAR ----------------------",
     "WORKS_BTN" : "lavori",
     "MAGAZINE_BTN" : "magazine",
+<<<<<<< HEAD
     "FIND-US_BTN" : "conoscici",
+=======
+    "FIND-US_BTN" : "trovaci",
+>>>>>>> origin/master
     "LANGUAGE_BTN": "ita",
 
     "_comment": "---------------------- HOME ----------------------"

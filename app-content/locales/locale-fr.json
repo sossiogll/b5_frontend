@@ -1,9 +1,16 @@
 {
     "_comment": "---------------------- NAVBAR ----------------------",
+<<<<<<< HEAD
     "WORKS_BTN" : "projets",
     "MAGAZINE_BTN" : "magazine",
     "FIND-US_BTN" : "nous sommes",
     "LANGUAGE_BTN": "fra",
+=======
+    "WORKS_BTN" : "Lavori",
+    "MAGAZINE_BTN" : "magazine",
+    "FIND-US_BTN" : "Trovaci",
+    "LANGUAGE_BTN": "French",
+>>>>>>> origin/master
 
     "_comment": "---------------------- HOME ----------------------"
 
