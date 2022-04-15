@@ -1,10 +1,10 @@
 {
-
     "_comment": "---------------------- NAVBAR ----------------------",
-    "WORKS_BTN" : "Lavori",
-    "MAGAZINE_BTN" : "Magazine",
-    "FIND-US_BTN" : "Trovaci",
-    "LANGUAGE_BTN": "Italiano",
+    "WORKS_BTN" : "lavori",
+    "MAGAZINE_BTN" : "magazine",
+    "FIND-US_BTN" : "conoscici",
+    "LANGUAGE_BTN": "ita",
 
     "_comment": "---------------------- HOME ----------------------"
+
 }

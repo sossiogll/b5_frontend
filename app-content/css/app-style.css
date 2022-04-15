@@ -1,6 +1,242 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root{
+  --b5blu: #010088;
+  --b5bianco: #EFEFEF;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+
 body{
+	background-color: var(--b5bianco);
 	font-family: 'Jost', sans-serif;
+}
+
+.navbar-custom{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+  border: 2px solid var(--b5blu);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--b5blu);
+}
+
+
+.navbar-custom > .navbar-nav-custom{
+  padding-left: 0px;
+  margin: 0px;
+}
+
+
+
+.navbar-custom > .navbar-brand-custom{
+  padding: 10px 50px;
+  margin-right: 1.5px;
+  color: #010088;
+  background-color: var(--b5bianco);
+  font-size: 16px;
+}
+
+.navbar-custom > .navbar-brand-custom:focus{
+  padding: 10px 50px;
+  margin-right: 1.5px;
+  color: var(--b5bianco);
+  background-color: var(--b5blu);
+  font-size: 16px;
+}
+
+.navbar-custom > .navbar-brand-custom:hover{
+  padding: 10px 50px;
+  color: white;
+  background-color: #010088;
+  font-size: 16px;
+}
+
+/*
+.navbar-nav-custom > .nav-item-logo{
+	display: flex;
+    list-style: none;
+box-sizing: border-box;
+}
+
+
+.navbar-nav-custom > .nav-item-logo > .nav-link{
+	display: inline-block;
+    text-decoration: none;
+    padding-left: 70px;
+    color: #010088;
+    background-color: #EFEFEF;
+	}
+	
+*/
+
+.navbar-nav-custom > .nav-item > .nav-link {
+    padding: 10px 50px;
+    text-decoration: none;
+    margin: 0px 1.5px;
+    color: var(--b5bianco);
+  }
+
+  .navbar-nav-custom > .nav-item > .nav-link:focus {
+    padding: 10px 50px;
+    margin: 0px 1.5px;
+
+    text-decoration: none;
+    background-color: var(--b5bianco);
+    color: var(--b5blu);
+  }
+
+  .navbar-nav-custom > .nav-item:hover {
+	background-color: var(--b5bianco);
+  
+  box-sizing: border-box;
+  }
+
+  .navbar-nav-custom > .nav-item:active {
+	background-color: var(--b5bianco);
+box-sizing: border-box;
+  }
+
+  .navbar-nav-custom > .nav-item > .nav-link:hover {
+	color: #010088;  
+  }
+
+	
+
+  
+.dropdown {color: var(--b5bianco);}
+
+.dropdown .nav-link {color: var(--b5bianco)}
+.dropdown .dropdown-menu a{color: var(--b5blu);}
+.dropdown .btn {
+  background: green; color:#fff;
+}
+
+.dropdown-menu .dropdown-item {
+  display: inline-block; width: 100%; 
+}
+.container .dropdown .dropdown-menu a:hover
+{
+  color: #fff;
+  background-color: #b91773;
+  border-color: #fff;
+}
+
+  
+/*
+.navbar-custom > .navbar-brand > a{
+	display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    padding-left: 70px;
+    color: #010088;
+    background-color: #EFEFEF;
+}
+*/
+
+h1{
+  color: var(--b5blu);
+}
+
+p{
+  color: var(--b5blu);
+}
+
+
+/* TEMA FIND-US */
+
+.cs-nome{
+  font-size: 1.4rem;
+line-height: 107.5%;
+/* identical to box height, or 25px */
+
+letter-spacing: 0.19em;
+text-transform: uppercase;
+color: var(--b5blu);
+}
+
+.cs-descrizione{
+  font-size: 1.2rem;
+line-height: 1.4em;
+
+}
+
+.cs-card-custom{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+
+}
+
+.cs-card-body-custom{
+  margin: 0.5em 0em;
+  padding: 0px;
+}
+
+
+
+/* TEMA FOOTER */
+
+.footer-media-section{
+  background-color: var(--b5blu);
+}
+
+.logo-b5{
+  width: 100%;
+}
+
+.link-utili-custom a{
+  color: var(--b5blu);
+  text-decoration-line: underline;
+  font-size: 1.1rem;
+}
+
+.link-section-custom{
+  border: 2px solid var(--b5blu);
+
+}
+
+
+
+.footer-media-section > .media-link-custom a{
+  color: var(--b5bianco);
+  text-decoration-line: underline;
+  font-size: 1.1rem;
+
+}
+
+.footer-info-section a{
+  color: var(--b5blu);
+  font-size: 1.1rem;
+}
+
+
+/* TEMA LAVORI */
+
+
+
+.b5-title-pag{
+font-style: normal;
+font-weight: 600;
+font-size: 7rem;
+line-height: 8rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+
+}
+
+
+.b5-p-pag{
+
+  font-size: 1.5rem;
+line-height: 33px;
+
 }

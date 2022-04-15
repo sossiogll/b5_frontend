@@ -18,9 +18,14 @@
     <body ng-controller="AppController">
 
     <div data-ng-controller="NavController" ng-include="'nav/nav.view.html'"></div>
+<<<<<<< HEAD
     <div class="jumbotron">
+=======
+
+    <div class="jumbotron jumbotron-fluid">
+>>>>>>> origin/master
         <div class="container">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="display-4">
                 <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
                 <div ng-view></div>
             </div>

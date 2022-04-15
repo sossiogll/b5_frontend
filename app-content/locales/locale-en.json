@@ -1,9 +1,9 @@
 {
     "_comment": "---------------------- NAVBAR ----------------------",
-    "WORKS_BTN" : "Works",
-    "MAGAZINE_BTN" : "Magazine",
-    "FIND-US_BTN" : "Find Us",
-    "LANGUAGE_BTN": "English",
+    "WORKS_BTN" : "works",
+    "MAGAZINE_BTN" : "magazine",
+    "FIND-US_BTN" : "find us",
+    "LANGUAGE_BTN": "eng",
 
     "_comment": "---------------------- HOME ----------------------"
 
