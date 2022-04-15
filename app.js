@@ -2,12 +2,12 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate'])
+        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate', 'gllCursor'])
         .config(config)
         .run(run);
 
-    config.$inject = ['$routeProvider', '$locationProvider', '$translateProvider'];
-    function config($routeProvider, $locationProvider, $translateProvider) {
+    config.$inject = ['$routeProvider', '$locationProvider', '$translateProvider', '$cursorProvider'];
+    function config($routeProvider, $locationProvider, $translateProvider, $cursorProvider) {
 
         $routeProvider
             .when('/', {
@@ -67,7 +67,6 @@
         });
 
     }
-
 
 
 })();

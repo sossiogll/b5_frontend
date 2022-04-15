@@ -50,13 +50,13 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/sossiogll/b5_backend.git
    ```
-3. Install NPM packages
+3. Install dipendencies
    ```sh
-   npm install
+   yarn install
    ```
-4. Enter your API in `config.js`
+4. Enter your API in `app.js` inside `config() ` function
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   $rootScope.APIUrl = `api.url`;
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>

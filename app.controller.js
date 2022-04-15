@@ -5,8 +5,8 @@
         .module('app')
         .controller('AppController', AppController);
 
-    AppController.$inject = ['$scope', '$rootScope', '$translate'];
-    function AppController($scope, $rootScope, $translate){
+    AppController.$inject = ['$scope', '$rootScope', '$translate', '$cursor'];
+    function AppController($scope, $rootScope, $translate, $gllCursorService){
 
         var apiURL = $rootScope.APIUrl;
 
