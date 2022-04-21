@@ -50,6 +50,10 @@
             // remove the warning from console log by putting the sanitize strategy
             .useSanitizeValueStrategy('sanitizeParameters')
             .preferredLanguage('it');
+
+        $cursorProvider.cursorTheme("BLUE");
+        $cursorProvider.cursorLazyness(200);
+
     }
 
     run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
@@ -60,11 +64,6 @@
 
         $rootScope.lang = 'it';
 
-        $rootScope.$on('$locationChangeStart', function (event, next, current) {
-
-            //$location.path('/');
-
-        });
 
     }
 

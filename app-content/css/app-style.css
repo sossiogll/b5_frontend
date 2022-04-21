@@ -17,7 +17,20 @@
 body{
 	background-color: var(--b5bianco);
 	font-family: 'Jost', sans-serif;
+    cursor: none;
 }
+
+
+.gllText,
+.gllBlock,
+.gllText > *,
+.gllBlock > *,
+.gllText:hover,
+.gllBlock:hover
+{
+  cursor:none;
+}
+
 
 .navbar-custom{
 	padding: 0px;
@@ -97,8 +110,8 @@ box-sizing: border-box;
 
   .navbar-nav-custom > .nav-item:hover {
 	background-color: var(--b5bianco);
-  
-  box-sizing: border-box;
+    box-sizing: border-box;
+    transition-duration: 200ms;
   }
 
   .navbar-nav-custom > .nav-item:active {
@@ -107,7 +120,7 @@ box-sizing: border-box;
   }
 
   .navbar-nav-custom > .nav-item > .nav-link:hover {
-	color: #010088;  
+	color: #010088;
   }
 
 	

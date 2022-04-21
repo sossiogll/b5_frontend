@@ -5,8 +5,8 @@
         .module('app')
         .controller('AppController', AppController);
 
-    AppController.$inject = ['$scope', '$rootScope', '$translate', '$cursor'];
-    function AppController($scope, $rootScope, $translate, $gllCursorService){
+    AppController.$inject = ['$scope', '$rootScope', '$translate', 'gllCursorService'];
+    function AppController($scope, $rootScope, $translate, gllCursorService){
 
         var apiURL = $rootScope.APIUrl;
 
@@ -14,6 +14,13 @@
             $rootScope.lang = key;
             $translate.use(key);
         };
+
+
+        $scope.$on('$viewContentLoaded', function () {
+
+            gllCursorService.findTriggeringElements();
+
+        });
 
         initController();
 
