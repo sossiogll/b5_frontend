@@ -57,7 +57,6 @@ _Below is an example of how you can instruct your audience on installing and set
 4. Enter your API in `app.js`
    ```js
    $rootScope.api = 'urToApi';
-=======
 3. Install dipendencies
    ```sh
    yarn install
@@ -65,7 +64,6 @@ _Below is an example of how you can instruct your audience on installing and set
 4. Enter your API in `app.js` inside `config() ` function
    ```js
    $rootScope.APIUrl = `api.url`;
->>>>>>> origin/master
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
