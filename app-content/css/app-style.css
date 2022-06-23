@@ -2,9 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+::selection {
+  background: var(--b5rosso);
+  color: var(--b5bianco);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background:  var(--b5rosso);
+  color: var(--b5bianco);
+  text-shadow: none;
+}
+
 :root{
   --b5blu: #010088;
   --b5bianco: #EFEFEF;
+  --b5rosso: #C11010;
 }
 
 *, *::before, *::after {
@@ -170,8 +183,47 @@ p{
 
 /* TEMA FIND-US */
 
-.cs-nome{
-  font-size: 1.4rem;
+#titolo-1-sezione-fu{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 101px;
+  letter-spacing: 0.83em;
+  text-transform: uppercase;
+}
+
+#descr-1-sezione-fu{
+  font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+}
+
+.fu-infobox-primary{
+  background-color: var(--b5blu);
+  position:relative;
+}
+
+.fu-infotext-primary{
+  color: var(--b5bianco);
+  font-size: 13px;
+  position:relative;
+
+}
+
+.fu-infobox-secondary{
+  border: 2px solid var(--b5blu);
+  font-size: 13px;
+  position: relative;
+}
+
+.fu-infotext-secondary{
+  color: var(--b5blu);
+}
+
+.fu-nome{
+  font-weight: 600;
+  font-size: 23px;
 line-height: 107.5%;
 /* identical to box height, or 25px */
 
@@ -180,22 +232,13 @@ text-transform: uppercase;
 color: var(--b5blu);
 }
 
-.cs-descrizione{
-  font-size: 1.2rem;
-line-height: 1.4em;
-
+.fu-descrizione{
+  font-weight: 400;
+font-size: 20px;
+line-height: 29px;
 }
 
-.cs-card-custom{
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
 
-}
-
-.cs-card-body-custom{
-  margin: 0.5em 0em;
-  padding: 0px;
-}
 
 
 
@@ -239,24 +282,116 @@ line-height: 1.4em;
 /* TEMA LAVORI */
 
 
+#titolo-1-sezione-work{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 101px;
+  letter-spacing: 0.83em;
+  text-transform: uppercase;
+}
 
-.b5-title-pag{
+#descr-1-sezione-work{
+  font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+}
+
+.titoli-sezioni-works{
 font-style: normal;
-font-weight: 600;
-font-size: 7rem;
-line-height: 8rem;
-letter-spacing: 0.12em;
-text-transform: uppercase;
+font-weight: 700;
+  font-size: 53px;
+  line-height: 101px;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--b5blu);
+}
 
+.link-sezioni-works{
+  text-decoration: underline;
+}
+
+/* TEMA MAGAZINE */
+
+
+#titolo-1-sezione-mag{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 101px;
+  letter-spacing: 0.83em;
+  text-transform: uppercase;
+}
+
+#descr-1-sezione-mag{
+  font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+}
+
+.titoli-sezioni-mag{
+font-style: normal;
+font-weight: 700;
+  font-size: 40px;
+  line-height: 101px;
+  letter-spacing: 0.30em;
+  text-transform: uppercase;
+  color: var(--b5blu);
+}
+
+.link-sezioni-mag{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+text-align: center;
+text-decoration-line: underline;
+}
+
+.box-mag{
+  border: 2px solid var(--b5blu);
+}
+
+.fu-infobox-primary{
+  background-color: var(--b5blu);
+  position:relative;
+}
+
+.mag-datatext{
+  color: var(--b5blu);
+  font-size: 16px;
+
+  position:relative;
+}
+
+.mag-categorytext{
+  color: var(--b5blu);
+  font-size: 16px;
+  font-weight: 500;
+  position:relative;
 }
 
 
-.b5-p-pag{
 
-  font-size: 1.5rem;
-line-height: 33px;
+.mag-titoloarticolo{
+  font-weight: 700;
+  font-size: 20px;
+line-height: 107.5%;
+/* identical to box height, or 25px */
 
+letter-spacing: 0.19em;
+color: var(--b5blu);
 }
+
+.mag-resarticolo{
+  font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+
+/* GENERICO */
 
 .draw-container, .content-container{
   width:100%;
@@ -273,4 +408,169 @@ line-height: 33px;
 
 .content-container{
   position: relative;
+}
+
+
+
+/*BUTTON SLIDER ARTICLE*/
+
+
+.slideshow-mag{
+  height: 60px;
+  /*max-width: 800px;*/
+  /*The width of the page cannot be a problem*/
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--b5blu);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+
+
+}
+
+
+
+.slideshow>div {
+  width: 6020px;
+  /*I don't want to have to input a width.*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slideshow>div:hover {
+  width: 6020px;
+  /*I don't want to have to input a width.*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--b5bianco);
+  border-top: 2px solid var(--b5blu);
+  border-bottom: 2px solid var(--b5blu);
+
+}
+
+.move>img {
+  height: 115px;
+}
+
+.move {
+  animation: moveSlideshow 21s linear infinite;
+  transform: translateX(-12.5%);
+  height: 100px;
+}
+
+.move h1 {
+  display: inline-block;
+  font-size: 27px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap;
+  color: var(--b5bianco)
+}
+
+.move h1:hover {
+  color: var(--b5blu);
+}
+
+.move a {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 13px;
+
+}
+
+
+.slideshow .move:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes moveSlideshow {
+  0% {
+      transform: translateX(-12.5%);
+      ;
+  }
+
+  100% {
+      transform: translateX(-41.6%);
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+
+  .slideshow {
+      height: 70px;
+  }
+
+  .slideshow>div {
+      width: 2790px;
+  }
+
+  .move {
+      animation: moveSlideshow 18s linear infinite;
+      transform: translateX(-19.8%);
+      height: auto;
+  }
+
+  .move a {
+      padding-top: 14px;
+      padding-bottom: 14px;
+  }
+
+  .move h1 {
+      font-size: 38px !important;
+  }
+
+  @keyframes moveSlideshow {
+      0% {
+          transform: translateX(-19.8%);
+      }
+
+      100% {
+          transform: translateX(-62.4%)
+      }
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .slideshow {
+      height: 50px;
+  }
+
+  .slideshow>div {
+      width: 2790px;
+  }
+
+  .move {
+      animation: moveSlideshow 18s linear infinite;
+      transform: translateX(-25.3%);
+      height: auto;
+  }
+
+  .move a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .move h1 {
+      font-size: 25px !important;
+  }
+
+  @keyframes moveSlideshow {
+      0% {
+          transform: translateX(-25.3%);
+          ;
+      }
+
+      100% {
+          transform: translateX(-52.4%)
+      }
+  }
+
+
 }
