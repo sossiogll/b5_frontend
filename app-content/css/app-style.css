@@ -317,10 +317,9 @@ font-weight: 700;
 
 #titolo-1-sezione-mag{
   font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 101px;
-  letter-spacing: 0.83em;
+  font-weight: 600;
+font-size: 4rem;
+  letter-spacing: 0.7em;
   text-transform: uppercase;
 }
 
@@ -336,7 +335,7 @@ font-style: normal;
 font-weight: 700;
   font-size: 40px;
   line-height: 101px;
-  letter-spacing: 0.30em;
+  letter-spacing: 0.8em;
   text-transform: uppercase;
   color: var(--b5blu);
 }
@@ -344,8 +343,8 @@ font-weight: 700;
 .link-sezioni-mag{
   font-style: normal;
   font-weight: 600;
-  font-size: 29px;
-text-align: center;
+  font-size: 25px;
+text-align: right;
 text-decoration-line: underline;
 }
 
@@ -380,7 +379,7 @@ text-decoration-line: underline;
 line-height: 107.5%;
 /* identical to box height, or 25px */
 
-letter-spacing: 0.19em;
+letter-spacing: 0.10em;
 color: var(--b5blu);
 }
 
@@ -412,20 +411,20 @@ line-height: 24px;
 
 
 
-/*BUTTON SLIDER ARTICLE*/
+/*BUTTON MAGAZINE*/
 
 
-.slideshow-mag{
+.slideshow {
   height: 60px;
   /*max-width: 800px;*/
   /*The width of the page cannot be a problem*/
   margin: 0 auto;
   position: relative;
-  background-color: var(--b5blu);
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-
-
+  background-color: var(--b5blu);
+  border-top: 2px solid var(--b5blu);
+  border-bottom: 2px solid var(--b5blu);
 }
 
 
@@ -444,10 +443,12 @@ line-height: 24px;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--b5bianco);
-  border-top: 2px solid var(--b5blu);
-  border-bottom: 2px solid var(--b5blu);
 
+}
+
+.button-magazine>div:hover{
+  background-color: var(--b5bianco);
+  border-top: 1px solid var(--b5blu);
 }
 
 .move>img {
@@ -465,10 +466,13 @@ line-height: 24px;
   font-size: 27px !important;
   line-height: 1.1 !important;
   white-space: nowrap;
-  color: var(--b5bianco)
 }
 
-.move h1:hover {
+.button-magazine h1{
+  color: var(--b5bianco);
+}
+
+.button-magazine h1:hover{
   color: var(--b5blu);
 }
 
@@ -573,4 +577,8 @@ line-height: 24px;
   }
 
 
+}
+
+.row-scorrevole-mag{
+  overflow-x: auto;
 }

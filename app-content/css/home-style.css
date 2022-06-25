@@ -61,6 +61,89 @@
 
 }
 
+
+/* SEZIONE PROGETTI */
+
+#titolo-sezione-progetti {
+    color: var(--b5blu);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 156px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#sezione-progetti-headline {
+    background-color: var(--b5bianco);
+}
+
+#sezione-progetti-list-articolo {
+    border: 2px solid var(--b5blu);
+}
+
+.button-progetti {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid var(--b5blu);
+}
+
+.titolo-progetto-lista {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--b5blu);
+}
+
+.tipologie-progetto-lista-box {
+    background-color: var(--b5blu);
+}
+
+.luogo-progetto-lista{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    color: var(--b5blu);
+}
+
+.tipologie-progetto-lista-text {
+    color: var(--b5bianco);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.categoria-progetto-lista-text {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--b5blu);
+}
+
+
+.categoria-progetto-lista-box{
+    background-color: var(--b5bianco);
+    border-top: 2px solid var(--b5blu);
+  
+
+}
+
+.articoloshow-progetti{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 2px solid var(--b5blu);
+    border-right: 2px solid var(--b5blu);
+    border-bottom: 2px solid var(--b5blu);
+
+}
+
+
+
+
+
 /*BOTTONE CHE SCORRE*/
 
 
@@ -93,8 +176,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--b5blu);
 
+}
+
+.button-home>div:hover {
+    background-color: var(--b5blu);
 }
 
 .move>img {
@@ -112,10 +198,14 @@
     font-size: 27px !important;
     line-height: 1.1 !important;
     white-space: nowrap;
-    color: var(--b5blu)
 }
 
-.move h1:hover {
+.button-home {
+    color: var(--b5blu);
+}
+
+
+.button-home h1:hover {
     color: var(--b5bianco);
 
 }
