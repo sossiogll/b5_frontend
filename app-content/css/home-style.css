@@ -9,7 +9,6 @@
     color: var(--b5blu);
     font-weight: 400;
     font-size: 26px;
-    line-height: 120%;
     letter-spacing: 0.11em;
 }
 
@@ -18,8 +17,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 132%;
-    /* or 50px */
+
 
 }
 
@@ -27,7 +25,6 @@
     color: var(--b5bianco);
     font-weight: 600;
     font-size: 100px;
-    line-height: 105%;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
@@ -37,7 +34,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
-    line-height: 30px;
 
 }
 
@@ -144,7 +140,7 @@
 
 
 
-/*BOTTONE CHE SCORRE*/
+/*Sliding button*/
 
 
 .slideshow {
@@ -155,9 +151,13 @@
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-    border-top: 2px solid var(--b5blu);
-    border-bottom: 2px solid var(--b5blu);
+    
 
+}
+
+.button-home {
+    background-color: var(--b5bianco);
+    border-bottom: 2px solid var(--b5blu);
 }
 
 
@@ -311,4 +311,29 @@
     }
 
 
+}
+
+.container-cit{
+    height: 80vh;
+}
+
+.container-seconda-sezione{
+    border-top: 2px solid var(--b5blu);
+}
+
+.sezione-costruzioni{
+    height: 40vh;
+    border-bottom: 2px solid var(--b5blu);
+}
+
+
+.sezione-foto-chisiamo {
+        /* The image used */
+        background-image: url('C:\Users\vince\Documents\workspace\siti-web\b5\img\find-us-foto-test.jpg');
+      
+        height: 100vh;
+      
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
