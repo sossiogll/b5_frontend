@@ -1,8 +1,24 @@
 :root {
     --b5blu: #010088;
     --b5bianco: #EFEFEF;
+
 }
 
+.draw-container{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content-container{
+    width:100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+}
 
 
 #cit-1-sezione {
@@ -314,7 +330,7 @@
 }
 
 .container-cit{
-    height: 80vh;
+    height: 700px;
 }
 
 .container-seconda-sezione{
@@ -337,3 +353,38 @@
         background-repeat: no-repeat;
         background-size: cover;
 }
+
+/******************************** DRAWS  */
+
+.svg-container{
+
+    width: 100%;
+    top:0;
+    bottom:0;
+    position: relative;
+    text-align: center;
+
+}
+
+.draw{
+    width: 100%;
+    top:0;
+    bottom:0;
+    position: relative;
+}
+
+/*
+#draw_1 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: draw-1 1s linear alternate infinite;
+}
+
+@keyframes draw-1 {
+    0% {
+        stroke-dashoffset: var(--draw1progress);
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}*/

@@ -392,14 +392,6 @@ line-height: 24px;
 
 /* GENERICO */
 
-.draw-container, .content-container{
-  width:100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-}
 
 .container-main{
   position: relative;
