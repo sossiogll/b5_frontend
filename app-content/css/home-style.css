@@ -159,6 +159,7 @@
 /*Sliding button*/
 
 
+
 .slideshow {
     height: 60px;
     /*max-width: 800px;*/
@@ -167,8 +168,9 @@
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-    
-
+    background-color: var(--b5blu);
+    border-top: 2px solid var(--b5blu);
+    border-bottom: 2px solid var(--b5blu);
 }
 
 .button-home {
@@ -186,6 +188,7 @@
     left: 0;
 }
 
+
 .slideshow>div:hover {
     width: 6020px;
     /*I don't want to have to input a width.*/
@@ -194,6 +197,7 @@
     left: 0;
 
 }
+
 
 .button-home>div:hover {
     background-color: var(--b5blu);
@@ -206,7 +210,6 @@
 .move {
     animation: moveSlideshow 21s linear infinite;
     transform: translateX(-12.5%);
-    height: 100px;
 }
 
 .move h1 {
@@ -214,6 +217,10 @@
     font-size: 27px !important;
     line-height: 1.1 !important;
     white-space: nowrap;
+    height: 100%;
+    padding: 16px 0;
+    margin: 0;
+    cursor: none;
 }
 
 .button-home {
@@ -228,9 +235,9 @@
 
 .move a {
     display: inline-block;
-    padding-top: 16px;
-    padding-bottom: 13px;
-
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: none;
 }
 
 
@@ -240,6 +247,8 @@
     -o-animation-play-state: paused;
     animation-play-state: paused;
 }
+
+
 
 @keyframes moveSlideshow {
     0% {
@@ -251,6 +260,7 @@
         transform: translateX(-41.6%);
     }
 }
+
 
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
