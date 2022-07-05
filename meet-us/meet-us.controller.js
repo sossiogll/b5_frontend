@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .controller('Find-UsController', FindUs);
+        .controller('MeetUsController', MeetUsController);
 
-    FindUs.$inject = ['$rootScope'];
-    function FindUs($rootScope) {
+    MeetUsController.$inject = ['$rootScope'];
+    function MeetUsController($rootScope) {
         var vm = this;
 
         initController();

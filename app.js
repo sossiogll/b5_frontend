@@ -30,9 +30,9 @@
                 templateUrl: 'magazine/magazine.view.html',
                 controllerAs: 'vm'
             })
-            .when('/find-us', {
-                controller: 'FindUsController',
-                templateUrl: 'find-us/find-us.view.html',
+            .when('/meet-us', {
+                controller: 'MeetUsController',
+                templateUrl: 'meet-us/meet-us.view.html',
                 controllerAs: 'vm'
             })
             .when('/credits', {
@@ -51,7 +51,7 @@
             .useSanitizeValueStrategy('sanitizeParameters')
             .preferredLanguage('it');
 
-        $cursorProvider.cursorTheme("BLUE");
+        $cursorProvider.cursorTheme("RED");
         $cursorProvider.cursorLazyness(200);
 
     }

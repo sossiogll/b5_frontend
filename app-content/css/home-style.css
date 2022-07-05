@@ -345,13 +345,22 @@
 
 .container-seconda-sezione{
     border-top: 2px solid var(--b5blu);
+    height: 500px;
+}
+
+.container-terza-sezione{
+    height: 376px;
 }
 
 .sezione-costruzioni{
-    height: 40vh;
+    height: 371px;
     border-bottom: 2px solid var(--b5blu);
 }
 
+
+.sezione-colosseo{
+    height: 730px;
+}
 
 .sezione-foto-chisiamo {
         /* The image used */
@@ -383,18 +392,89 @@
     position: relative;
 }
 
-/*
+
 #draw_1 {
-    stroke-dasharray: 3000;
-    stroke-dashoffset: 3000;
-    animation: draw-1 1s linear alternate infinite;
+    stroke-dasharray: 7103.858703613281;
+    stroke-dashoffset: 7103.858703613281;
+    animation: draw-1 5s ease-in-out forwards;
 }
 
 @keyframes draw-1 {
     0% {
-        stroke-dashoffset: var(--draw1progress);
+        stroke-dashoffset: 7103;
     }
     100% {
         stroke-dashoffset: 0;
     }
-}*/
+}
+
+#draw_2{
+    stroke-dasharray: 9047.794921875;
+    stroke-dashoffset: 9047.794921875;
+}
+
+.draw_2 {
+    animation: draw-2 3s ease-in-out forwards;
+}
+
+@keyframes draw-2 {
+    0% {
+        stroke-dashoffset: 9047.794921875;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.draw_3 {
+    stroke-dasharray: 1606.502197265625;
+    stroke-dashoffset: 1606.502197265625;
+    animation: draw-3 5s ease-in-out forwards;
+}
+
+@keyframes draw-3 {
+    0% {
+        stroke-dashoffset: 1606.502197265625;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#draw_4{
+    stroke-dasharray: 42682.160400390625;
+    stroke-dashoffset: 42682.160400390625;
+}
+
+.draw_4 {
+
+    animation: draw-4 7s ease-in-out forwards;
+}
+
+@keyframes draw-4 {
+    0% {
+        stroke-dashoffset: 42682.160400390625;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#draw_5 {
+    stroke-dasharray: 30576.379150390625;
+    stroke-dashoffset: 30576.379150390625;
+}
+
+.draw_5 {
+
+    animation: draw-5 5s ease-in-out forwards;
+}
+
+@keyframes draw-5 {
+    0% {
+        stroke-dashoffset: 30576.379150390625;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
