@@ -47,6 +47,14 @@ body{
   cursor:none;
 }
 
+#flash-container{
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  z-index: 1;
+  border-radius: 0;
+}
+
 
 .navbar-custom{
 	padding: 0px;

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+
+<!-- APP HEADER -->
+
 <html ng-app="app" lang="{{ lang }}">
+
+    <!-- APP HEADER / meta infos and stylesheet references -->
 
     <head>
 	    
@@ -15,11 +20,13 @@
 		
 	</head>
 
+    <!-- APP BODY / dynamic view container -->
+
     <body ng-controller="AppController">
 
         <div data-ng-controller="NavController" ng-include="'nav/nav.view.html'"></div>
 
-        <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+        <div id="flash-container" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
         <div ng-view id="views-container"></div>
 
         <div data-ng-controller="FooterController" ng-include="'footer/footer.view.html'"></div>
@@ -27,6 +34,9 @@
     </body>
 </html>
 
+<!-- APP INCLUDES -->
+
+    <!-- FRAMEWORKS AND LIBRARIES -->
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -40,9 +50,17 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.18.3/angular-translate-loader-static-files.min.js"></script>
 
 
+    <!-- APP CONTROLLERS AND MAIN -->
+
 <script src="app.js"></script>
 <script src="app.controller.js"></script>
 
+    <!-- APP SERVICES -->
+
+<script src="app-services/flash.service.js"></script>
+<script src="app-services/user.service.js"></script>
+
+    <!-- VIEWS CONTROLLERS -->
 
 <script src="nav/nav.controller.js"></script>
 <script src="home/home.controller.js"></script>

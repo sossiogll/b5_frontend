@@ -61,7 +61,7 @@
 
         // keep user logged in after page refresh
         $rootScope.globals = $cookies.getObject('globals') || {};
-
+        $rootScope.APIUrl = "http://192.168.230.128/api/v1"
         $rootScope.lang = 'it';
 
 

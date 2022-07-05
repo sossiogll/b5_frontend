@@ -9,72 +9,78 @@
     <div class="col-12 px-0 mt-3">
       <div class="row mx-0 pl-5 pt-4 ">
         <div class="col-12 px-0">
-          <h1 id="titolo-1-sezione-fu">il mondo di b5</h1>
+          <h1 id="titolo-1-sezione-fu">
+
+            {{'MEET_US_TITLE' | translate}}
+
+          </h1>
         </div>
       </div>
       <div class="row mx-0 pl-5 pt-2">
         <div class="col-6 px-0 text-left">
-          <p id="descr-1-sezione-fu">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi
-            fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum
-            fringilla.</p>
+          <p id="descr-1-sezione-fu">
+
+            {{'MEET_US_DESCRIPTION' | translate}}
+
+          </p>
         </div>
 
       </div>
 
-      
+
+      <!-- PROFILES SECTION -->
       <div class="row mx-0">
-        <div class="col-3 px-0 mx-5">
+
+        <!-- PROFILE PRINT LOOP -->
+
+        <!-- SINGLE PROFILE -->
+        <div ng-repeat="profile in vm.profiles"  class="col-3 px-0 mx-5">
+
+          <!-- PROFILE IMAGE -->
           <div class="row mx-0 pt-5">
             <div class="col px-0">
-              <img class="my-1 img-fluid" src="img/peppe.png" alt="vincenzo giallaurito">
+              <img class="my-1 img-fluid" src="{{profile.profile_picture.url}}" alt="{{profile.profile_picture.description}}">
             </div>
-          </div>
-      
-          <div class="row mx-0 justify-content-between">
+          </div> <!-- PROFILE IMAGE END -->
 
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-primary ">
-              <p class="my-2 mx-2 fu-infotext-primary">ARCHITETTO</p>
-            </div>
+          <!-- PROFILE POSITIONS -->
+          <div class="row mx-0 justify-content-between" ng-if=" (profile.positions != null) && (profile.positions.length > 0)">
 
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-secondary">
-              <p class="my-2 mx-2 fu-infotext-secondary">PROGETTISTA</p>
-            </div>
-
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-secondary">
-              <p class="my-2 mx-2 fu-infotext-secondary">CO-WORKER</p>
+            <div  class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-primary">
+              <p class="my-2 mx-2 fu-infotext-primary">
+                {{profile.positions[0]}}
+              </p>
             </div>
 
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-secondary">
-              <p class="my-2 mx-2 fu-infotext-secondary">INTERIOR DESIGNER</p>
+            <div ng-if=" profile.positions.length > 0" ng-repeat="position in profile.positions" ng-show="!$first" class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-secondary" >
+              <p class="my-2 mx-2 fu-infotext-secondary">
+                {{position}}
+              </p>
             </div>
+            
+          </div> <!-- PROFILE POSITIONS END -->
 
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-secondary">
-              <p class="my-2 mx-2 fu-infotext-secondary">URBAN-REGENERATOR</p>
-            </div>
-
-            <div class="my-1 px-2 py-1  justify-content-center text-center fu-infobox-secondary">
-              <p class="my-2 mx-2 fu-infotext-secondary">FOTOGRAFO</p>
-            </div>
-
-          </div>
-
+          <!-- PROFILE NAME -->
           <div class="row mx-0">
             <div class="col-12 px-0 py-3 text-left">
-              <h5 class="fu-nome">Giuseppe D'Angelo</h5>
+              <h5 class="fu-nome">
+                {{profile.name}}
+              </h5>
             </div>
-          </div>
+          </div> <!-- PROFILE NAME END -->
 
+          <!-- PROFILE DESCRIPTION -->
           <div class="row mx-0">
             <div class="col-12 px-0 text-left">
-              <p class="fu-descrizione">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh vitae
-                consequat vitae ornare est augue id tristique. Eros sit tincidunt egestas pellentesque lobortis at. Arcu
-                est porttitor sed et scelerisque dignissim donec. Tempus commodo mattis risus posuere scelerisque
-                condimentum leo. Faucibus egestas turpis massa in egestas.<br>Libero congue placerat sit cras quis urna,
-                euismod augue. Elementum dolor tincidunt bibendum orci dui, id sit nam. Morbi semper vitae nunc auctor
-                vestibulum donec urna. Hendrerit mauris egestas cras.</p>
+              <p class="fu-descrizione">
+
+                {{profile.bio}}
+
+              </p>
             </div>
-          </div>
-        </div>
+          </div> <!-- PROFILE DESCRIPTION END -->
+
+        </div> <!-- SINGLE PROFILE END -->
 
         
 
