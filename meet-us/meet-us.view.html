@@ -34,7 +34,7 @@
         <!-- PROFILE PRINT LOOP -->
 
         <!-- SINGLE PROFILE -->
-        <div ng-repeat="profile in vm.profiles"  class="col-3 px-0 mx-5">
+        <div ng-if=" vm.profiles.length > 0" ng-repeat="profile in vm.profiles"  class="col-3 px-0 mx-5">
 
           <!-- PROFILE IMAGE -->
           <div class="row mx-0 pt-5">
@@ -82,11 +82,14 @@
 
         </div> <!-- SINGLE PROFILE END -->
 
-        
 
-        
+        <div ng-if=" vm.profiles === undefined || vm.profiles == null || vm.profiles.length > 0" class="col mx-0 pl-5 pt-4 pb-5">
+          <h1>OOPS!</h1>
+          <h3>A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5</h3>
+          <hr class="my-4">
+          <p>Sicuramente Francesca c'è però.</p>
+        </div>
 
-        
       </div>
 
 

@@ -43,7 +43,8 @@
                 function(){
 
                     FlashService.Error("Errore di comunicazione col server.");
-                    console.log(res);
+                    console.log(vm.profiles.length);
+
                 });
         }
 
