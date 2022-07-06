@@ -1,0 +1,71 @@
+:root {
+    --b5blu: #010088;
+    --b5bianco: #EFEFEF;
+    --b5rosso: #C11010;
+}
+
+
+.titolo-work {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 140px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.body-work {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--b5blu);
+}
+
+.titolo-single-works {
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--b5blu);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.luogo-single-works {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--b5blu);
+}
+
+
+.categoria-single-works {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    text-transform: uppercase;
+    color: var(--b5blu);
+}
+
+
+.img-works{
+    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+    aspect-ratio: 1/1;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+  
+  .category-select-box-work{
+    border: 2px solid var(--b5blu);
+    font-size: 13px;
+    position: relative;
+  }
+  
+  .category-select-text-work{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: var(--b5blu);
+  }
