@@ -12,13 +12,13 @@
         var apiURL = $rootScope.APIUrl;
 
 
-        service.GetProfile = GetProfile;
+        service.Index = Index;
 
 
         return service;
 
 
-        function GetProfile(goodCallback, badCallback) {
+        function Index(goodCallback, badCallback) {
             $http.get(apiURL+"/users").then(goodCallback, badCallback);
         }
 

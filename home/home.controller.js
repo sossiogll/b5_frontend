@@ -27,13 +27,20 @@
         function drawSVGOnViewEnter(mainDrawContainerID, drawID, drawAnimationClass)
         {
             $(window).scroll(function() {
-                var wScroll = $(this).scrollTop();
 
-                if (wScroll > $('#'+mainDrawContainerID).offset().top - ($(window).height() / 1.5)) {
-                    $('#'+drawID).attr("class", drawAnimationClass);
-                } else if (wScroll < $('#'+mainDrawContainerID).offset().top - ($(window).height())) {
-                    $('#'+drawID).attr("class", "");
+                try {
+                    var wScroll = $(this).scrollTop();
+
+                    if (wScroll > $('#' + mainDrawContainerID).offset().top - ($(window).height() / 1.5)) {
+                        $('#' + drawID).attr("class", drawAnimationClass);
+                    } else if (wScroll < $('#' + mainDrawContainerID).offset().top - ($(window).height())) {
+                        $('#' + drawID).attr("class", "");
+                    }
                 }
+                catch (e) {
+                    console.log(e);
+                }
+
             });
         }
 
@@ -73,20 +80,25 @@
                 draw.style.strokeDashoffset = length;
                 $(window).scroll(function () {
 
-                    var scrollpercent;
+                    try {
+                        var scrollpercent;
 
-                    var scrollFromBottom = drawContainer.getBoundingClientRect().top - (window.innerHeight || document.documentElement.clientHeight) + drawContainer.clientHeight;
+                        var scrollFromBottom = drawContainer.getBoundingClientRect().top - (window.innerHeight || document.documentElement.clientHeight) + drawContainer.clientHeight;
 
-                    if (scrollFromBottom >= 0)
-                        scrollpercent = 0;
-                    else if (scrollFromBottom + drawContainer.clientHeight >= 0)
-                        scrollpercent = offset + (scrollFromBottom * (1 - offset)) / drawContainer.clientHeight
-                    else
-                        scrollpercent = -1;
+                        if (scrollFromBottom >= 0)
+                            scrollpercent = 0;
+                        else if (scrollFromBottom + drawContainer.clientHeight >= 0)
+                            scrollpercent = offset + (scrollFromBottom * (1 - offset)) / drawContainer.clientHeight
+                        else
+                            scrollpercent = -1;
 
-                    var progress = length * scrollpercent;
+                        var progress = length * scrollpercent;
 
-                    draw.style.strokeDashoffset = (Math.round(length - progress)).toString();
+                        draw.style.strokeDashoffset = (Math.round(length - progress)).toString();
+                    }
+                    catch (e) {
+                        console.log(e);
+                    }
 
                 });
             }

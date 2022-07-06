@@ -18,7 +18,7 @@
         }
 
         function loadAllProfile(){
-            UserService.GetProfile(
+            UserService.Index(
 
                 function(res){
 

@@ -16,14 +16,24 @@
     "OUR_WORKS" : "I nostri lavori",
     "LAST_ARTICLES" : "Ultimi articoli",
     "GO_TO_PROJECT_BTN" : "Vai al progetto completo",
+    "GO_TO_ALL_PROJECTS_BTN" : "Vedi tutti i nostri progetti",
     "READ_FULL_ARTICLE_BTN" : "Leggi tutto",
 
     "_comment": "---------------------- MEET US ----------------------",
     "MEET_US_TITLE" : "il mondo di b5",
     "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
 
+    "_comment": "---------------------- FOOTER ----------------------",
 
-
+    "VAT_NUMBER_TAX_CODE" : "P.IVA/C.F.",
+    "SHARE_CAPITAL" : "Capitale sociale",
+    "USEFUL_LINKS" : "Ultimi articoli",
+    "PRIVACY_POLICY" : "Privacy Policy",
+    "COOKIE_POLICY" : "Cookie Policy",
+    "ADMIN_AREA" : "Area admin",
+    "CREDITS" : "Crediti e riconoscimenti",
+    "CALL_US_BTN" : "chiamaci",
+    "EMAIL_US_BTN" : "scrivici",
 
     "_comment": "---------------------- END OF FILE ----------------------"
 }

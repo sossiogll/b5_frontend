@@ -15,9 +15,14 @@
                 templateUrl: 'home/home.view.html',
                 controllerAs: 'vm'
             })
-            .when('/privacyPolicy', {
+            .when('/privacy-policy', {
                 controller: 'PrivacyPolicyController',
                 templateUrl: 'privacy-policy/privacy-policy.view.html',
+                controllerAs: 'vm'
+            })
+            .when('/cookie-policy', {
+                controller: 'CookiePolicyController',
+                templateUrl: 'cookie-policy/cookie-policy.view.html',
                 controllerAs: 'vm'
             })
             .when('/works', {
