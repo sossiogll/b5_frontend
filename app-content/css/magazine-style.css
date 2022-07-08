@@ -1,0 +1,45 @@
+.img-magazine-article {
+    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#box-left-magazine-article{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid var(--b5blu);
+
+}
+
+.title-magazine-article{
+    font-style: normal;
+font-weight: 800;
+font-size: 32px;
+color: var(--b5blu);
+}
+
+.date-magazine-article{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: var(--b5blu);
+}
+
+.category-magazine-article{
+    background-color: var(--b5blu);
+}
+
+.category-magazine-article  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--b5bianco);
+}
+
+
+
+
