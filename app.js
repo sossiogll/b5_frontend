@@ -35,6 +35,16 @@
                 templateUrl: 'magazine/magazine.view.html',
                 controllerAs: 'vm'
             })
+            .when('/lavoro', {
+                controller: 'WorkArticleController',
+                templateUrl: 'work-article/work-article.view.html',
+                controllerAs: 'vm'
+            })
+            .when('/articolo', {
+                controller: 'MagazineArticleController',
+                templateUrl: 'magazine-article/magazine-article.view.html',
+                controllerAs: 'vm'
+            })
             .when('/meet-us', {
                 controller: 'MeetUsController',
                 templateUrl: 'meet-us/meet-us.view.html',
