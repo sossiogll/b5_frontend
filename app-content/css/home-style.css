@@ -280,8 +280,8 @@
     }
 
     .move a {
-        padding-top: 14px;
-        padding-bottom: 14px;
+        /*padding-top: 14px;
+        padding-bottom: 14px;*/
     }
 
     .move h1 {
@@ -364,13 +364,20 @@
 
 .sezione-foto-chisiamo {
         /* The image used */
-        background-image: url('C:\Users\vince\Documents\workspace\siti-web\b5\img\find-us-foto-test.jpg');
-      
-        height: 100vh;
-      
+        height: 600px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+}
+
+#foto-gruppo{
+
+    background-image: url(../img/home/find-us-foto-test.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 600px;
+
 }
 
 /******************************** DRAWS  */
