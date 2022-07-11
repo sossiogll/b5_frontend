@@ -20,6 +20,8 @@
     color: var(--b5blu);
 }
 
+
+
 .titolo-single-works {
     font-style: normal;
     text-transform: uppercase;
@@ -82,12 +84,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    
     height: 70vh;
 }
 
 
 .img-single-work-article {
-    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+    background-image: url(../img/test_lavoro_single_1.jpg);
     aspect-ratio: 16/9;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,9 +98,47 @@
     width: 100%;
 }
 
-#box-right-work-article {
+.img-single-work-article-2 {
+    background-image: url(../img/test_lavoro_single_2.jpg);
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.img-single-work-article-3 {
+    background-image: url(../img/test_lavoro_single_3.jpg);
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.img-single-work-article-4 {
+    background-image: url(../img/test_lavoro_single_4.jpg);
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
 
 
+#box-right-work-article a{
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--b5blu);
+    text-decoration-line: underline;
+}
+
+
+#box-right-work-article h2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    color: var(--b5blu);
 }
 
 #box-left-work-article {
@@ -176,6 +217,60 @@ font-weight: 600;
 font-size: 20px;
 text-decoration-line: underline;
 }
+
+
+/** MASONRY GALLERY TEST 1***/
+
+.row-custom-single-article {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .col-custom-article {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .col-custom-article img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.3s linear;
+  }
+  .col-custom-article img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .col-custom-article {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-custom-article {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .col-custom-article img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
+
+
+  /*é*********/
+
+
+
+  
+
+
+
 
 
 

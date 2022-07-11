@@ -57,8 +57,6 @@ body{
 
 
 .navbar-custom{
-	padding: 0px;
-	margin: 0px;
 	display: flex;
   border: 2px solid var(--b5blu);
   flex-wrap: wrap;
@@ -67,14 +65,7 @@ body{
   background-color: var(--b5blu);
 }
 
-
-.navbar-custom > .navbar-nav-custom{
-  padding-left: 0px;
-  margin: 0px;
-}
-
-
-
+/*
 .navbar-custom > .navbar-brand-custom{
   padding: 10px 50px;
   margin-right: 1.5px;
@@ -82,6 +73,7 @@ body{
   background-color: var(--b5bianco);
   font-size: 16px;
 }
+
 
 .navbar-custom > .navbar-brand-custom:focus{
   padding: 10px 50px;
@@ -91,6 +83,8 @@ body{
   font-size: 16px;
 }
 
+
+
 .navbar-custom > .navbar-brand-custom:hover{
   padding: 10px 50px;
   color: white;
@@ -98,22 +92,6 @@ body{
   font-size: 16px;
 }
 
-/*
-.navbar-nav-custom > .nav-item-logo{
-	display: flex;
-    list-style: none;
-box-sizing: border-box;
-}
-
-
-.navbar-nav-custom > .nav-item-logo > .nav-link{
-	display: inline-block;
-    text-decoration: none;
-    padding-left: 70px;
-    color: #010088;
-    background-color: #EFEFEF;
-	}
-	
 */
 
 .navbar-nav-custom > .nav-item > .nav-link {
@@ -121,7 +99,7 @@ box-sizing: border-box;
     text-decoration: none;
     margin: 0px 1.5px;
     color: var(--b5bianco);
-  }
+}
 
   .navbar-nav-custom > .nav-item > .nav-link:focus {
     padding: 10px 50px;
@@ -159,8 +137,11 @@ box-sizing: border-box;
 }
 
 .dropdown-menu .dropdown-item {
-  display: inline-block; width: 100%; 
+  display: inline-block; 
+  width: 100%; 
 }
+
+
 .container .dropdown .dropdown-menu a:hover
 {
   color: #fff;
@@ -168,17 +149,6 @@ box-sizing: border-box;
   border-color: #fff;
 }
 
-  
-/*
-.navbar-custom > .navbar-brand > a{
-	display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    padding-left: 70px;
-    color: #010088;
-    background-color: #EFEFEF;
-}
-*/
 
 h1{
   color: var(--b5blu);

@@ -15,12 +15,23 @@
 
 }
 
-.title-magazine-article{
-    font-style: normal;
-font-weight: 800;
-font-size: 32px;
-color: var(--b5blu);
+.header-magazine h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
 }
+
+.header-magazine p{
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+}
+
+
+
+
 
 .date-magazine-article{
     font-style: normal;
@@ -39,7 +50,5 @@ color: var(--b5blu);
     font-size: 20px;
     color: var(--b5bianco);
 }
-
-
 
 
