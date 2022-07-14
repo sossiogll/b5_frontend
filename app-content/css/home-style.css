@@ -196,8 +196,9 @@
 .marquee {
     width: 100%;
     max-width: 100%;
-    height: 7vh;
-    overflow-x: hidden;
+    height: 63px;
+    white-space: nowrap;
+    overflow: hidden; 
     border-top: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
   }
@@ -206,20 +207,20 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 12s linear infinite;
+    animation: marquee 5s linear infinite;
   }
 
   .content{
     font-family: 'Jost';
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--b5blu);
   }
   
   @keyframes marquee {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    to { transform: translateX(-20%);}
   }
 
   .marquee:hover .track{
@@ -238,6 +239,63 @@ animation-play-state: paused;
     text-decoration: none;
   }
   
+
+/*****************/
+
+
+/*Marquee button blu*/
+
+
+.marquee-blu{
+    width: 100%;
+    max-width: 100%;
+    height: 63px;
+
+    white-space: nowrap;
+    overflow: hidden; 
+    background-color: var(--b5blu);
+  }
+  
+  .track-blu {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-blu 12s linear infinite;
+  }
+
+  .content-blu{
+    font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--b5bianco);
+  }
+  
+  @keyframes marquee-blu {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .marquee-blu:hover .track-blu{
+
+-moz-animation-play-state: paused;
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+  }
+
+  .marquee-blu:hover {
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: var(--b5bianco);
+    border-top: 2px solid var(--b5blu);
+  }
+
+  .marquee-blu:hover .content-blu{
+    color: var(--b5blu);
+    text-decoration: none;
+  }
+
 
 /*****************/
 
@@ -270,19 +328,19 @@ animation-play-state: paused;
 
 .sezione-titolo-chisiamo{
     background-color: var(--b5blu);
-    height: 35vh;
+    height: 30vh;
 }
 
 .sezione-titolo-chisiamo h3{
-        color: var(--b5bianco);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 95px;
-        line-height: 156px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+    color: var(--b5bianco);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
     
 }
+
 
 .sezione-foto-chisiamo {
         /* The image used */
