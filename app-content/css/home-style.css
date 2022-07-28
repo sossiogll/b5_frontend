@@ -1,7 +1,6 @@
 :root {
     --b5blu: #010088;
     --b5bianco: #EFEFEF;
-
 }
 
 .draw-container{
@@ -20,24 +19,41 @@
     right: 0;
 }
 
+/* HERO */
 
-#cit-1-sezione {
+
+.container-hero{
+    height: 700px;
+}
+
+ .hero  h3 {
     color: var(--b5blu);
     font-weight: 400;
     font-size: 26px;
     letter-spacing: 0.11em;
 }
 
-#cit-name-1-sezione {
+.hero h4 {
     color: var(--b5blu);
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
 
-
 }
 
-#titolo-2-sezione {
+/* SECONDA SEZIONE */
+
+
+.container-seconda-sezione{
+    border-top: 2px solid var(--b5blu);
+    height: 500px;
+}
+
+.seconda-sezione > div{
+    background-color: var(--b5blu);
+}
+
+.seconda-sezione h2 {
     color: var(--b5bianco);
     font-weight: 600;
     font-size: 100px;
@@ -45,15 +61,31 @@
     text-transform: uppercase;
 }
 
-.seconda-sezione h2 {
+.seconda-sezione p {
+    color: var(--b5bianco);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+/* TERZA SEZIONE */
+
+.container-terza-sezione{
+    height: 376px;
+    background-color: var(--b5blu);
+}
+
+
+.terza-sezione h2{
     color: var(--b5bianco);
     font-weight: 600;
     font-size: 100px;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
 }
 
-.seconda-sezione p {
+.terza-sezione p {
         color: var(--b5bianco);
         font-style: normal;
         font-weight: 400;
@@ -62,23 +94,9 @@
 }
 
 
-#descr-2-sezione {
-    color: var(--b5bianco);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-
-}
-
-
-
-
-
-
-
 /* SEZIONE PROGETTI */
 
-#titolo-sezione-progetti {
+.sezione-progetti h2{
     color: var(--b5blu);
     font-style: normal;
     font-weight: 600;
@@ -88,17 +106,13 @@
     text-transform: uppercase;
 }
 
-#sezione-progetti-headline {
-    background-color: var(--b5bianco);
-}
 
 #sezione-progetti-list-articolo {
     border: 2px solid var(--b5blu);
 }
 
 
-
-.button-progetti {
+.button-lista-progetti {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -106,7 +120,7 @@
 }
 
 
-.button-progetti:hover{
+.button-lista-progetti:hover{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -114,29 +128,27 @@
     background-color: var(--b5blu);
 }
 
-.button-progetti:hover .titolo-progetto-lista{
+.button-lista-progetti:hover .titolo-progetto-lista{
     color: var(--b5bianco);
 }  
 
-.button-progetti:hover .tipologie-progetto-lista-box{
+.button-lista-progetti:hover .tipologie-progetto-lista-box{
     border-top: 2px solid var(--b5blu);
     border-right: 2px solid var(--b5blu);
     background-color: var(--b5bianco);
 }
 
-.button-progetti:hover .tipologie-progetto-lista-box > h3{
+.button-lista-progetti:hover .tipologie-progetto-lista-box > h3{
     color: var(--b5blu);
 }
 
-.button-progetti:hover .luogo-progetto-lista{
+.button-lista-progetti:hover .luogo-progetto-lista{
     color: var(--b5bianco);
 }  
 
-.button-progetti:hover .tipologie-progetto-lista-box{
+.button-lista-progetti:hover .tipologie-progetto-lista-box{
     background-color: var(--b5bianco);
 }
-
-
 
 .titolo-progetto-lista {
     font-style: normal;
@@ -189,9 +201,22 @@
 
 }
 
+/* SEZIONE MAGAZINE*/
+
+.sezione-magazine h2{
+    color: var(--b5blu);
+font-weight: 600;
+font-size: 135px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+}
+
+
+
+
 
 /*Marquee button*/
-
 
 .marquee {
     width: 100%;
@@ -239,8 +264,6 @@ animation-play-state: paused;
     text-decoration: none;
   }
   
-
-/*****************/
 
 
 /*Marquee button blu*/
@@ -296,25 +319,7 @@ animation-play-state: paused;
     text-decoration: none;
   }
 
-
-/*****************/
-
-
-
-
-
-.container-cit{
-    height: 700px;
-}
-
-.container-seconda-sezione{
-    border-top: 2px solid var(--b5blu);
-    height: 500px;
-}
-
-.container-terza-sezione{
-    height: 376px;
-}
+/* SEZIONE COSTRUZIONI */
 
 .sezione-costruzioni{
     height: 371px;
@@ -322,33 +327,32 @@ animation-play-state: paused;
 }
 
 
+/* SEZIONE COLOSSEO */
+
 .sezione-colosseo{
     height: 730px;
 }
 
-.sezione-titolo-chisiamo{
+
+/*SEZIONE CHI SIAMO*/
+
+.sezione-chisiamo{
     background-color: var(--b5blu);
     height: 30vh;
 }
 
-.sezione-titolo-chisiamo h3{
+.sezione-chisiamo h3{
     color: var(--b5bianco);
     font-style: normal;
     font-weight: 600;
-    font-size: 6rem;
+    font-size: 5.2rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
-    
 }
-
 
 .sezione-foto-chisiamo {
-        /* The image used */
-        height: 100vh;
-    
+        height: 100vh;    
 }
-
-
 
 #foto-gruppo{
 
@@ -360,7 +364,7 @@ animation-play-state: paused;
 
 }
 
-/******************************** DRAWS  */
+/* DRAWS */
 
 .svg-container{
 

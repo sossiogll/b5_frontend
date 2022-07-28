@@ -65,34 +65,6 @@ body{
   background-color: var(--b5blu);
 }
 
-/*
-.navbar-custom > .navbar-brand-custom{
-  padding: 10px 50px;
-  margin-right: 1.5px;
-  color: #010088;
-  background-color: var(--b5bianco);
-  font-size: 16px;
-}
-
-
-.navbar-custom > .navbar-brand-custom:focus{
-  padding: 10px 50px;
-  margin-right: 1.5px;
-  color: var(--b5bianco);
-  background-color: var(--b5blu);
-  font-size: 16px;
-}
-
-
-
-.navbar-custom > .navbar-brand-custom:hover{
-  padding: 10px 50px;
-  color: white;
-  background-color: #010088;
-  font-size: 16px;
-}
-
-*/
 
 .navbar-nav-custom > .nav-item > .nav-link {
     padding: 10px 50px;
@@ -293,78 +265,12 @@ font-weight: 700;
 /* TEMA MAGAZINE */
 
 
-#titolo-1-sezione-mag{
-  font-style: normal;
-  font-weight: 600;
-font-size: 4rem;
-  letter-spacing: 0.7em;
-  text-transform: uppercase;
-}
 
-#descr-1-sezione-mag{
-  font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 35px;
-}
 
-.titoli-sezioni-mag{
-font-style: normal;
-font-weight: 700;
-  font-size: 40px;
-  line-height: 101px;
-  letter-spacing: 0.8em;
-  text-transform: uppercase;
-  color: var(--b5blu);
-}
-
-.link-sezioni-mag{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-text-align: right;
-text-decoration-line: underline;
-}
-
-.box-mag{
-  border: 2px solid var(--b5blu);
-}
 
 .fu-infobox-primary{
   background-color: var(--b5blu);
   position:relative;
-}
-
-.mag-datatext{
-  color: var(--b5blu);
-  font-size: 16px;
-
-  position:relative;
-}
-
-.mag-categorytext{
-  color: var(--b5blu);
-  font-size: 16px;
-  font-weight: 500;
-  position:relative;
-}
-
-
-
-.mag-titoloarticolo{
-  font-weight: 700;
-  font-size: 20px;
-line-height: 107.5%;
-/* identical to box height, or 25px */
-
-letter-spacing: 0.10em;
-color: var(--b5blu);
-}
-
-.mag-resarticolo{
-  font-weight: 400;
-font-size: 20px;
-line-height: 24px;
 }
 
 
@@ -381,12 +287,93 @@ line-height: 24px;
 
 
 
-/*BUTTON MAGAZINE*/
+/*CARD MAGAZINE*/
 
 
+.card-articolo{
+  border: 2px solid var(--b5blu);
+  width: 350px;
+}
+
+.card-articolo-img {
+  background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-articolo .data {
+  color: var(--b5blu);
+  font-size: 16px;
+  font-weight: 400;
+  position:relative;
+}
+
+.card-articolo .categoria {
+  color: var(--b5blu);
+  font-size: 15px;
+  font-weight: 500;
+  position:relative;
+}
+
+.card-articolo .titolo{
+  font-weight: 700;
+  font-size: 20px;  
+color: var(--b5blu);
+}
+
+.card-articolo .riassunto{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
 
 
+/*CARD MAGAZINE MOBILE */
 
+@media (max-width: 575px){
+  
+.card-articolo{
+  border: 2px solid var(--b5blu);
+  
+}
+
+.card-articolo-img {
+  background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-articolo .data {
+  color: var(--b5blu);
+  font-size: 0.9rem;
+  font-weight: 400;
+  position:relative;
+}
+
+.card-articolo .categoria {
+  color: var(--b5blu);
+  font-size: 0.9rem;
+  font-weight: 500;
+  position:relative;
+}
+
+.card-articolo .titolo{
+  font-weight: 700;
+  font-size: 1rem;  
+  line-height: 1.3rem;
+color: var(--b5blu);
+}
+
+.card-articolo .riassunto{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+}
 
 
 
@@ -394,6 +381,8 @@ line-height: 24px;
   background-color: var(--b5bianco);
   border-top: 1px solid var(--b5blu);
 }
+
+
 
 
 .button-magazine h1{
