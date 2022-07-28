@@ -135,10 +135,9 @@ p{
 
 #titolo-1-sezione-fu{
   font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 101px;
-  letter-spacing: 0.83em;
+  font-weight: 600;
+  font-size: 120px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
