@@ -1,22 +1,21 @@
-﻿<!--------------------- Prima sezione --------------------->
-
-<div class="container-fluid px-0 container-main">
+﻿<div class="container-fluid px-0 container-main ng-scope">
 
         <!-- Contenitore -->
-        <div class="content-container row mx-0">
-                <div class="col-12 px-0 mt-3">
-                        <div class="row mx-0 px-5 pb-3">
-                                <div class="col-9 px-0">
+        <!-- Sezione back button -->
+        <div class="content-container row mx-0 sezione-heading">
+                <div class="col-12 px-0 mt-3 mt-sm-4">
+                        <div class="row mx-0 px-3 px-sm-5 pb-3 pb-sm-3">
+                                <div class="col-1 col-sm-9 px-0">
 
                                 </div>
 
-                                <div class="col-3 px-0 text-right">
-                                        <a href="#"><span class="back-button-work-article">torna indietro</span></a>
+                                <div class="col-11 col-sm-3 px-0 my-auto text-right">
+                                        <a href=""><span>torna indietro</span></a>
                                 </div>
                         </div>
 
 
-                        <div class="row mx-0 px-5 py-2">
+                        <div class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
                                 <div class="col px-0 img-work-article">
 
                                 </div>
@@ -28,175 +27,95 @@
         </div>
 
 
-        <!--------------------- Seconda sezione --------------------->
+        <!--------------------- Sezione Heading Info --------------------->
+
+
+
+        <div class="container-fluid px-0 container-main container-heading-info">
+
+                <!-- Contenitore -->
+                <div class="content-container row mx-0 sezione-heading-info">
+                        <div class="col-12 px-0 py-4 py-sm-5">
+                                <div class="row mx-0 px-3 px-sm-5">
+                                        <div class="col-12 col-sm-4 px-0">
+                                                <div class="row mx-0 pb-2 box-left">
+
+                                                        <div class="col-6 py-2 text-left d-table info-titolo">
+                                                                <p class="p-1 d-table-cell align-middle">Località</p>
+                                                        </div>
+
+
+                                                        <div class="col-6 py-2 text-left d-table info-descrizione">
+                                                                <p class="p-1 d-table-cell align-middle">{{vm.articleinfo.data.custom_fields_values["localita"]}}</p>
+                                                        </div>
+                                                </div><div class="row mx-0 pb-2 box-left">
+
+                                                        <div class="col-6 py-2 text-left d-table info-titolo">
+                                                                <p class="p-1 d-table-cell align-middle">IMPORTO</p>
+                                                        </div>
+
+
+                                                        <div class="col-6 py-2 text-left d-table info-descrizione">
+                                                                <p class="p-1 d-table-cell align-middle">PROVA</p>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+
+
+
+                                        <div class="col-12 col-sm-8 px-0 py-4 py-sm-0">
+
+                                                <div class="row mx-0 ml-0 ml-sm-5 d-flex flex-column justify-content-between box-right">
+
+                                                        <div class="row mx-0">
+
+                                                                <div class="row mx-0">
+                                                                        <div class="col-12 px-0 titolo">
+                                                                                <h1>{{vm.articleinfo.data["title"]}}</h1>
+                                                                        </div>
+
+                                                                        <div class="col-12 px-0 text-left descrizone">
+                                                                                <p>Lorem ipsum dolor sit
+                                                                                        amet, consectetur adipiscing
+                                                                                        elit. Donec elementum consequat
+                                                                                        elementum diam in phasellus
+                                                                                        dictum tempor.</p>
+                                                                        </div>
+
+                                                                </div>
+
+                                                        </div>
+
+                                                        <div class="row mx-0">
+                                                                <div class="col-12 px-0 text-left read-button">
+                                                                        <a href="#!">leggi il documento completo</a>
+                                                                </div>
+
+                                                        </div>
+
+                                                
+                                                        
+                                                </div>
+                                        </div>
+
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+<!-- PROBABILE SEZIONE CAROSELLO -->
 
 
         <div class="container-fluid px-0 container-main">
 
                 <!-- Contenitore -->
                 <div class="content-container row mx-0">
-                        <div class="col-12 px-0 py-5">
-                                <div class="row mx-0 px-5">
-                                        <div class="col-4 px-0" id="box-left-work-article">
-                                                <div class="row mx-0 pb-2  ">
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-left-work-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-left-work-article">
-                                                                        IMPORTO</p>
-                                                        </div>
-
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-right-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-right-work-article">
-                                                                        PROVA</p>
-                                                        </div>
-                                                </div>
-
-                                                <div class="row mx-0 pb-2  ">
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-left-work-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-left-work-article">
-                                                                        IMPORTO</p>
-                                                        </div>
-
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-right-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-right-work-article">
-                                                                        PROVA</p>
-                                                        </div>
-                                                </div>
-                                                <div class="row mx-0 pb-2  ">
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-left-work-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-left-work-article">
-                                                                        IMPORTO</p>
-                                                        </div>
-
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-right-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-right-work-article">
-                                                                        PROVA</p>
-                                                        </div>
-                                                </div>
-                                                <div class="row mx-0 pb-2  ">
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-left-work-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-left-work-article">
-                                                                        IMPORTO</p>
-                                                        </div>
-
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-right-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-right-work-article">
-                                                                        PROVA</p>
-                                                        </div>
-                                                </div>
-
-
-
-
-                                        </div>
-
-
-
-                                        <div class="col-8 px-0" id="">
-
-
-
-                                                <div class="row mx-4 d-flex flex-column justify-content-between" id="box-right-work-article">
-                                                       
-                                                                
-                                                                        <div class="row mx-0">
-
-                                                                                <div class="row mx-0">
-                                                                                        <div class="col-12 px-0">
-                                                                                                <h1 class="titolo-work-article">
-                                                                                                        COMPLESSO DI SAN MARTINO</h1>
-                                                                                        </div>
-                                                                                </div>
-        
-                                                                                <div class="row mx-0">
-                                                                                        <div class="col-12 px-0 text-left">
-                                                                                                <h2 class="pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum consequat elementum diam in phasellus dictum tempor.</h2>
-                                                                                        </div>
-                
-                                                                                </div>
-        
-                                                                        </div>
-
-                                                                        <div class="row mx-0">
-                                                                                <div class="col-12 px-0 text-left">
-                                                                                        <a href="#!">leggi il documento completo</a>
-                                                                                </div>
-        
-                                                                        </div>    
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                        </div>
-                </div>
-        </div>
-
-
-
-        <!--------------------- Terza sezione --------------------->
-
-
-<!--
-
-
-        <div class="container-fluid px-0 container-main">
-
-            
-                <div class="content-container row mx-0">
                         <div class="col-12 px-0 pt-2 pb-5 ">
                                 <div class="row mx-0 px-5">
-                                        <div class="col px-0">
-                                                <div class="row mx-0">
-                                                        <div class="img-single-work-article">
-                                                        </div>
-                                                        
-                                                </div>
-                                                
-                                        </div>
 
-                                        <div class="col px-0">
-                                                <div class="row mx-0 justify-content-start">
-                                                        <div class="img-single-work-article-2">
-                                                        </div>
-                                                        
-                                                </div>
-                                                
-                                        </div>
-
-                                        <div class="col px-0">
-                                                <div class="row mx-0 justify-content-start">
-                                                        <div class="img-single-work-article-3">
-                                                        </div>
-                                                        
-                                                </div>
-                                                
-                                        </div>
-
-                                        <div class="col px-0">
-                                                <div class="row mx-0 justify-content-start">
-                                                        <div class="img-single-work-article-4">
-                                                        </div>
-                                                        
-                                                </div>
-                                                
-                                        </div>
-
+        
                                 </div>
 
                         </div>
@@ -204,254 +123,39 @@
 
         </div>
 
--->
 
-<!--
-
-    <div class="row mx-0 px-5 row-custom-single-article">
-      <div class="col-custom-article">
-        <img src= "app-content\img\test_lavoro_single_1.jpg" />
-        <img src="app-content\img\test_lavoro_single_2.jpg" />
-   
-      </div>
-      <div class="col-custom-article">
-        <img src="app-content\img\test_lavoro_single_3.jpg" />
-        <img src="app-content\img\test_lavoro_single_4.jpg" />
-      </div>
-      <div class="col-custom-article">
-
-      </div>
-    </div>
-
--->
-  
-<!-- Gallery -->
-
-
-
-
-<div class="container-fluid px-0 container-main">
-
-        <!-- Contenitore -->
-        <div class="content-container row mx-0">
-                <div class="col-12 px-0 pt-2 pb-5 ">
-                        <div class="row mx-0 px-5">
-                               
-                                        <div class="col-3">
-                                          <img
-                                            src="app-content\img\test_lavoro_single_3.jpg"
-                                            class="w-100 shadow-1-strong  mb-4"
-                                            alt="Boat on Calm Water"
-                                          />
-                                      
-                                          <img
-                                            src="app-content\img\test_lavoro_single_1.jpg"
-                                            class="w-100 shadow-1-strong  mb-4"
-                                            alt="Wintry Mountain Landscape"
-                                          />
-                                        </div>
-                                      
-                                        <div class="col-4">
-                                          <img
-                                            src="app-content\img\test_lavoro_single_4.jpg"
-                                            class="w-100 shadow-1-strong  mb-4"
-                                            alt="Mountains in the Clouds"
-                                          />
-                                      
-                                          <img
-                                            src="app-content\img\test_lavoro_single_2.jpg"
-                                            class="w-100 shadow-1-strong  mb-4"
-                                            alt="Boat on Calm Water"
-                                          />
-                                        </div>
-
-                                        <div class="col-4">
-                                                <img
-                                                  src="app-content\img\test_lavoro_single_4.jpg"
-                                                  class="w-100 shadow-1-strong  mb-4"
-                                                  alt="Mountains in the Clouds"
-                                                />
-                                            
-                                                <img
-                                                  src="app-content\img\test_lavoro_single_2.jpg"
-                                                  class="w-100 shadow-1-strong  mb-4"
-                                                  alt="Boat on Calm Water"
-                                                />
-                                        </div>
-                        </div>
-
-                </div>
-        </div>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-        <!--  CONDIVIDI SUI SOCIAL
-        <div class="row mx-0 py-3">
-                <div class="col-2">
-
-                </div>
-
-                <div class="col-8">
-                        <div class="row mx-0">
-                                <p class="share-text-work-article">condividi su</p>
-                        </div>
-
-                        <div class="row mx-0 justify-content-around">
-                                <div class="col-6 px-0">
-                                        <a href="">
-                                                <p class="link-social-work-article">facebook</p>
-                                        </a>
-                                </div>
-
-                                <div class="col-6 px-0">
-                                        <a href="">
-                                                <p class="link-social-work-article">linkedin</p>
-                                        </a>
-                                </div>
-                        </div>
-
-
-
-                </div>
-
-                <div class="col-2">
-
-                </div>
-        </div>
-
-
-        -->
-
-
-
-        <!-- OLD
-
-<div class="container-fluid px-0 container-main">
-
-   
-        <div class="content-container row mx-0">
-                <div class="col-12 px-0 mt-3">
-                        <div class="row mx-0 px-5 pb-3">
-                                <div class="col-9 px-0">
-
-                                </div>
-
-                                <div class="col-3 px-0 text-right">
-                                        <a href="#"><span class="back-button-work-article">torna indietro</span></a>
-                                </div>
-                        </div>
-
-
-                        <div class="row mx-0 px-5 py-2">
-                                <div class="col px-0 img-work-article">
-
-                                </div>
-                        </div>
-
-
-                        <div class="row mx-0 pl-5">
-                                <div class="col-12 px-0">
-                                        <h1 class="titolo-work-article">COMPLESSO DI SAN MARTINO</h1>
-                                </div>
-                        </div>
-                        <div class="row mx-0 pl-5 pt-0">
-                                <div class="col-12 px-0 text-left">
-                                        <h2 class="luogo-work-article">Napoli</h2>
-                                </div>
-
-                        </div>
-                </div>
-        </div>
+        <!-- CONDIVIDI SUI SOCIAL -->
 
 
 
         <div class="container-fluid px-0 container-main">
-
+        
+                <!-- Contenitore -->
                 <div class="content-container row mx-0">
-                        <div class="col-12 px-0 py-5">
-                                <div class="row mx-0 px-5">
-                                        <div class="col-4 px-0" id="box-left-work-article">
-                                                <div class="row mx-0 pb-2  ">
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-left-work-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-left-work-article">
-                                                                        IMPORTO</p>
-                                                        </div>
+                        <div class="col-6 col-sm-3 px-0 pb-5 mx-3 mx-sm-5">
 
-                                                        <div class="col-6 py-2 text-left d-table"
-                                                                id="box-info-right-article">
-                                                                <p
-                                                                        class="p-1 d-table-cell align-middle box-info-title-right-work-article">
-                                                                        €
-                                                                        Ministero per i Beni e le Attività Culturali –
-                                                                        Soprintendenza Speciale per i Beni Archeologici
-                                                                        di Roma.</p>
-                                                        </div>
-                                                </div>
-
-
-                                                <div class="row mx-0 py-3">
-                                                        <div class="col-2">
-
-                                                        </div>
-
-                                                        <div class="col-8">
-                                                                <div class="row mx-0">
-                                                                        <p class="share-text-work-article">condividi su</p>
-                                                                </div>
-
-                                                                <div class="row mx-0 justify-content-around">
-                                                                        <div class="col-6 px-0">
-                                                                                <a href="">
-                                                                                        <p class="link-social-work-article">facebook</p>
-                                                                                </a>
-                                                                        </div>
-                
-                                                                        <div class="col-6 px-0">
-                                                                                <a href="">
-                                                                                        <p class="link-social-work-article">linkedin</p>
-                                                                                </a>
-                                                                        </div>
-                                                                </div>
-
-
-
-                                                        </div>
-
-                                                        <div class="col-2">
-
-                                                        </div>
-                                                </div>
-
-                                                
-
+                                <div class="row mx-0 ">
+                                        <p class="share-text-work-article">condividi su</p>
+                                </div>
+        
+                                <div class="row mx-0 justify-content-around">
+                                        <div class="col-6 px-0">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://verteego.it/">
+                                                        <p class="link-social-work-article">facebook</p>
+                                                </a>
                                         </div>
-
-
-
-                                        <div class="col-8 px-0" id="">
-
-
-
-                                                <div class="row mx-4" id="box-right-work-article">
-                                                        <div class="col-12 px-0 m-3">
-                                                                <a href="">prova 2</a>
-                                                        </div>
-                                                </div>
+        
+                                        <div class="col-6 px-0">
+                                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={https://verteego.it/}">
+                                                        <p class="link-social-work-article">linkedin</p>
+                                                </a>
                                         </div>
-
                                 </div>
 
                         </div>
                 </div>
-        </div>-->
+        
+        </div>
+
+
+</div>

@@ -209,10 +209,22 @@ line-height: 29px;
 }
 
 .link-section-custom{
-  border: 2px solid var(--b5blu);
-
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  border-top: 2px solid var(--b5blu);
+  border-right: 2px solid var(--b5blu);
+  border-left: 2px solid var(--b5blu);
 }
 
+.sezione-signature {
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  border-right: 2px solid var(--b5blu);
+  border-left: 2px solid var(--b5blu);
+  border-bottom: 2px solid var(--b5blu);
+}
 
 
 .footer-media-section > .media-link-custom a{
