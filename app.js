@@ -2,12 +2,18 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate', 'gllCursor'])
+        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate', 'gllCursor', 'ngSanitize'])
         .config(config)
         .run(run);
 
-    config.$inject = ['$routeProvider', '$locationProvider', '$translateProvider', '$cursorProvider'];
-    function config($routeProvider, $locationProvider, $translateProvider, $cursorProvider) {
+    config.$inject = ['$routeProvider', '$locationProvider', '$translateProvider', '$cursorProvider', 'Settings'];
+    function config($routeProvider, $locationProvider, $translateProvider, $cursorProvider, Settings) {
+
+        $locationProvider.html5Mode({
+            enabled: false,
+            requireBase: false,
+            rewriteLinks: true
+          })
 
         $routeProvider
             .when('/', {
@@ -40,7 +46,7 @@
                 templateUrl: 'work-article/work-article.view.html',
                 controllerAs: 'vm'
             })
-            .when('/articolo', {
+            .when('/magazine/:postSlug', {
                 controller: 'MagazineArticleController',
                 templateUrl: 'magazine-article/magazine-article.view.html',
                 controllerAs: 'vm'
@@ -55,29 +61,28 @@
                 templateUrl: 'credits/credits.view.html',
                 controllerAs: 'vm'
             })
-            .otherwise({ redirectTo: '/' });
+            .otherwise({ redirectTo: Settings.DEFAULT_REDIRECT });
 
         $translateProvider
             .useStaticFilesLoader({
-                prefix: 'app-content/locales/locale-',
-                suffix: '.json'
+                prefix: Settings.LOCALE_FILE_PREFIX,
+                suffix: Settings.LOCALE_FILE_SUFFIX
             })
             // remove the warning from console log by putting the sanitize strategy
             .useSanitizeValueStrategy('sanitizeParameters')
-            .preferredLanguage('it');
+            .preferredLanguage(Settings.DEFAULT_LANG);
 
-        $cursorProvider.cursorTheme("RED");
-        $cursorProvider.cursorLazyness(200);
+        $cursorProvider.cursorTheme(Settings.CURSOR_THEME);
+        $cursorProvider.cursorLazyness(Settings.CURSOR_LAZYNESS);
 
     }
 
-    run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
-    function run($rootScope, $location, $cookies, $http) {
+    run.$inject = ['$rootScope', '$location', '$cookies', '$http', 'Settings'];
+    function run($rootScope, $location, $cookies, $http, Settings) {
 
         // keep user logged in after page refresh
         $rootScope.globals = $cookies.getObject('globals') || {};
-        $rootScope.APIUrl = "http://192.168.230.128/api/v1"
-        $rootScope.lang = 'it';
+        //$rootScope.lang = Settings.DEFAULT_LANG;
 
 
     }

@@ -6,10 +6,10 @@
         .module('app')
         .factory('PostService', PostService);
 
-    PostService.$inject = ['$http',  '$rootScope'];
-    function PostService($http, $rootScope) {
+    PostService.$inject = ['$http',  '$rootScope', 'Settings'];
+    function PostService($http, $rootScope, Settings) {
         var service = {};
-        var apiURL = $rootScope.APIUrl;
+        var apiURL = Settings.APIURL;
 
 
         service.Index = Index;
@@ -23,8 +23,8 @@
             $http.get(apiURL+"/posts").then(goodCallback, badCallback);
         }
 
-        function Post(postId, goodCallback, badCallback){
-            $http.get(apiURL+"/posts/"+postId).then(goodCallback, badCallback);
+        function Post(postSlug, goodCallback, badCallback){
+            $http.get(apiURL+"/posts/"+postSlug).then(goodCallback, badCallback);
         }
 
     }

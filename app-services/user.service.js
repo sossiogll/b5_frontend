@@ -6,10 +6,10 @@
         .module('app')
         .factory('UserService', UserService);
 
-    UserService.$inject = ['$http',  '$rootScope'];
-    function UserService($http, $rootScope) {
+    UserService.$inject = ['$http',  '$rootScope', 'Settings'];
+    function UserService($http, $rootScope, Settings) {
         var service = {};
-        var apiURL = $rootScope.APIUrl;
+        var apiURL = Settings.APIURL;
 
 
         service.Index = Index;

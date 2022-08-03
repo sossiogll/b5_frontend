@@ -5,11 +5,12 @@
         .module('app')
         .controller('MeetUsController', MeetUsController);
 
-    MeetUsController.$inject = ['$rootScope', 'UserService', 'FlashService'];
-    function MeetUsController($rootScope, UserService, FlashService) {
+    MeetUsController.$inject = ['UserService', 'FlashService'];
+    function MeetUsController(UserService, FlashService) {
+        
         var vm = this;
-        var apiURL = $rootScope.APIUrl;
-        var profiles = [];
+        vm.profiles = [];
+        vm.isLoaded = false;
 
         initController();
 
@@ -18,35 +19,46 @@
         }
 
         function loadAllProfile(){
+
             UserService.Index(
 
                 function(res){
 
                     try{
-                        //console.log("ok authentication service ");
+
                         if(res.data == null) {
 
-                            FlashService.Error("Nessuna informazione ricevuta dal server.");
-
+                            $translate('ERROR_404').then(function (errorMessage) {
+                                FlashService.Error(errorMessage);
+                            });  
                         }
                         else {
 
                             vm.profiles = res.data.data;
 
                         }
-                        console.log(res.data);
+
                     }catch (error) {
+
                         console.error(error);
+
                     }
+
+                    vm.isLoaded = true;
+
                 },
 
                 function(){
 
-                    FlashService.Error("Errore di comunicazione col server.");
-                    console.log(vm.profiles.length);
+                    $translate('ERROR_400').then(function (errorMessage) {
+                        FlashService.Error(errorMessage);
+                    });
+
+                    vm.isLoaded = true;
 
                 });
         }
+
 
 
     }

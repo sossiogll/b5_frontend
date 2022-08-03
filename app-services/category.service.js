@@ -6,15 +6,15 @@
         .module('app')
         .factory('CategoryService', CategoryService);
 
-    CategoryService.$inject = ['$http',  '$rootScope'];
-    function CategoryService($http, $rootScope) {
+    CategoryService.$inject = ['$http',  '$rootScope', 'Settings'];
+    function CategoryService($http, $rootScope, Settings) {
 
         var service = {};
-        var apiURL = $rootScope.APIUrl;
+        var apiURL = Settings.APIURL;
 
 
         service.Index = Index;
-        service.Category = Post
+        service.Category = Category
 
 
         return service;
@@ -24,8 +24,8 @@
             $http.get(apiURL+"/categories").then(goodCallback, badCallback);
         }
 
-        function Category(categoryId, goodCallback, badCallback){
-            $http.get(apiURL+"/categories/"+categoryId).then(goodCallback, badCallback);
+        function Category(categorySlug, goodCallback, badCallback){
+            $http.get(apiURL+"/categories/"+categorySlug).then(goodCallback, badCallback);
         }
 
     }

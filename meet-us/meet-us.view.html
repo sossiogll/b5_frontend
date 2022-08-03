@@ -34,25 +34,33 @@
         <!-- PROFILE PRINT LOOP -->
 
         <!-- SINGLE PROFILE -->
-        <div ng-if=" vm.profiles.length > 0" ng-repeat="profile in vm.profiles"  class="col-3 px-0 mx-5">
+        <div ng-if="vm.profiles != null && vm.profiles!== undefined && vm.profiles.length > 0" ng-repeat="profile in vm.profiles"  class="col-3 px-0 mx-5 animate__animated animate__fadeIn">
 
           <!-- PROFILE IMAGE -->
-          <div class="row mx-0 pt-5">
+          <div ng-if="profile.profile_picture != null && profile.profile_picture !== undefinited" class="row mx-0 pt-5">
             <div class="col px-0">
-              <img class="my-1 img-fluid" src="{{profile.profile_picture.url}}" alt="{{profile.profile_picture.description}}">
+
+              <div class="thumbnail">
+                <div class="profilePicture">
+                    <img class="my-1 img-fluid" ng-src="{{profile.profile_picture.url}}" alt="{{profile.profile_picture.description}}">
+                </div>
+                <div class="secondaryProfilePicture">
+                    <img class="my-1 img-fluid" ng-src="{{profile.secondary_profile_picture.url}}" alt="{{profile.secondary_profile_picture.description}}">
+                </div>
+              </div>
             </div>
           </div> <!-- PROFILE IMAGE END -->
 
           <!-- PROFILE POSITIONS -->
-          <div class="row mx-0 justify-content-between" ng-if=" (profile.positions != null) && (profile.positions.length > 0)">
+          <div class="row mx-0 justify-content-between" ng-if="profile.positions != null && profile.positions.length > 0">
 
-            <div  class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-primary">
+            <div class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-primary">
               <p class="my-2 mx-2 fu-infotext-primary">
                 {{profile.positions[0]}}
               </p>
             </div>
 
-            <div ng-if=" profile.positions.length > 0" ng-repeat="position in profile.positions" ng-show="!$first" class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-secondary" >
+            <div ng-repeat="position in profile.positions track by $index" ng-if="!$first" class="my-1 px-2 py-1 justify-content-center text-center fu-infobox-secondary" >
               <p class="my-2 mx-2 fu-infotext-secondary">
                 {{position}}
               </p>
@@ -83,11 +91,13 @@
         </div> <!-- SINGLE PROFILE END -->
 
 
-        <div ng-if=" vm.profiles === undefined || vm.profiles == null || vm.profiles.length > 0" class="col mx-0 pl-5 pt-4 pb-5">
-          <h1>OOPS!</h1>
-          <h3>A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5</h3>
+        <!-- 404 meet us -->
+
+        <div ng-if="vm.profiles == null || vm.profiles === undefined || vm.profiles.length == 0" class="col mx-0 pl-5 pt-4 pb-5">
+          <h1>{{'404_MEET_US_TITLE' | translate}}</h1>
+          <h3>{{'404_MEET_US_DESCRIPTION' | translate}}</h3>
           <hr class="my-4">
-          <p>Sicuramente Francesca c'è però.</p>
+          <p>{{'404_MEET_US_SUBTITLE' | translate}}</p>
         </div>
 
       </div>

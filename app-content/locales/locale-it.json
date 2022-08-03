@@ -1,11 +1,13 @@
 {
     "_comment": "---------------------- NAVBAR ----------------------",
+
     "WORKS_BTN" : "lavori",
     "MAGAZINE_BTN" : "magazine",
     "MEET_US_BTN" : "conoscici",
     "LANGUAGE_BTN": "ita",
 
     "_comment": "---------------------- HOME ----------------------",
+
     "QUOTE" : "Talvolta l'architettura cerca il silenzio e il vuoto in cui la nostra coscienza si possa ritrovare.",
     "AUTHOR_QUOTE" : "Renzo Piano",
     "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
@@ -19,9 +21,23 @@
     "GO_TO_ALL_PROJECTS_BTN" : "Vedi tutti i nostri progetti",
     "READ_FULL_ARTICLE_BTN" : "Leggi tutto",
 
+    "_comment": "---------------------- MAGAZINE ----------------------",
+
+    "MAGAZINE_TITLE" :  "Magazine",
+    "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "404_MAGAZINE_TITLE" :  "OOPS!",
+    "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
+    "404_MAGAZINE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "magazine-1" : "Magazine fico",
+    "magazine-2" : "Magazine più fico",
+
     "_comment": "---------------------- MEET US ----------------------",
+
     "MEET_US_TITLE" : "il mondo di b5",
     "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "404_MEET_US_TITLE" :  "OOPS!",
+    "404_MEET_US_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
+    "404_MEET_US_SUBTITLE" :  "Sicuramente Francesca c'è però.",
 
     "_comment": "---------------------- FOOTER ----------------------",
 
@@ -34,6 +50,76 @@
     "CREDITS" : "Crediti e riconoscimenti",
     "CALL_US_BTN" : "+39 081 55 192 74",
     "EMAIL_US_BTN" : "info@b5srl.it",
+
+    "_comment": "---------------------- SHARED ----------------------",
+
+    "BACK_BUTTON" :  "Torna indietro",
+    "SHARE" : "Condividi su",
+
+    "_comment": "---------------------- ERRORS ----------------------",
+
+
+    "ERROR_404" : "Risorsa non trovata.",
+    "ERROR_400" : "Richiesta informazioni errata.",
+
+    "_comment": "---------------------- DAYS WEEK ----------------------",
+
+    "Monday" : "Lunedì",
+    "Tuesday" : "Martedì",
+    "Wednesday" : "Mercoledì",
+    "Thurdsay" : "Giovedì",
+    "Friday" : "Venerdì",
+    "Saturday" : "Sabato",
+    "Sunday" : "Domenica",
+
+    "_comment" : "---------------------- MONTHS ----------------------",
+
+    "January" : "Gennaio",
+ 	"February" : "Febbraio",
+ 	"March" : "Marzo",
+ 	"April" : "Aprile",
+ 	"May" : "Maggio",
+ 	"June" : "Giugno",
+ 	"July" : "Luglio",
+ 	"August" : "Agosto",
+ 	"September" : "Settembre",
+ 	"October" : "Ottobre",
+	"November" : "Novembre",
+ 	"December" : "Dicembre",
+
+     "_comment" : "---------------------- DAYS ----------------------",
+
+    "1" : "1",
+    "2" : "2",
+    "3" : "3",
+    "4" : "4",
+    "5" : "5",
+    "6" : "6",
+    "7" : "7",
+    "8" : "8",
+    "9" : "9",
+    "10" : "10",
+    "11" : "11",
+    "12" : "12",
+    "13" : "13",
+    "14" : "14",
+    "15" : "15",
+    "16" : "16",
+    "17" : "17",
+    "18" : "18",
+    "19" : "19",
+    "20" : "20",
+    "21" : "21",
+    "22" : "22",
+    "23" : "23",
+    "24" : "24",
+    "25" : "25",
+    "26" : "26",
+    "27" : "27",
+    "28" : "28",
+    "29" : "29",
+    "30" : "30",
+    "31" : "31",
 
     "_comment": "---------------------- END OF FILE ----------------------"
 }

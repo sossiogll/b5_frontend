@@ -11,16 +11,19 @@
                 </div>
 
                 <div class="col-11 col-sm-3 px-0 text-right">
-                    <a href="#"><span>torna indietro</span></a>
+                    <a href="#!/magazine">
+                        <span>
+                            {{'BACK_BUTTON' | translate}}
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!--------------------- Sezione articolo--------------------->
 
-    <div class="container-fluid px-0 container-main">
+    <div ng-if="vm.postInfo != null && vm.postInfo!== undefined"  class="container-fluid px-0 container-main" >
 
         <!-- Contenitore -->
         <div class="content-container row mx-0 sezione-articolo-magazine">
@@ -29,19 +32,23 @@
                     <div class="col-12 col-sm-4 px-0 box-left">
 
                         <div class="row mx-0 pb-1 m-3 m-sm-4">
-                            <div class="col-12 px-0 img-fluid img">
+                            <div class="col-12 px-0 img-fluid img" style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
                             </div>
 
                         </div>
                         <div class="row mx-0 py-1 py-sm-2 px-3 px-sm-4">
                             <div class="col-12 px-0 text-left d-table">
                                 <div class="row mx-0">
-                                    <p class="titolo">Cras id massa dolor ultrices tincidunt nisl ut mauris.</p>
+                                    <p class="titolo">{{vm.postInfo.title}}</p>
                                 </div>
                             
 
                                 <div class="row mx-0">
-                                    <p class="data">Venerdi 23 Giugno 2022</p>
+                                    <p class="data">
+                                        {{vm.postInfo.posted_at | date: 'EEEE' | translate}}
+                                        {{vm.postInfo.posted_at | date: 'd' | translate}}
+                                        {{vm.postInfo.posted_at | date: 'MMMM' | translate}}
+                                        {{vm.postInfo.posted_at | date: 'yyyy'}}</p>
                                 </div>
 
                             </div>
@@ -52,7 +59,7 @@
                             
                             <div class="col-8 px-0 sezione-condividi">
                                 <div class="row mx-0">
-                                    <p class="titolo">condividi su</p>
+                                    <p class="titolo">{{"SHARE" | translate}}</p>
                                 </div>
 
                                 <div class="row mx-0 justify-content-around">
@@ -74,7 +81,7 @@
                             </div>
 
                             <div class="col-2">
-
+                            
                             </div>
                         </div>
 
@@ -89,11 +96,9 @@
                         <div class="row mx-0 ">
                             <div class="col-12 px-0">
                                 <div class="row mx-0">
-                                    <div class="col-8 px-0">
-
-                                    </div>
+                                    <div ng-bind-html="postContent" class="col-8 px-0"></div>
                                     <div class="col-4 px-0 mb-5 d-table text-center categoria">
-                                        <p class="p-2 d-table-cell align-middle">CATEGORIA ARTICOLO</p>
+                                        <p class="p-2 d-table-cell align-middle">{{vm.postInfo.category_slug | translate}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -104,4 +109,12 @@
 
             </div>
         </div>
+    </div>
+
+    <!-- 404 meet us -->
+    <div ng-if="vm.postInfo == null || vm.postInfo === undefined" class="col mx-0 pl-5 pt-4 pb-5">
+        <h1>{{'404_MEET_US_TITLE' | translate}}</h1>
+        <h3>{{'404_MEET_US_DESCRIPTION' | translate}}</h3>
+        <hr class="my-4">
+        <p>{{'404_MEET_US_SUBTITLE' | translate}}</p>
     </div>
