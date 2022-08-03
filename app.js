@@ -41,7 +41,7 @@
                 templateUrl: 'magazine/magazine.view.html',
                 controllerAs: 'vm'
             })
-            .when('/lavoro', {
+            .when('/works/:postSlug', {
                 controller: 'WorkArticleController',
                 templateUrl: 'work-article/work-article.view.html',
                 controllerAs: 'vm'
@@ -82,7 +82,7 @@
 
         // keep user logged in after page refresh
         $rootScope.globals = $cookies.getObject('globals') || {};
-        //$rootScope.lang = Settings.DEFAULT_LANG;
+        $rootScope.lang = Settings.DEFAULT_LANG;
 
 
     }

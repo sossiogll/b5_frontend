@@ -27,21 +27,30 @@
 /* LISTA CATEGORIE */
 
 
-.sezione-lista-categorie p {
+.sezione-lista-categorie label {
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--b5blu);
-}
-
-.sezione-lista-categorie>div>div>div {
-
+    float: left;
     border: 2px solid var(--b5blu);
     font-size: 13px;
     position: relative;
 
 }
+
+.sezione-lista-categorie input[type="checkbox"]:checked + label {
+    color: var(--b5bianco);
+    background-color: var(--b5blu);
+}
+
+.sezione-lista-categorie input[type=checkbox] {
+    display: none;
+    float: right;
+
+}
+
 
 
 /* CARD PROGETTI */
@@ -51,7 +60,6 @@
 }
 
 .card-progetto-img {
-    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
     aspect-ratio: 1/1;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -224,15 +232,15 @@
 
 /* SEZIONE HEADING INFO */
 
-.box-left{
+.box-custom-field{
     box-sizing: border-box;
 }
 
-.box-left .info-titolo{
+.box-custom-field .info-titolo{
     background-color: var(--b5blu);
 }
 
-.box-left .info-titolo p{
+.box-custom-field .info-titolo p{
     
   font-style: normal;
     font-weight: 500;
@@ -242,13 +250,13 @@
     
 }
 
-.box-left .info-descrizione{
+.box-custom-field .info-descrizione{
     border-top: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
     border-right: 2px solid var(--b5blu);
 }
 
-.box-left .info-descrizione p{
+.box-custom-field .info-descrizione p{
     font-style: normal;
     font-weight: 400;
     width: 100%;
@@ -257,18 +265,14 @@
 }
 
 
-.box-right .titolo h1{
+.box-custom-field .titolo h1{
     font-weight: 600;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
-.box-right{
-    height: 100%;
-}
-    
 
-.box-right .read-button a{
+.box-custom-field .read-button a{
     font-weight: 600;
     font-size: 22px;
     color: var(--b5blu);
@@ -276,7 +280,7 @@
 }
 
 
-.box-right .descrizone p {
+.box-custom-field .descrizone p {
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -312,7 +316,6 @@
     /* SEZIONE HEADING MOBILECO */
 
 .sezione-heading .img-work-article {
-    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
     aspect-ratio: 16/9;
     background-position: center;
     background-repeat: no-repeat;

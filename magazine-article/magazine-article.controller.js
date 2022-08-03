@@ -5,8 +5,8 @@
         .module('app')
         .controller('MagazineArticleController', MagazineArticleController);
 
-    MagazineArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService', 'State'];
-    function MagazineArticleController($scope, $routeParams, PostService, FlashService, State) {
+    MagazineArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService'];
+    function MagazineArticleController($scope, $routeParams, PostService, FlashService) {
              
         //Init pointer to controller for inner functions
         var vm = this;

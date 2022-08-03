@@ -7,38 +7,49 @@
         <div class="col-12 px-0">
             <div class="row mx-0 pt-4 ml-3 ml-sm-5">
                 <div class="col-12 px-0">
-                    <h1 class="gllText">I NOSTRI LAVORI</h1>
+                    <h1 class="gllText">
+                        
+                        {{"WORKS_TITLE" | translate}}
+                    
+                    </h1>
                 </div>
             </div>
 
             <div class="row mx-0 ml-3 ml-sm-5">
                 <div class="col-12 col-sm-9 px-0 text-left">
-                    <p class="gllText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis
-                        facilisi fermentum elit consequat pellentesque neque, vitae sit. 
-                        Tincidunt at consectetur fringilla.</p>
+                    <p class="gllText">
+
+                        {{"WORKS_DESCRIPTION" | translate}}
+                        
+                    </p>
                 </div>
             </div>
 
-<!-- LISTA CATEGORIE -->
+            <!-- LISTA CATEGORIE -->
 
             <div class="row mx-0 ml-3 ml-sm-5 sezione-lista-categorie">
                 <div class="col-lg-7 col-sm-12 px-0">
                     <div class="row mx-0 justify-content-start">
-                        <div class="my-1 px-2 py-1 mr-2 justify-content-center text-center gllBlock">
-                            <p class="my-2 mx-2 ">Categoria</p>
+                        <div ng-repeat="category in vm.worksCategoryInfos track by $index" ng-if="category.post_count > 0" class="justify-content-center text-center">
+                            <input type="checkbox" id="{{category.slug}}" name="workCategory" value="{{category.slug}}">
+                            <label class="p-4 m-1" for="{{category.slug}}">
+                                {{category.slug | translate}}
+                            </label>
                         </div>
                     </div>
                 </div>
 
-            </div>            
+            </div>
+            
+            
 
 
             <div class="row mx-0 py-5 px-3 px-sm-5 justify-content-lg-between container-card-progetto">
                 
-                    <div class="col-6 col-sm-3 px-0 pt-0 pt-sm-2 card-progetto">
-                        <a href="http://localhost/siti-web/b5/#!/lavoro">
+                    <div  ng-repeat="work in vm.worksInfos track by $index" class="col-6 col-sm-3 px-0 pt-0 pt-sm-2 card-progetto">
+                        <a href="#!/works/{{work.slug}}">
                         <div class="row mx-0 pr-2 pr-sm-3">
-                            <div class="col-12 px-0 pt-3 mr-3 card-progetto-img">
+                            <div class="col-12 px-0 pt-3 mr-3 card-progetto-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>
                 
                         </div>
@@ -46,14 +57,14 @@
                         <div class="row mx-0 pr-2 pr-sm-3">
                     
                             <div class="col-12 px-0 mr-3 text-left categoria">
-                                <h5 class="px-0 my-2 my-sm-3 ml-2 ml-sm-3 gllText">Opera Internazionale</h5>
+                                <h5 class="px-0 my-2 my-sm-3 ml-2 ml-sm-3 gllText">{{work.category_slug | translate}}</h5>
                             </div>
                         </div>
     
                         <div class="row mx-0 pr-2 pr-sm-3 justify-content-between">
     
                             <div class="col px-0 py-1 mr-3 text-left">
-                                <h3 class="my-0 my-sm-0 mt-1 mt-sm-2 mx-0 gllText">Complesso di San Martino Complesso di San Martino</h3>
+                                <h3 class="my-0 my-sm-0 mt-1 mt-sm-2 mx-0 gllText">{{work.title | translate}}</h3>
                             </div>
     
                         </div>
@@ -61,7 +72,7 @@
                         <div class="row mx-0 pr-2 pr-sm-3 justify-content-between">
     
                             <div class="col-12 px-0 pt-0 pt-sm-1 mr-3 text-letf ">
-                                <h4 class="my-0 my-sm-0 mx-0 gllText">Marina di Camerota</h4>
+                                <h4 class="my-0 my-sm-0 mx-0 gllText">{{work.custom_fields_values["place"]}}</h4>
                             </div>
                         
                         </div>

@@ -5,17 +5,13 @@
         .module('app')
         .controller('MagazineController', MagazineController);
 
-    MagazineController.$inject = ['$rootScope', 'CategoryService', 'FlashService', '$translate'];
-    function MagazineController($rootScope, CategoryService, FlashService, $translate) {
+    MagazineController.$inject = ['CategoryService', 'FlashService', '$translate', 'Categories'];
+    function MagazineController(CategoryService, FlashService, $translate, Categories) {
 
         //Init pointer to controller for inner functions
         var vm = this;
 
         //Declaring local variables
-        vm.categoriesSlug = [
-            "magazine-1",
-            "magazine-2",
-        ]
         vm.categoriesInfos = [];
 
         //Init controller
@@ -31,7 +27,7 @@
 
         function getCategoriesInfo(){
 
-            vm.categoriesSlug.forEach(categorySlug => {
+            Categories.MAGAZINE.forEach(categorySlug => {
                 
                 CategoryService.Category(categorySlug,
 
@@ -51,7 +47,6 @@
     
                                 vm.categoriesInfos.push(res.data.data);
 
-                                console.log(res.data.data);
                             }
 
                         }catch (error) {

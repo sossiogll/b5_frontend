@@ -25,6 +25,16 @@
             LOADING : '2',
             INIT : '1'
         })
+        .constant('Categories', {
+            MAGAZINE : [
+                'magazine-1',
+                'magazine-2'
+            ],
+            WORKS : [
+                'work-1',
+                'work-2',
+            ]
+        })
 
 
 

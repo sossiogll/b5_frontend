@@ -28,8 +28,14 @@
     "404_MAGAZINE_TITLE" :  "OOPS!",
     "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_MAGAZINE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
-    "magazine-1" : "Magazine fico",
-    "magazine-2" : "Magazine più fico",
+
+    "_comment": "---------------------- WORKS ----------------------",
+
+    "WORKS_TITLE" : "I nostri lavori",
+    "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
+    "404_WORKS_TITLE" :  "OOPS!",
+    "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
+    "404_WORKS_SUBTITLE" :  "Sicuramente Francesca c'è però.",
 
     "_comment": "---------------------- MEET US ----------------------",
 
@@ -53,8 +59,8 @@
 
     "_comment": "---------------------- SHARED ----------------------",
 
-    "BACK_BUTTON" :  "Torna indietro",
-    "SHARE" : "Condividi su",
+    "BACK_BUTTON" : "Torna indietro",
+    "SHARE_LABEL" : "Condividi su",
 
     "_comment": "---------------------- ERRORS ----------------------",
 
@@ -120,6 +126,20 @@
     "29" : "29",
     "30" : "30",
     "31" : "31",
+
+    "_comment" : "---------------------- CATEGORIES ----------------------",
+
+    "magazine-1" : "Magazine fico",
+    "magazine-2" : "Magazine più fico",
+    "work-1" : "Lavori 1",
+    "work-2" : "Lavori 2",
+
+    "_comment" : "---------------------- CUSTOMFIELDS ----------------------",
+
+    "custom-1" : "Magazine fico",
+    "custom-2" : "Magazine più fico",
+    "custom-3" : "Lavori 1",
+    "custom-4" : "Lavori 2",
 
     "_comment": "---------------------- END OF FILE ----------------------"
 }

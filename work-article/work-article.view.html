@@ -10,13 +10,13 @@
                                 </div>
 
                                 <div class="col-11 col-sm-3 px-0 my-auto text-right">
-                                        <a href=""><span>torna indietro</span></a>
+                                        <a href=""><span>{{"BACK_BUTTON" | translate}}</span></a>
                                 </div>
                         </div>
 
 
                         <div class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
-                                <div class="col px-0 img-work-article">
+                                <div class="col px-0 img-work-article" style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
 
                                 </div>
                         </div>
@@ -38,25 +38,16 @@
                         <div class="col-12 px-0 py-4 py-sm-5">
                                 <div class="row mx-0 px-3 px-sm-5">
                                         <div class="col-12 col-sm-4 px-0">
-                                                <div class="row mx-0 pb-2 box-left">
+
+                                                <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" class="row mx-0 pb-2 box-custom-field">
 
                                                         <div class="col-6 py-2 text-left d-table info-titolo">
-                                                                <p class="p-1 d-table-cell align-middle">Località</p>
+                                                                <p class="p-1 d-table-cell align-middle">{{key | translate}}</p>
                                                         </div>
 
 
                                                         <div class="col-6 py-2 text-left d-table info-descrizione">
-                                                                <p class="p-1 d-table-cell align-middle">{{vm.articleinfo.data.custom_fields_values["localita"]}}</p>
-                                                        </div>
-                                                </div><div class="row mx-0 pb-2 box-left">
-
-                                                        <div class="col-6 py-2 text-left d-table info-titolo">
-                                                                <p class="p-1 d-table-cell align-middle">IMPORTO</p>
-                                                        </div>
-
-
-                                                        <div class="col-6 py-2 text-left d-table info-descrizione">
-                                                                <p class="p-1 d-table-cell align-middle">PROVA</p>
+                                                                <p class="p-1 d-table-cell align-middle">{{value}}</p>
                                                         </div>
                                                 </div>
 
@@ -135,7 +126,7 @@
                         <div class="col-6 col-sm-3 px-0 pb-5 mx-3 mx-sm-5">
 
                                 <div class="row mx-0 ">
-                                        <p class="share-text-work-article">condividi su</p>
+                                        <p class="share-text-work-article">{{"SHARE_LABEL" | translate}}</p>
                                 </div>
         
                                 <div class="row mx-0 justify-content-around">
