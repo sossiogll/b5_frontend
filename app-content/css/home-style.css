@@ -159,7 +159,9 @@
 }
 
 .tipologie-progetto-lista-box {
-    background-color: var(--b5blu);
+    background-color: var(--b5bianco);
+    border-top: 2px solid var(--b5blu);
+    border-right: 2px solid var(--b5blu);
 }
 
 .luogo-progetto-lista{
@@ -170,7 +172,7 @@
 }
 
 .tipologie-progetto-lista-text {
-    color: var(--b5bianco);
+    color: var(--b5blu);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -178,7 +180,7 @@
 
 .categoria-progetto-lista-text {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
     text-transform: uppercase;
     color: var(--b5blu);
 }
@@ -352,17 +354,66 @@ animation-play-state: paused;
 
 .sezione-foto-chisiamo {
         height: 100vh;    
+        overflow: hidden;
 }
 
 #foto-gruppo{
 
     background-image: url(../img/home/find-us-foto-test.jpg);
+    aspect-ratio: 16/9;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 100vh;
-
+    height: 100%;
+    width: 100%;
 }
+
+.chi-siamo-home-float{
+    z-index: 1;
+    position: absolute;
+    border: 2px solid var(--b5blu);
+    background-color: var(--b5bianco);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    background-clip:content-box; 
+}
+
+.chi-siamo-home-float:hover{
+    z-index: 1;
+    position: absolute;
+    background-color: var(--b5bianco);
+    opacity: 1;
+    border: 2px solid var(--b5blu);
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    background-clip:content-box; 
+}
+
+
+.chi-siamo-home-float p{
+    font-size: 1.1rem;
+    margin-right: 1.1rem;
+    margin-left: 1.1rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+.franc-bra { 
+    top: 30%;
+    left: 41%;
+}
+
+
+.ugo-bra{
+    top: 45%;
+    left: 40%;
+}
+
+
+
 
 /* DRAWS */
 
