@@ -21,14 +21,14 @@
         <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
         <!-- local stylesheets -->
-        <link href="app-content/css/app-style.css" rel="stylesheet" />
-        <link href="app-content/css/home-style.css" rel="stylesheet" />
-        <link href="app-content/css/cookie-policy-style.css" rel="stylesheet" />
-        <link href="app-content/css/credits-style.css" rel="stylesheet" />
-        <link href="app-content/css/magazine-style.css" rel="stylesheet" />
-        <link href="app-content/css/meet-us-style.css" rel="stylesheet" />
-        <link href="app-content/css/privacy-policy-style.css" rel="stylesheet" />
-        <link href="app-content/css/works-style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="app-content/css/app-style.css"/>
+        <link rel="stylesheet" href="app-content/css/home-style.css"/>
+        <link rel="stylesheet" href="app-content/css/cookie-policy-style.css"/>
+        <link rel="stylesheet" href="app-content/css/credits-style.css"/>
+        <link rel="stylesheet" href="app-content/css/magazine-style.css">
+        <link rel="stylesheet" href="app-content/css/meet-us-style.css"/>
+        <link rel="stylesheet" href="app-content/css/privacy-policy-style.css"/>
+        <link rel="stylesheet" href="app-content/css/works-style.css"/>
 
 
     </head>
@@ -45,13 +45,31 @@
         <div data-ng-controller="FooterController" ng-include="'footer/footer.view.html'"></div>
 
     </body>
+
+    <!-- END APP BODY -->
+
 </html>
 
-<!-- APP INCLUDES -->
+<!-------------------- APP INCLUDES -------------------->
 
-    <!-- FRAMEWORKS AND LIBRARIES -->
+    <!-- JQUERY AND JQUERY LIBRARIES -->
 
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-bridget/jquery-bridget.js"></script>
+
+    <!-- LIBRARIES BASED ON JQUERY AND STOCK JAVASCRIPT-->
+
+<script type="text/javascript" src="node_modules/ev-emitter/ev-emitter.js"></script>
+<script type="text/javascript" src="node_modules/desandro-matches-selector/matches-selector.js"></script>
+<script type="text/javascript" src="node_modules/fizzy-ui-utils/utils.js"></script>
+<script type="text/javascript" src="node_modules/get-size/get-size.js"></script>
+<script type="text/javascript" src="node_modules/outlayer/item.js"></script>
+<script type="text/javascript" src="node_modules/outlayer/outlayer.js"></script>
+<script type="text/javascript" src="node_modules/masonry-layout/masonry.js"></script>
+<script type="text/javascript" src="node_modules/imagesloaded/imagesloaded.js"></script>
+
+    <!-- ANGULAR AND ANGULAR LIBRARIES -->
+
 <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
@@ -62,29 +80,29 @@
 <script type="text/javascript" src="node_modules/gllCursor/release/GllCursor.js"></script>
 <script type="text/javascript" src="node_modules/angular-translate/dist/angular-translate.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
-
+<script type="text/javascript" src="node_modules/angular-masonry/angular-masonry.min.js"></script>
 
     <!-- APP CONTROLLERS AND MAIN -->
 
-<script src="app.js"></script>
-<script src="app.settings.js"></script>
-<script src="app.controller.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="app.settings.js"></script>
+<script type="text/javascript" src="app.controller.js"></script>
 
     <!-- APP SERVICES -->
 
-<script src="app-services/flash.service.js"></script>
-<script src="app-services/category.service.js"></script>
-<script src="app-services/post.service.js"></script>
-<script src="app-services/user.service.js"></script>
+<script type="text/javascript" src="app-services/flash.service.js"></script>
+<script type="text/javascript" src="app-services/category.service.js"></script>
+<script type="text/javascript" src="app-services/post.service.js"></script>
+<script type="text/javascript" src="app-services/user.service.js"></script>
 
     <!-- VIEWS CONTROLLERS -->
 
-<script src="nav/nav.controller.js"></script>
-<script src="home/home.controller.js"></script>
-<script src="footer/footer.controller.js"></script>
-<script src="privacy-policy/privacy-policy.controller.js"></script>
-<script src="works/works.controller.js"></script>
-<script src="magazine/magazine.controller.js"></script>
-<script src="meet-us/meet-us.controller.js"></script>
-<script src="work-article/work-article.controller.js"></script>
-<script src="magazine-article/magazine-article.controller.js"></script>
+<script type="text/javascript" src="nav/nav.controller.js"></script>
+<script type="text/javascript" src="home/home.controller.js"></script>
+<script type="text/javascript" src="footer/footer.controller.js"></script>
+<script type="text/javascript" src="privacy-policy/privacy-policy.controller.js"></script>
+<script type="text/javascript" src="works/works.controller.js"></script>
+<script type="text/javascript" src="magazine/magazine.controller.js"></script>
+<script type="text/javascript" src="meet-us/meet-us.controller.js"></script>
+<script type="text/javascript" src="work-article/work-article.controller.js"></script>
+<script type="text/javascript" src="magazine-article/magazine-article.controller.js"></script>

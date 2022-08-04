@@ -40,12 +40,12 @@
 
 }
 
-.sezione-lista-categorie input[type="checkbox"]:checked + label {
+.sezione-lista-categorie input[type="radio"]:checked + label {
     color: var(--b5bianco);
     background-color: var(--b5blu);
 }
 
-.sezione-lista-categorie input[type=checkbox] {
+.sezione-lista-categorie input[type="radio"] {
     display: none;
     float: right;
 
@@ -73,7 +73,6 @@
 }
 
 .card-progetto:hover .card-progetto-img{
-    background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
     background-color: var(--b5blu); 
     background-blend-mode: luminosity;
 }
@@ -414,4 +413,22 @@
 }
 
 }
+
+.masonry-brick {
+    float: left;
+    height: fit-content;
+    width: 33.33%;
+}
+
+.masonry-image {
+    position: relative;
+    width: 100%;
+  }
+
+  @media (max-width: 575px){
+    .masonry-brick {
+
+        width: 100%;
+    }
+  }
 

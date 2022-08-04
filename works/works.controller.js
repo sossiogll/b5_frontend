@@ -5,8 +5,8 @@
         .module('app')
         .controller('WorksController', WorksController);
 
-    WorksController.$inject = ['CategoryService', 'FlashService', '$translate', 'Categories'];
-    function WorksController(CategoryService, FlashService, $translate, Categories) {
+    WorksController.$inject = ['$scope', 'CategoryService', 'FlashService', '$translate', 'Categories'];
+    function WorksController($scope, CategoryService, FlashService, $translate, Categories) {
 
         //Init pointer to controller for inner functions
         var vm = this;
@@ -14,6 +14,9 @@
         //Declaring local variables
         vm.worksCategoryInfos = [];
         vm.worksInfos = [];
+        vm.filters = [];
+        $scope.selectCategory = selectCategory
+        
 
         //Init controller
         initController();
@@ -47,14 +50,14 @@
                             else {
 
                                 res.data.data.posts.forEach((post) => {
-                                    post.category_slug = res.data.data.slug;
+                                    post.category_slug = categorySlug;
                                 });
                                 vm.worksInfos = vm.worksInfos.concat(res.data.data.posts);
 
                                 res.data.data.posts.splice(0,res.data.data.posts.length);
                                 vm.worksCategoryInfos.push(res.data.data);
 
-                                console.log(res.data.data);
+                                console.log(vm.worksCategoryInfos);
                                 console.log(vm.worksInfos);
                             }
 
@@ -77,6 +80,10 @@
             });
 
         };
+
+        function selectCategory(element) {
+            console.log(element);
+        }
 
     }
 

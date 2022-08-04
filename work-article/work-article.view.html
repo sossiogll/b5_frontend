@@ -1,4 +1,4 @@
-﻿<div class="container-fluid px-0 container-main ng-scope">
+﻿<div ng-if="vm.postInfo!=null && vm.postInfo!==undefinited" class="container-fluid px-0 container-main ng-scope">
 
         <!-- Contenitore -->
         <!-- Sezione back button -->
@@ -10,12 +10,12 @@
                                 </div>
 
                                 <div class="col-11 col-sm-3 px-0 my-auto text-right">
-                                        <a href=""><span>{{"BACK_BUTTON" | translate}}</span></a>
+                                        <a href="#!/works"><span>{{"BACK_BUTTON" | translate}}</span></a>
                                 </div>
                         </div>
 
 
-                        <div class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
+                        <div ng-if="vm.postInfo.thumbnail_url!=null && vm.postInfo.thumbnail_url!==undefinited" class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
                                 <div class="col px-0 img-work-article" style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
 
                                 </div>
@@ -63,15 +63,11 @@
 
                                                                 <div class="row mx-0">
                                                                         <div class="col-12 px-0 titolo">
-                                                                                <h1>{{vm.articleinfo.data["title"]}}</h1>
+                                                                                <h1>{{vm.postInfo.title}}</h1>
                                                                         </div>
 
-                                                                        <div class="col-12 px-0 text-left descrizone">
-                                                                                <p>Lorem ipsum dolor sit
-                                                                                        amet, consectetur adipiscing
-                                                                                        elit. Donec elementum consequat
-                                                                                        elementum diam in phasellus
-                                                                                        dictum tempor.</p>
+                                                                        <div ng-bind-html="vm.postInfo.content_resume" class="col-12 px-0 text-left descrizone">                                                                                                                    
+
                                                                         </div>
 
                                                                 </div>
@@ -79,8 +75,34 @@
                                                         </div>
 
                                                         <div class="row mx-0">
-                                                                <div class="col-12 px-0 text-left read-button">
-                                                                        <a href="#!">leggi il documento completo</a>
+                                                                <div ng-if="vm.postInfo.content != null && vm.postInfo.content !== undefinited" class="col-12 px-0 text-left read-button">
+                                                                        
+                                                                        <a class="btn btn-primary" data-toggle="modal" data-target="#full-article">
+                                                                                
+                                                                                {{'READ_FULL_ARTICLE_BTN' | translate}}
+
+                                                                        </a>
+
+                                                                        <div id="full-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                                                <div class="modal-dialog modal-lg">
+                                                                                        <div class="modal-content">
+                                                                                                <div class="modal-header">
+                                                                                                        <h5 class="modal-title">{{vm.postInfo.title}}</h5>
+                                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                                        </button>
+                                                                                                </div>
+
+                                                                                                <div class="modal-body" ng-bind-html="vm.postInfo.content">
+                
+                                                                                                </div>
+
+                                                                                                <div class="modal-footer">
+                                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">{{"CLOSE_BTN" | translate}}</button>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>    
                                                                 </div>
 
                                                         </div>
@@ -104,9 +126,35 @@
                 <!-- Contenitore -->
                 <div class="content-container row mx-0">
                         <div class="col-12 px-0 pt-2 pb-5 ">
-                                <div class="row mx-0 px-5">
+                                <div masonry load-images="true" reload-on-resize>
+                                        <div class="masonry-brick" ng-repeat="image in vm.postInfo.carousel track by $index">
+                                                
+                                                <a type="button" data-target="#image_{{$index}}" data-toggle="modal">
 
-        
+                                                
+                                                        <img class="masonry-image" ng-src="{{image.src}}"/>
+                                   
+
+                                                </a>
+
+                                                <div id="image_{{$index}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                                <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                        </div>
+
+                                                                        <div class="modal-body">
+                                                                                <img class="masonry-image" ng-src="{{image.src}}"/> 
+                                                                        </div>
+
+                                                                </div>
+                                                        </div>
+                                                </div>  
+
+                                        </div>
                                 </div>
 
                         </div>

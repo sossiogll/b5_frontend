@@ -5,8 +5,8 @@
         .module('app')
         .controller('WorkArticleController', WorkArticleController);
 
-    WorkArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService', 'State'];
-    function WorkArticleController($scope, $routeParams, PostService, FlashService, State) {
+    WorkArticleController.$inject = ['$routeParams', 'PostService', 'FlashService', '$window'];
+    function WorkArticleController($routeParams, PostService, FlashService, $window) {
         //Init pointer to controller for inner functions
         var vm = this;
 
@@ -36,6 +36,7 @@
                             vm.postInfo = res.data.data;
 
                             console.log(vm.postInfo);
+
                         }
 
                     }catch (error) {
