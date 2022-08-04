@@ -36,6 +36,8 @@
 
                             vm.profiles = res.data.data;
 
+                            console.log(vm.profiles);
+
                         }
 
                     }catch (error) {

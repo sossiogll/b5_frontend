@@ -122,74 +122,6 @@ box-sizing: border-box;
 }
 
 
-h1{
-  color: var(--b5blu);
-}
-
-p{
-  color: var(--b5blu);
-}
-
-
-/* TEMA FIND-US */
-
-#titolo-1-sezione-fu{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 120px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-#descr-1-sezione-fu{
-  font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 35px;
-}
-
-.fu-infobox-primary{
-  background-color: var(--b5blu);
-  position:relative;
-}
-
-.fu-infotext-primary{
-  color: var(--b5bianco);
-  font-size: 13px;
-  position:relative;
-
-}
-
-.fu-infobox-secondary{
-  border: 2px solid var(--b5blu);
-  font-size: 13px;
-  position: relative;
-}
-
-.fu-infotext-secondary{
-  color: var(--b5blu);
-}
-
-.fu-nome{
-  font-weight: 600;
-  font-size: 23px;
-line-height: 107.5%;
-/* identical to box height, or 25px */
-
-letter-spacing: 0.19em;
-text-transform: uppercase;
-color: var(--b5blu);
-}
-
-.fu-descrizione{
-  font-weight: 400;
-font-size: 20px;
-line-height: 29px;
-}
-
-
-
-
 
 /* TEMA FOOTER */
 
@@ -271,17 +203,6 @@ font-weight: 700;
 
 .link-sezioni-works{
   text-decoration: underline;
-}
-
-/* TEMA MAGAZINE */
-
-
-
-
-
-.fu-infobox-primary{
-  background-color: var(--b5blu);
-  position:relative;
 }
 
 
