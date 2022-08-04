@@ -1,3 +1,4 @@
+
 /* SEZIONE HEADING */
 
 .sezione-heading-conoscici h1{
@@ -24,7 +25,6 @@
     ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-x: scroll;
-    cursor: grab;
 }
 
 
