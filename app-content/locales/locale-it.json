@@ -19,7 +19,6 @@
     "LAST_ARTICLES" : "Ultimi articoli",
     "GO_TO_PROJECT_BTN" : "Vai al progetto completo",
     "GO_TO_ALL_PROJECTS_BTN" : "Vedi tutti i nostri progetti",
-    "READ_FULL_ARTICLE_BTN" : "Leggi tutto",
 
     "_comment": "---------------------- MAGAZINE ----------------------",
 
@@ -33,6 +32,7 @@
 
     "WORKS_TITLE" : "I nostri lavori",
     "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
+    "ALL_CATEGORIES_BTN" : "Tutte le categorie",
     "404_WORKS_TITLE" :  "OOPS!",
     "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_WORKS_SUBTITLE" :  "Sicuramente Francesca c'è però.",
@@ -61,6 +61,7 @@
 
     "BACK_BUTTON" : "Torna indietro",
     "SHARE_LABEL" : "Condividi su",
+    "READ_FULL_ARTICLE_BTN" : "Leggi tutto",
 
     "_comment": "---------------------- ERRORS ----------------------",
 
