@@ -20,8 +20,12 @@
 
     <!-- Contenitore testo -->
     <div class="content-container row mx-0 hero">
-        <div class="col-7 px-0 "></div>
-        <div class="col-5 px-0">
+        <div class="col-12 col-sm-7 px-0 order-2 order-sm-1 col-vuota-1">
+            <div class="row mx-0">
+                 <div class="col-12 px-0 mx-5 disegno1-mobile"></div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-5 px-0 order-1 order-sm-2">
             <div class="row mx-0">
                 <div class="col-12 px-0">
                     <h3 class="pr-5 pt-5 text-right">
@@ -67,10 +71,10 @@
 
     <!-- Contenitore testo -->
     <div class="content-container row mx-0 seconda-sezione">
-        <div class="col-4 px-0">
+        <div class="col-12 col-sm-4 px-0">
             <div class="row mx-0">
                 <div class="col-12 px-0">
-                    <h2 class="gllText pl-5 pt-5">
+                    <h2 class="gllText pl-3 pl-sm-5 pt-5">
 
                         {{'FIRST_PARAGRAPH_TITLE' | translate}}
 
@@ -79,14 +83,18 @@
             </div>
 
             <div class="row py-3 mx-0">
-                <p class="gllText px-5">
+                <p class="gllText px-3 px-sm-5">
 
                     {{'FIRST_PARAGRAPH' | translate}}
 
                 </p>
             </div>
         </div>
-        <div class="col-8 px-0 my-auto"></div>
+        <div class="col-12 col-sm-8 px-0 my-auto">
+            <div class="row mx-0">
+                <div class="col-12 px-0 mx-5 disegno2-mobile"></div>
+           </div>
+        </div>
     </div>
 </div>
 
@@ -112,13 +120,13 @@
         <div class="col-12 px-0">
             <div class="row mx-0">
                 <div class="col-12 px-0 py-0">
-                    <h2 class="gllText pl-5 pt-3">
+                    <h2 class="gllText pl-3 pl-sm-5 pt-3">
                         {{'SECOND_PARAGRAPH_TITLE' | translate}}
                     </h2>
                 </div>
             </div>
             <div class="row mx-0">
-                <p class="gllText pl-5">
+                <p class="gllText pl-3 pl-sm-5">
 
                     {{'SECOND_PARAGRAPH' | translate}}
 
@@ -267,7 +275,7 @@
 
 
     <!-- Contenitore foto -->
-    <div class="draw-container row mx-0">
+    <div class="draw-container draw-container-foto row mx-0">
         <div class="col-12 px-0">
             <div id="foto-gruppo" class="row px-3 pb-5 mx-0 ">
 
@@ -303,7 +311,7 @@
     <!-- Contenitore main -->
     <div class="content-container row mx-0 sezione-progetti">
         <div class="col-12 px-0">
-            <div class="row mx-0 px-5">
+            <div class="row mx-0 px-3 px-sm-5">
                 <div class="col-12 px-0 pt-5 text-left">
                     <h2>
 
@@ -313,8 +321,8 @@
                 </div>
             </div>
 
-            <div class="row mx-0 px-5 pb-5">
-                <div  class="col-6 px-0">
+            <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
+                <div  class="col-12 col-sm-6 px-0 box-left-lp">
                     <div ng-repeat="work in vm.worksInfos track by $index" class="row mx-0 px-0 button-lista-progetti">
                         <div ng-mouseenter="selectCategory($index)" class="col-12 px-0">
                             <div class="row mx-0 pt-3">
@@ -343,7 +351,7 @@
 
                 </div>
 
-                <div class="col-6 px-0 articoloshow-progetti">
+                <div class="col-12 col-sm-6 px-0 articoloshow-progetti">
                     <div class="row mx-0 px-0">
                         <div class="col-12 px-0" ng-bind-html="vm.worksInfos[selectedArticle].content">
                            
@@ -396,7 +404,7 @@
         <!-- Contenitore main -->
         <div class="content-container row mx-0 sezione-magazine">
             <div class="col-12 px-0">
-                <div class="row mx-0 px-5">
+                <div class="row mx-0 px-3 px-sm-5">
                     <div class="col-12 px-0 pt-5 text-left">
                         <h2>
                             {{'LAST_ARTICLES' | translate}}
@@ -404,8 +412,8 @@
                     </div>
                 </div>
 
-                <div class="row mx-0 pl-1 pb-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
-                    <div  ng-repeat="work in vm.magazinePostsInfos track by $index"  class="col-3 px-0 ml-5 card-articolo">
+                <div class="row mx-0 pl-3 pl-sm-5 pb-5 pt-3 pt-sm-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
+                    <div  ng-repeat="work in vm.magazinePostsInfos track by $index"  class="col-9 col-sm-3 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
                         <div class="row mx-0 ">
                             <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>

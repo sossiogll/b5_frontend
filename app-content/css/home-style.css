@@ -26,6 +26,7 @@
     height: 700px;
 }
 
+
  .hero  h3 {
     color: var(--b5blu);
     font-weight: 400;
@@ -106,6 +107,16 @@
     text-transform: uppercase;
 }
 
+.sezione-progetti .box-left-lp{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 2px solid var(--b5blu);
+    border-left: 2px solid var(--b5blu);   
+    border-right: 2px solid var(--b5blu);   
+
+}
+
 
 #sezione-progetti-list-articolo {
     border: 2px solid var(--b5blu);
@@ -116,7 +127,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 2px solid var(--b5blu);
+    border-bottom: 2px solid var(--b5blu);
 }
 
 
@@ -124,7 +135,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 2px solid var(--b5blu);
+    border-bottom: 2px solid var(--b5blu);
     background-color: var(--b5blu);
 }
 
@@ -214,6 +225,9 @@ text-transform: uppercase;
 
 }
 
+.row-scorrevole-mag{
+    overflow-x: scroll;
+}
 
 
 
@@ -367,6 +381,442 @@ animation-play-state: paused;
     height: 100%;
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE HOME */
+
+@media (max-width: 575px){
+    .draw-container{
+        display: none;
+    }
+    
+    .draw-container-foto{
+        display: inherit !important;
+    }
+    
+    .content-container{
+        width:100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    
+    /* HERO */
+    
+    
+    .container-hero{
+        height: 700px;
+    }
+
+
+
+    .container-hero .disegno1-mobile{
+        background-image: url(../img/logo.png);
+        aspect-ratio: 1/1;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .disegno2-mobile{
+        background-image: url(../img/disegno.png);
+        aspect-ratio: 1/1;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .disegno3-mobile{
+        background-image: url(../img/Anfiteatro.png);
+        aspect-ratio: 1/1;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    
+    
+     .hero  h3 {
+        color: var(--b5blu);
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0em;
+    }
+    
+    .hero h4 {
+        color: var(--b5blu);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+    
+    }
+    
+    /* SECONDA SEZIONE */
+    
+    
+    .container-seconda-sezione{
+        border-top: 2px solid var(--b5blu);
+        height: 500px;
+    }
+    
+    .seconda-sezione > div{
+        background-color: var(--b5blu);
+    }
+    
+    .seconda-sezione h2 {
+        color: var(--b5bianco);
+        font-weight: 600;
+        font-size: 4.6rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    
+    .seconda-sezione p {
+        color: var(--b5bianco);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    
+    /* TERZA SEZIONE */
+    
+    .container-terza-sezione{
+        height: 376px;
+        background-color: var(--b5blu);
+    }
+    
+    
+    .terza-sezione h2{
+        color: var(--b5bianco);
+        font-weight: 600;
+        font-size: 4.6rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+    
+    .terza-sezione p {
+            color: var(--b5bianco);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    
+    /* SEZIONE PROGETTI */
+    
+    .sezione-progetti h2{
+        color: var(--b5blu);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    
+    .sezione-progetti .box-left-lp{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-top: 2px solid var(--b5blu);
+        border-left: 2px solid var(--b5blu);   
+        border-right: 2px solid var(--b5blu);   
+    
+    }
+    
+    
+    #sezione-progetti-list-articolo {
+        border: 2px solid var(--b5blu);
+    }
+    
+    
+    
+.button-lista-progetti {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 2px solid var(--b5blu);
+}
+
+
+.button-lista-progetti:hover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 2px solid var(--b5blu);
+    background-color: var(--b5blu);
+}
+    
+    .button-lista-progetti:hover .titolo-progetto-lista{
+        color: var(--b5bianco);
+    }  
+    
+    .button-lista-progetti:hover .tipologie-progetto-lista-box{
+        border-top: 2px solid var(--b5blu);
+        border-right: 2px solid var(--b5blu);
+        background-color: var(--b5bianco);
+    }
+    
+    .button-lista-progetti:hover .tipologie-progetto-lista-box > h3{
+        color: var(--b5blu);
+    }
+    
+    .button-lista-progetti:hover .luogo-progetto-lista{
+        color: var(--b5bianco);
+    }  
+    
+    .button-lista-progetti:hover .tipologie-progetto-lista-box{
+        background-color: var(--b5bianco);
+    }
+    
+    .titolo-progetto-lista {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        text-transform: uppercase;
+        color: var(--b5blu);
+    }
+    
+    .tipologie-progetto-lista-box {
+        background-color: var(--b5bianco);
+        border-top: 2px solid var(--b5blu);
+        border-right: 2px solid var(--b5blu);
+    }
+    
+    .luogo-progetto-lista{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        color: var(--b5blu);
+    }
+    
+    .tipologie-progetto-lista-text {
+        color: var(--b5blu);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .categoria-progetto-lista-text {
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: var(--b5blu);
+    }
+    
+    
+    .categoria-progetto-lista-box{
+        background-color: var(--b5bianco);
+        border-top: 2px solid var(--b5blu);
+      
+    
+    }
+    
+    .articoloshow-progetti{
+        display: none;
+    
+    }
+    
+    /* SEZIONE MAGAZINE*/
+    
+    .sezione-magazine h2{
+        color: var(--b5blu);
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    }
+
+    .row-scorrevole-mag{
+        overflow-x: scroll;
+    }
+    
+    
+    
+    
+    
+    /*Marquee button*/
+    
+    .marquee {
+        width: 100%;
+        max-width: 100%;
+        height: 3.3rem;
+        white-space: nowrap;
+        overflow: hidden; 
+        border-top: 2px solid var(--b5blu);
+        border-bottom: 2px solid var(--b5blu);
+      }
+      
+      .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 6s linear infinite;
+      }
+    
+      .content{
+        font-family: 'Jost';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: var(--b5blu);
+      }
+      
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-20%);}
+      }
+    
+      .marquee:hover .track{
+    
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+      }
+    
+      .marquee:hover {
+        background-color: var(--b5blu);
+      }
+    
+      .marquee:hover .content{
+        color: var(--b5bianco);
+        text-decoration: none;
+      }
+      
+    
+    
+    /*Marquee button blu*/
+    
+    
+    .marquee-blu{
+        width: 100%;
+        max-width: 100%;
+        height: 63px;
+    
+        white-space: nowrap;
+        overflow: hidden; 
+        background-color: var(--b5blu);
+      }
+      
+      .track-blu {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee-blu 12s linear infinite;
+      }
+    
+      .content-blu{
+        font-family: 'Jost';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--b5bianco);
+      }
+      
+      @keyframes marquee-blu {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+    
+      .marquee-blu:hover .track-blu{
+    
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+      }
+    
+      .marquee-blu:hover {
+          box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background-color: var(--b5bianco);
+        border-top: 2px solid var(--b5blu);
+      }
+    
+      .marquee-blu:hover .content-blu{
+        color: var(--b5blu);
+        text-decoration: none;
+      }
+    
+    /* SEZIONE COSTRUZIONI */
+    
+    .sezione-costruzioni{
+        height: 371px;
+        border-bottom: 2px solid var(--b5blu);
+    }
+    
+    
+    /* SEZIONE COLOSSEO */
+    
+    .sezione-colosseo{
+        height: 730px;
+    }
+    
+    
+    /*SEZIONE CHI SIAMO*/
+    
+    .sezione-chisiamo{
+        background-color: var(--b5blu);
+        height: 30vh;
+    }
+    
+    .sezione-chisiamo h3{
+        color: var(--b5bianco);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+    }
+    
+    .sezione-foto-chisiamo {
+            height: 100vh;    
+            overflow: hidden;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .chi-siamo-home-float{
     z-index: 1;
