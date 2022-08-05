@@ -40,7 +40,7 @@
         <div class="row mx-0 px-3 px-sm-5 py-3 py-sm-5 d-flex flex-row flex-nowrap animate__animated animate__fadeIn animate__slow animate__delay-1s">
 
         <!-- SINGLE PROFILE -->
-        <div ng-if="vm.profiles != null && vm.profiles!== undefined && vm.profiles.length > 0" ng-repeat="profile in vm.profiles"  class="col-11 col-sm-4 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
+        <div ng-if="isIdle()" ng-repeat="profile in vm.profiles"  class="col-11 col-sm-4 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
 
           <!-- PROFILE IMAGE -->
 
@@ -107,9 +107,19 @@
         <!-- SINGLE PROFILE END -->
 
 
+        <!-- SKELETRON -->
+
+        <div ng-if="isLoading() || isInit()" class="skeletron">
+          <h2></h2>
+          <p></p>
+          <h2></h2>
+          <p></p>
+        </div>
+        
+
         <!-- 404 meet us -->
 
-        <div ng-if="vm.profiles == null || vm.profiles === undefined || vm.profiles.length == 0" class="col mx-0 pl-5 pt-4 pb-5">
+        <div ng-if="isFailed()" class="col mx-0 pl-5 pt-4 pb-5">
           <h1>{{'404_MEET_US_TITLE' | translate}}</h1>
           <h3>{{'404_MEET_US_DESCRIPTION' | translate}}</h3>
           <hr class="my-4">

@@ -55,63 +55,7 @@ body{
   border-radius: 0;
 }
 
-/* NAVBAR */
 
-.navbar .navbar-toggler{
-  z-index:1000
-}
-@media (max-width: 991.98px){
-  .navbar .navbar-collapse{
-      background:rgba(0,0,0,0.85);
-      opacity:0;
-      position:fixed;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      transition:opacity 0.35s ease;
-      display:flex;
-      flex-direction:column;
-      align-content:center;
-      text-align:center !important
-  }
-  .navbar .navbar-collapse.collapse{
-      display:flex;
-      opacity:0;
-      pointer-events:none
-  }
-  .navbar .navbar-collapse.collapsing[style*="height"]{
-      opacity:1;
-      height:100vh !important
-  }
-  .navbar .navbar-collapse.collapsing{
-      opacity:0;
-      height:100vh
-  }
-  .navbar .navbar-collapse.collapse.show{
-      opacity:1;
-      pointer-events:auto
-  }
-  .navbar .navbar-collapse .navbar-nav{
-      margin-right:initial !important;
-      margin-top:auto;
-      margin-bottom:auto
-  }
-}
-
-@media (max-width: 991.98px) {
-  .navbar-nav {
-      margin-left: initial !important;
-  }
-}
-
-
-.navbar-mobile-button{
-  border: none;
-padding: 0.5rem;
-color: var(--b5bianco);
-
-}
 
 .navbar-custom{
 	display: flex;
@@ -379,6 +323,39 @@ color: var(--b5blu);
 
 .button-magazine h1:hover{
   color: var(--b5blu);
+}
+
+/* SKELETON EFFECT */
+
+
+
+.skeletron {
+	width: 100%;
+  position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: white;
+	padding: 0;
+	z-index: 30;
+}
+.skeletron h2:empty{
+  width: 70%;
+  margin: 100px auto;
+  height: 1em;
+  background-color: rgba(0,0,0,0.2);
+  animation: skeleton-anim 1s 0.5s infinite alternate;
+}
+.skeletron p:empty{
+  width: 50%;
+  height: 8em;
+  margin: 100px auto;
+  background-color: rgba(0,0,0,0.2);
+  animation: skeleton-anim 1s infinite alternate;
+}
+@keyframes skeleton-anim{
+  0%{opacity: 0.3}
+  100%{opacity: 0.8}
 }
 
 

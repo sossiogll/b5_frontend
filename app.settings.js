@@ -33,7 +33,6 @@
             WORKS : [
                 'work-1',
                 'work-2',
-                'progetto'
             ]
         })
         .constant('HomeSettings', {
@@ -48,6 +47,12 @@
 
             COLOSSEO_ARTICLE_SLUG : 'restauro-dellanfiteatro-flavio-colosseo'
         })
+        .constant('Status', {
+            INIT : 1,
+            LOADING : 1,
+            FAILED : 3,
+            IDLE : 4
+        })       
 
 
 

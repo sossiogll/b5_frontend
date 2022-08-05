@@ -5,12 +5,12 @@
         .module('app')
         .controller('MeetUsController', MeetUsController);
 
-    MeetUsController.$inject = ['UserService', 'FlashService'];
-    function MeetUsController(UserService, FlashService) {
+    MeetUsController.$inject = ['$scope','UserService', 'FlashService', 'Status'];
+    function MeetUsController($scope, UserService, FlashService, Status) {
         
         var vm = this;
         vm.profiles = [];
-        vm.isLoaded = false;
+        vm.status = Status.INIT;
 
         initController();
 
@@ -19,6 +19,8 @@
         }
 
         function loadAllProfile(){
+
+            vm.status = Status.LOADING;
 
             UserService.Index(
 
@@ -36,17 +38,19 @@
 
                             vm.profiles = res.data.data;
 
-                            console.log(vm.profiles);
+                            vm.status = Status.IDLE;
+
 
                         }
 
                     }catch (error) {
 
-                        console.error(error);
+                        
+                        FlashService.Error(error);
+                        vm.status = Status.FAILED;
 
                     }
 
-                    vm.isLoaded = true;
 
                 },
 
@@ -56,11 +60,27 @@
                         FlashService.Error(errorMessage);
                     });
 
-                    vm.isLoaded = true;
+                    vm.status = Status.FAILED;
 
                 });
         }
 
+        
+        $scope.isFailed = function(){
+            return (vm.profiles == null || vm.profiles === undefined || vm.profiles.length == 0 || vm.status == Status.FAILED)
+        }
+
+        $scope.isInitial = function(){
+            return (vm.status == Status.INIT);
+        }
+
+        $scope.isLoading = function(){
+            return (vm.status == Status.LOADING);
+        }
+
+        $scope.isIdle = function(){
+            return (vm.profiles != null && vm.profiles!== undefined && vm.profiles.length > 0 && vm.status == Status.IDLE);
+        }
 
 
     }
