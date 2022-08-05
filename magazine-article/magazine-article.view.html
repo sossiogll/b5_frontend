@@ -4,7 +4,7 @@
 
     <!-- Contenitore -->
     <div class="content-container row mx-0">
-        <div class="col-12 px-0 mt-2 mt-sm-4 sezione-heading-articolo-magazine">
+        <div class="col-12 px-0 mt-3 mt-sm-4 sezione-heading-articolo-magazine">
             <div class="row mx-0 pr-3 pr-sm-5">
                 <div class="col-1 col-sm-9 px-0">
 
@@ -27,7 +27,7 @@
 
         <!-- Contenitore -->
         <div class="content-container row mx-0 sezione-articolo-magazine">
-            <div class="col-12 px-0 py-2 py-sm-4">
+            <div class="col-12 px-0 py-3 py-sm-4">
                 <div class="row mx-0 px-3 px-sm-5">
                     <div class="col-12 col-sm-4 px-0 box-left">
 
@@ -57,12 +57,12 @@
 
                         <div class="row mx-0 py-1 py-sm-3 px-3 px-sm-4 sticky-top">
                             
-                            <div class="col-8 px-0 sezione-condividi">
+                            <div class="col-8 px-0 pt-5 pt-sm-0 sezione-condividi">
                                 <div class="row mx-0">
-                                    <p class="titolo">{{"SHARE_LABEL" | translate}}</p>
+                                    <p class="mb-0 mb-sm-1 titolo">{{"SHARE_LABEL" | translate}}</p>
                                 </div>
 
-                                <div class="row mx-0 justify-content-around">
+                                <div class="row mx-0 py-0 py-sm-0 justify-content-around">
                                     <div class="col-6 px-0">
                                         <a href="">
                                             <p class="link">facebook</p>
@@ -91,15 +91,20 @@
 
 
 
-                    <div class="col-12 col-sm-8 px-0 pt-5 pt-sm-0 box-right">
+                    <div class="col-12 col-sm-8 px-0 pt-5 pt-sm-0 pb-5 pb-sm-0 pl-0 pl-sm-3 box-right">
 
-                        <div class="row mx-0 ">
+                        <div class="row mx-0 box-right-border">
                             <div class="col-12 px-0">
                                 <div class="row mx-0">
-                                    <div ng-bind-html="postContent" class="col-8 px-0"></div>
-                                    <div class="col-4 px-0 mb-5 d-table text-center categoria">
+                                    <div class="col-12 col-sm-8 px-0 mb-3 order-2 order-sm-1"></div>
+                                    <div class="col-12 col-sm-8 px-0 mb-3 d-table order-1 order-sm-2 text-center categoria">
                                         <p class="p-2 d-table-cell align-middle">{{vm.postInfo.category_slug | translate}}</p>
                                     </div>
+                                </div>
+                                <div class="row mx-0 p-4 sezione-contenuto-articolo">
+                            
+                                        <div ng-bind-html="postContent" class="col-12 px-0"></div>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 ﻿<div ng-if="vm.postInfo!=null && vm.postInfo!==undefinited" class="container-fluid px-0 container-main ng-scope">
-
         <!-- Contenitore -->
         <!-- Sezione back button -->
+
+
         <div class="content-container row mx-0 sezione-heading">
                 <div class="col-12 px-0 mt-3 mt-sm-4">
                         <div class="row mx-0 px-3 px-sm-5 pb-3 pb-sm-3">
@@ -15,14 +16,13 @@
                         </div>
 
 
-                        <div ng-if="vm.postInfo.thumbnail_url!=null && vm.postInfo.thumbnail_url!==undefinited" class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
-                                <div class="col px-0 img-work-article" style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
+                        <div ng-if="vm.postInfo.thumbnail_url!=null && vm.postInfo.thumbnail_url!==undefinited"
+                                class="row mx-0 px-3 px-sm-5 py-1 py-sm-2">
+                                <div class="col px-0 img-work-article"
+                                        style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
 
                                 </div>
                         </div>
-
-
-
                 </div>
         </div>
 
@@ -34,167 +34,222 @@
         <div class="container-fluid px-0 container-main container-heading-info">
 
                 <!-- Contenitore -->
+
                 <div class="content-container row mx-0 sezione-heading-info">
                         <div class="col-12 px-0 py-4 py-sm-5">
                                 <div class="row mx-0 px-3 px-sm-5">
-                                        <div class="col-12 col-sm-4 px-0">
+                                        <div class="col-12 col-sm-4 px-0 box-custom-field">
 
-                                                <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" class="row mx-0 pb-2 box-custom-field">
+                                                <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" class="row mx-0 pb-2">
 
                                                         <div class="col-6 py-2 text-left d-table info-titolo">
-                                                                <p class="p-1 d-table-cell align-middle">{{key | translate}}</p>
+                                                                <p class="px-auto px-sm-1 pt-1 pt-sm-1 d-table-cell align-middle">{{key | translate}}</p>
                                                         </div>
 
 
                                                         <div class="col-6 py-2 text-left d-table info-descrizione">
-                                                                <p class="p-1 d-table-cell align-middle">{{value}}</p>
+                                                                <p class="px-auto px-sm-1 pt-1 pt-sm-1 d-table-cell align-middle">{{value}}</p>
                                                         </div>
+
                                                 </div>
 
                                         </div>
-
-
 
                                         <div class="col-12 col-sm-8 px-0 py-4 py-sm-0">
 
-                                                <div class="row mx-0 ml-0 ml-sm-5 d-flex flex-column justify-content-between box-right">
-
+                                                <div class="row mx-0 ml-0 ml-sm-5 d-flex flex-column justify-content-between box-heading-lavori">
+        
                                                         <div class="row mx-0">
-
+        
                                                                 <div class="row mx-0">
-                                                                        <div class="col-12 px-0 titolo">
-                                                                                <h1>{{vm.postInfo.title}}</h1>
-                                                                        </div>
-
-                                                                        <div ng-bind-html="vm.postInfo.content_resume" class="col-12 px-0 text-left descrizone">                                                                                                                    
-
-                                                                        </div>
-
+        
+                                                                <div class="col-12 px-0 py-3 py-sm-0 text-left text-sm-left titolo">
+                                                                        <h1>{{vm.postInfo.title}}</h1>
                                                                 </div>
-
+        
+                                                                <div class="col-12 px-0 py-1 py-sm-0 text-center text-sm-left descrizone">
+                                                                        <p>{{vm.postInfo.summary_content}}</p>
+                                                                </div>
+        
+                                                                </div>
+        
                                                         </div>
-
+        
+                                                     
                                                         <div class="row mx-0">
-                                                                <div ng-if="vm.postInfo.content != null && vm.postInfo.content !== undefinited" class="col-12 px-0 text-left read-button">
-                                                                        
-                                                                        <a class="btn btn-primary" data-toggle="modal" data-target="#full-article">
-                                                                                
-                                                                                {{'READ_FULL_ARTICLE_BTN' | translate}}
-
-                                                                        </a>
-
-                                                                        <div id="full-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                                                <div class="modal-dialog modal-lg">
-                                                                                        <div class="modal-content">
-                                                                                                <div class="modal-header">
-                                                                                                        <h5 class="modal-title">{{vm.postInfo.title}}</h5>
-                                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                                                <span aria-hidden="true">&times;</span>
-                                                                                                        </button>
-                                                                                                </div>
-
-                                                                                                <div class="modal-body" ng-bind-html="vm.postInfo.content">
-                
-                                                                                                </div>
-
-                                                                                                <div class="modal-footer">
-                                                                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">{{"CLOSE_BTN" | translate}}</button>
-                                                                                                </div>
+        
+                                                        <didv ng-if="vm.postInfo.content != null && vm.postInfo.content !== undefinited" class="col-12 px-0 py-3 py-sm-0 text-center text-sm-left">
+        
+                                                                <a class="btn btn-primary leggi-tutto" data-toggle="modal" data-target="#full-article">
+                                                                        {{'READ_FULL_ARTICLE_BTN' | translate}}
+                                                                </a>
+        
+                                                                <div id="full-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-lg">
+                                                                                <div class="modal-content p-0 p-sm-4">
+                                                                                        <div class="modal-header text-left">
+                                                                                                <h5 class="modal-title">
+                                                                                                        {{vm.postInfo.title}}
+                                                                                                </h5>
+                                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                                </button>
+                                                                                        </div>
+        
+                                                                                        <div class="modal-body articolo-lavoro text-left" ng-bind-html="vm.postInfo.content">
+        
+                                                                                        </div>
+        
+                                                                                        <div class="modal-footer">
+                                                                                                <button type="button" class="btn btn-secondary modal-close-button" data-dismiss="modal">{{"CLOSE_BTN" | translate}}</button>
                                                                                         </div>
                                                                                 </div>
-                                                                        </div>    
+                                                                        </div>
                                                                 </div>
+                                                        </div>
+        
+                                                </div>
+        
+                                        </div>
 
+                                </div>
+
+
+                                
+
+
+
+
+
+
+                                </div>
+                        </div>
+
+
+                </div>
+
+        </div>
+
+
+
+
+<!-- SEZIONE MASONRY -->
+
+
+<div class="container-fluid px-0 container-main">
+
+        <!-- Contenitore -->
+        <div class="content-container row mx-0">
+                <div class="col-12 px-0 pt-0 pt-sm-2 pb-5 ">
+
+
+                        <div class="row mx-0 px-1 px-sm-4 py-0 py-sm-3">
+
+                                <div class="col-12 col-sm-12 px-0 pb-0">
+
+                                        <div masonry load-images="true" reload-on-resize class="masonry-container">
+                                                <div class="masonry-brick"
+                                                        ng-repeat="image in vm.postInfo.carousel track by $index">
+
+                                                        <a type="button" data-target="#image_{{$index}}"
+                                                                data-toggle="modal">
+
+
+                                                                <img class="masonry-image" ng-src="{{image.src}}" />
+
+
+                                                        </a>
+
+                                                        <div id="image_{{$index}}" class="modal fade" tabindex="-1"
+                                                                role="dialog" aria-labelledby="myLargeModalLabel"
+                                                                aria-hidden="true">
+                                                                <div class="modal-dialog modal-lg">
+                                                                        <div class="modal-content p-4">
+
+                                                                                <div class="modal-header">
+                                                                                        <h5 class="modal-title">
+                                                                                                {{image.alt}}</h5>
+                                                                                        <button type="button"
+                                                                                                class="close"
+                                                                                                data-dismiss="modal"
+                                                                                                aria-label="Close">
+                                                                                                <span
+                                                                                                        aria-hidden="true">&times;</span>
+                                                                                        </button>
+
+                                                                                </div>
+
+
+                                                                                <div class="modal-body">
+                                                                                        <img class="masonry-image"
+                                                                                                ng-src="{{image.src}}" />
+                                                                                </div>
+
+                                                                        </div>
+                                                                </div>
                                                         </div>
 
-                                                
-                                                        
                                                 </div>
                                         </div>
 
                                 </div>
 
                         </div>
+
+
+
                 </div>
         </div>
 
-<!-- PROBABILE SEZIONE CAROSELLO -->
+</div>
 
 
-        <div class="container-fluid px-0 container-main">
+<!-- SEZIONE CONDIVIDI -->
 
-                <!-- Contenitore -->
-                <div class="content-container row mx-0">
-                        <div class="col-12 px-0 pt-2 pb-5 ">
-                                <div masonry load-images="true" reload-on-resize>
-                                        <div class="masonry-brick" ng-repeat="image in vm.postInfo.carousel track by $index">
-                                                
-                                                <a type="button" data-target="#image_{{$index}}" data-toggle="modal">
 
-                                                
-                                                        <img class="masonry-image" ng-src="{{image.src}}"/>
-                                   
 
-                                                </a>
+<div class="container-fluid px-0 container-main">
 
-                                                <div id="image_{{$index}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-lg">
-                                                                <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                        <span aria-hidden="true">&times;</span>
-                                                                                </button>
-                                                                        </div>
+        <!-- Contenitore -->
+        <div class="content-container row mx-0 pt-0 pt-sm-1 pb-5 pb-sm-5">
 
-                                                                        <div class="modal-body">
-                                                                                <img class="masonry-image" ng-src="{{image.src}}"/> 
-                                                                        </div>
+                <div class="col-12 px-0 sezione-condividi">
 
-                                                                </div>
-                                                        </div>
-                                                </div>  
+                        <div class="row mx-0 px-3 px-sm-5 py-0 py-sm-0">
 
+                                <div class="col-6 col-sm-3 px-0 pb-2 pb-sm-0">
+
+                                        <div class="row mx-0">
+                                                <p class="mb-0 mb-sm-1">{{"SHARE_LABEL" | translate}}</p>
                                         </div>
+
+                                        <div class="row mx-0 justify-content-around">
+                                                <div class="col-6 px-0">
+                                                        <a
+                                                                href="https://www.facebook.com/sharer/sharer.php?u=https://verteego.it/">
+                                                                <p class="mb-0 mb-sm-1">facebook</p>
+                                                        </a>
+                                                </div>
+
+                                                <div class="col-6 px-0">
+                                                        <a
+                                                                href="https://www.linkedin.com/sharing/share-offsite/?url={https://verteego.it/}">
+                                                                <p class="mb-0 mb-sm-1">linkedin</p>
+                                                        </a>
+                                                </div>
+                                        </div>
+
                                 </div>
 
+                                <div class="col-6 col-sm-9 px-0 pb-0 mx-0 mr-sm-0Z">
+
+                                </div>
                         </div>
                 </div>
-
         </div>
+</div>
 
 
-        <!-- CONDIVIDI SUI SOCIAL -->
-
-
-
-        <div class="container-fluid px-0 container-main">
-        
-                <!-- Contenitore -->
-                <div class="content-container row mx-0">
-                        <div class="col-6 col-sm-3 px-0 pb-5 mx-3 mx-sm-5">
-
-                                <div class="row mx-0 ">
-                                        <p class="share-text-work-article">{{"SHARE_LABEL" | translate}}</p>
-                                </div>
-        
-                                <div class="row mx-0 justify-content-around">
-                                        <div class="col-6 px-0">
-                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://verteego.it/">
-                                                        <p class="link-social-work-article">facebook</p>
-                                                </a>
-                                        </div>
-        
-                                        <div class="col-6 px-0">
-                                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={https://verteego.it/}">
-                                                        <p class="link-social-work-article">linkedin</p>
-                                                </a>
-                                        </div>
-                                </div>
-
-                        </div>
-                </div>
-        
-        </div>
 
 
 </div>

@@ -24,6 +24,7 @@
 
     "MAGAZINE_TITLE" :  "Magazine",
     "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "COMUNICATO-STAMPA" : "Comunicati stampa",
     "404_MAGAZINE_TITLE" :  "OOPS!",
     "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_MAGAZINE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
@@ -33,7 +34,12 @@
     "WORKS_TITLE" : "I nostri lavori",
     "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
     "ALL_CATEGORIES_BTN" : "Tutte le categorie",
-    "404_WORKS_TITLE" :  "OOPS!",
+    "PLACE" : "Luogo",
+    "CLIENT" : "Committente",
+    "AMOUNT" : "Importo lavori",
+    "EXECUTING_COMPANY" : "Impresa esecutrice",
+    "CLOSE_BTN" : "Chiudi",
+     "404_WORKS_TITLE" :  "OOPS!",
     "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_WORKS_SUBTITLE" :  "Sicuramente Francesca c'è però.",
 

@@ -8,9 +8,10 @@
 /* HEADING */
 
 .container-heading h1 {
+    color: var(--b5blu);
     font-style: normal;
     font-weight: 600;
-    font-size: 8.4rem;
+    font-size: 8.2rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
@@ -40,7 +41,7 @@
 
 }
 
-.sezione-lista-categorie input[type="radio"]:checked + label {
+.sezione-lista-categorie input[type="radio"]:checked+label {
     color: var(--b5bianco);
     background-color: var(--b5blu);
 }
@@ -55,8 +56,8 @@
 
 /* CARD PROGETTI */
 
-.card-progetto a{
-        text-decoration: none;
+.card-progetto a {
+    text-decoration: none;
 }
 
 .card-progetto-img {
@@ -72,8 +73,8 @@
 
 }
 
-.card-progetto:hover .card-progetto-img{
-    background-color: var(--b5blu); 
+.card-progetto:hover .card-progetto-img {
+    background-color: var(--b5blu);
     background-blend-mode: luminosity;
 }
 
@@ -102,7 +103,7 @@
     color: var(--b5bianco);
 }
 
-.card-progetto .categoria{
+.card-progetto .categoria {
     background-color: var(--b5blu);
 }
 
@@ -110,14 +111,15 @@
 
 @media (max-width: 575px) {
 
-    .container-card-progetto  .col-sm-12, .container-card-progetto .col-lg-4{
+    .container-card-progetto .col-sm-12,
+    .container-card-progetto .col-lg-4 {
         width: 300px;
         min-width: 300px;
-        
+
     }
 
 
-    .container-card-progetto{
+    .container-card-progetto {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -153,7 +155,6 @@
 
     .sezione-lista-categorie>div>div>div {
 
-        border: 2px solid var(--b5blu);
         position: relative;
 
     }
@@ -170,9 +171,9 @@
         width: 100%;
     }
 
-    .card-progetto-img:hover{
+    .card-progetto-img:hover {
         background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
-        
+
     }
 
 
@@ -194,10 +195,10 @@
 
     .card-progetto h5 {
         font-style: normal;
-    font-weight: 600;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    color: var(--b5bianco);
+        font-weight: 600;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        color: var(--b5bianco);
     }
 
 }
@@ -209,7 +210,6 @@
 
 /* SEZIONE HEADING */
 
-
 .sezione-heading .img-work-article {
     background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
     aspect-ratio: 16/9;
@@ -217,202 +217,110 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 30vw;
 }
 
-.sezione-heading span{
+.sezione-heading span {
     font-style: normal;
     font-weight: 600;
     color: var(--b5rosso);
     font-size: 22px;
     text-align: center;
     text-decoration-line: underline;
+    text-transform: lowercase;
+}
+
+.leggi-tutto {
+    background-color: var(--b5bianco);
+    border-radius: 0px;
+    border: 2px solid var(--b5blu);
+    color: var(--b5blu);
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 40%;
+}
+
+.leggi-tutto:hover {
+    background-color: var(--b5blu);
+    border-radius: 0px;
+    border: 2px solid var(--b5blu);
+    color: var(--b5bianco);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.sezione-heading-info h1 {
+    color: var(--b5blu);
+}
+
+.sezione-heading-info p {
+    color: var(--b5blu);
 }
 
 /* SEZIONE HEADING INFO */
 
-.box-custom-field{
+.box-custom-field {
     box-sizing: border-box;
 }
 
-.box-custom-field .info-titolo{
+.box-custom-field .info-titolo {
     background-color: var(--b5blu);
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.box-custom-field .info-titolo p{
-    
-  font-style: normal;
+.box-custom-field .info-titolo p {
+
+    font-style: normal;
     font-weight: 500;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: var(--b5bianco);
-    
+    text-transform: uppercase;
+
 }
 
-.box-custom-field .info-descrizione{
+.box-custom-field .info-descrizione {
     border-top: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
     border-right: 2px solid var(--b5blu);
 }
 
-.box-custom-field .info-descrizione p{
+.box-custom-field .info-descrizione p {
     font-style: normal;
     font-weight: 400;
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--b5blu);
 }
 
 
-.box-custom-field .titolo h1{
+
+.box-heading-lavori {
+    height: 100%;
+}
+
+
+.box-heading-lavori .titolo h1 {
+    color: var(--b5blu);
     font-weight: 600;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
 
-.box-custom-field .read-button a{
-    font-weight: 600;
-    font-size: 22px;
-    color: var(--b5blu);
-    text-decoration-line: underline;
-}
 
-
-.box-custom-field .descrizone p {
+.box-heading-lavori .descrizone p {
     font-style: normal;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
     color: var(--b5blu);
 }
 
 
-
-/*SEZIONE CONDIVIDI*/
-
-
-.share-text-work-article {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000000;
-}
-
-.link-social-work-article {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration-line: underline;
-}
-
-
-
-/* ARTICOLO SINGOLO LAVORI MOBILE*/
-
-@media (max-width: 575px){
-
-
-    /* SEZIONE HEADING MOBILECO */
-
-.sezione-heading .img-work-article {
-    aspect-ratio: 16/9;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30vh;
-}
-
-.sezione-heading span{
-    font-style: normal;
-    font-weight: 600;
-    color: var(--b5rosso);
-    font-size: 1rem;
-    text-align: center;
-    text-decoration-line: underline;
-}
-
-/* SEZIONE HEADING INFO */
-
-.box-left{
-    box-sizing: border-box;
-}
-
-.box-left .info-titolo{
-    background-color: var(--b5blu);
-}
-
-.box-left .info-titolo p{
-    
-  font-style: normal;
-    font-weight: 500;
-    width: 100%;
-    font-size: auto;
-    color: var(--b5bianco);
-    
-}
-
-.box-left .info-descrizione{
-    border-top: 2px solid var(--b5blu);
-    border-bottom: 2px solid var(--b5blu);
-    border-right: 2px solid var(--b5blu);
-}
-
-.box-left .info-descrizione p{
-    font-style: normal;
-    font-weight: 400;
-    width: 100%;
-    font-size: auto;
-    color: var(--b5blu);
-}
-
-
-.box-right .titolo h1{
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
-.box-right{
-    height: 100%;
-}
-    
-
-.box-right .read-button a{
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--b5blu);
-    text-decoration-line: underline;
-}
-
-
-.box-right .descrizone p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--b5blu);
-}
-
-
-
-/*SEZIONE CONDIVIDI*/
-
-
-.share-text-work-article {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: #000000;
-}
-
-.link-social-work-article {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-decoration-line: underline;
-}
-
-}
+/* MASONRY */
 
 .masonry-brick {
     float: left;
@@ -420,15 +328,248 @@
     width: 33.33%;
 }
 
+
 .masonry-image {
     position: relative;
-    width: 100%;
-  }
+    width: 92%;
+    margin: 4%;
+}
 
-  @media (max-width: 575px){
+/* RESPONSIVE PAGINA ARTICOLO SINGOLO */
+
+@media (max-width: 575px) {
+
+    /* SEZIONE HEADING MOBILE*/
+
+    .sezione-heading .img-work-article {
+        background-image: url("https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dW5zcGxhc2h8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");
+        aspect-ratio: 16/9;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60vw;
+    }
+
+    .sezione-heading span {
+        font-style: normal;
+        font-weight: 600;
+        color: var(--b5rosso);
+        font-size: 1.2rem;
+        text-align: center;
+        text-decoration-line: underline;
+        text-transform: lowercase;
+    }
+
+    .leggi-tutto {
+        background-color: var(--b5bianco);
+        border-radius: 0px;
+        border: 2px solid var(--b5blu);
+        color: var(--b5blu);
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 90%;
+    }
+
+    .leggi-tutto:hover {
+        background-color: var(--b5blu);
+        border-radius: 0px;
+        border: 2px solid var(--b5blu);
+        color: var(--b5bianco);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+
+    /* SEZIONE HEADING INFO */
+
+    .box-custom-field {
+        box-sizing: border-box;
+    }
+
+    .box-custom-field .info-titolo {
+        background-color: var(--b5blu);
+    }
+
+    .box-custom-field .info-titolo p {
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+        font-size: 0.9rem;
+        color: var(--b5bianco);
+
+    }
+
+    .box-custom-field .info-descrizione {
+        border-top: 2px solid var(--b5blu);
+        border-bottom: 2px solid var(--b5blu);
+        border-right: 2px solid var(--b5blu);
+    }
+
+    .box-custom-field .info-descrizione p {
+        font-style: normal;
+        font-weight: 400;
+        width: 100%;
+        font-size: 0.8rem;
+        color: var(--b5blu);
+    }
+
+
+
+    .box-heading-lavori {
+        height: 100%;
+    }
+
+
+    .box-heading-lavori .titolo h1 {
+        color: var(--b5blu);
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+
+    }
+
+
+
+    .box-heading-lavori .descrizone p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        text-align: justify;
+
+        color: var(--b5blu);
+    }
+
+
+
+
+
+
+    /* MASONRY MOBILE*/
+
     .masonry-brick {
-
+        float: left;
+        height: fit-content;
         width: 100%;
     }
-  }
 
+
+
+
+}
+
+/* STILE ARTICOLO SINGOLO MODAL */
+
+
+.articolo-lavoro h1 {
+    font-size: 1.525rem;
+    line-height: 1.975rem;
+}
+
+.articolo-lavoro h2 {
+    color: var(--b5blu);
+    font-size: 1.325rem;
+    line-height: 1.625rem;
+}
+
+.articolo-lavoro h3 {
+    color: var(--b5blu);
+    font-size: 1.15rem;
+    line-height: 1.65rem;
+}
+
+.articolo-lavoro h4 {
+    color: var(--b5blu);
+    font-size: 0.953rem;
+    line-height: 1.175rem;
+}
+
+.articolo-lavoro h5 {
+    color: var(--b5blu);
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+.articolo-lavoro blockquote {
+    background: var(--b5blu);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.articolo-lavoro blockquote p {
+    color: var(--b5bianco);
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.articolo-lavoro p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-top: 0.5rem;
+}
+
+.articolo-lavoro ul {
+    color: var(--b5blu);
+    font-size: 0.9rem;
+    margin-left: 5%;
+}
+
+.articolo-lavoro ol {
+    color: var(--b5blu);
+    font-size: 0.9rem;
+    margin-left: 3%;
+}
+
+.articolo-lavoro a {
+    color: var(--b5rosso);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.modal-close-button{
+    background-color: var(--b5bianco);
+    border-radius: 0px;
+    border: 2px solid var(--b5rosso);
+    color: var(--b5rosso);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal-header h5 {
+    color: var(--b5blu);
+}
+
+.modal-content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: var(--b5bianco);
+    border-radius: 0;
+    border: 3px solid var(--b5blu);
+}
+
+.modal-content .close span {
+    color: var(--b5rosso);
+    opacity: 1;
+}
+
+
+/* SEZIONE CONDIVIDI */
+
+.sezione-condividi p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.sezione-condividi a p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration-line: underline;
+    color: var(--b5blu);
+}
