@@ -5,9 +5,14 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$rootScope'];
-    function HomeController($rootScope) {
+    HomeController.$inject = ['$scope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService'];
+    function HomeController($scope, HomeSettings, PostService, FlashService, Categories, CategoryService) {
         var vm = this;
+        vm.worksInfos = [];
+        vm.articlesInfos = [];
+        vm.magazinePostsInfos = [];
+        $scope.selectedArticle = 0;
+        $scope.colosseoArticleSlug = HomeSettings.COLOSSEO_ARTICLE_SLUG;
 
         initController();
 
@@ -16,7 +21,8 @@
             drawSVGOnScroll("draw-container-3", "draw_3");
             drawSVGOnViewEnter("draw-container-4", "draw_4", "draw_4");
             drawSVGOnViewEnter("draw-container-5", "draw_5", "draw_5");
-
+            getHomeWorksArticle();
+            getCategoriesInfo();
         }
 
         /***********
@@ -111,6 +117,98 @@
             }
 
         }
+
+        function getHomeWorksArticle(){
+
+            HomeSettings.WORK_ARTICLES.forEach(postSlug => {
+                
+                PostService.Post(postSlug,
+                    //Good callback
+                    function(res){
+    
+                        try{
+    
+                            if(res.data == null) {
+    
+                                $translate('ERROR_404').then(function (errorMessage) {
+                                    FlashService.Error(errorMessage);
+                                });    
+                            }
+    
+                            else {
+    
+                                vm.worksInfos.push(res.data.data);
+        
+                            }
+    
+                        }catch (error) {
+    
+                            FlashService.Error(error);
+    
+                        }
+                    },
+                    
+                    //bad callback
+                    function(){
+    
+                        $translate('ERROR_400').then(function (errorMessage) {
+                            FlashService.Error(errorMessage);
+                          });
+    
+                    })
+
+            });
+
+        }
+
+        function getCategoriesInfo(){
+
+            Categories.MAGAZINE.forEach(categorySlug => {
+                
+                CategoryService.Category(categorySlug,
+
+                    //Good callback
+                    function(res){
+
+                        try{
+
+                            if(res.data == null) {
+    
+                                $translate('ERROR_404').then(function (errorMessage) {
+                                    FlashService.Error(errorMessage);
+                                });    
+                            }
+
+                            else {
+    
+                                vm.magazinePostsInfos = vm.magazinePostsInfos.concat(res.data.data.posts);
+                                console.log(vm.magazinePostsInfos);
+
+                            }
+
+                        }catch (error) {
+
+                            FlashService.Error(error);
+
+                        }
+                    },
+                    
+                    //bad callback
+                    function(){
+
+                        $translate('ERROR_400').then(function (errorMessage) {
+                            FlashService.Error(errorMessage);
+                          });
+
+                    })
+
+            });
+
+        };
+
+        $scope.selectCategory = function(article){
+            $scope.selectedArticle = article;
+        };
 
 
 

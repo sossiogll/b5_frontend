@@ -33,7 +33,20 @@
             WORKS : [
                 'work-1',
                 'work-2',
+                'progetto'
             ]
+        })
+        .constant('HomeSettings', {
+            WORK_ARTICLES : [
+                'hello-world',
+                'test-magazine-1',
+                'test-2-magazine-1',
+                'test-3-magazine-1',
+                'test-magazine-2',
+                'lavoro-1'
+            ],
+
+            COLOSSEO_ARTICLE_SLUG : 'restauro-dellanfiteatro-flavio-colosseo'
         })
 
 

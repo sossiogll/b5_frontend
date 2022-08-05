@@ -57,8 +57,6 @@
                                 res.data.data.posts.splice(0,res.data.data.posts.length);
                                 vm.worksCategoryInfos.push(res.data.data);
 
-                                console.log(vm.worksCategoryInfos);
-                                console.log(vm.worksInfos);
                             }
 
                         }catch (error) {
