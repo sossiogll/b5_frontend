@@ -20,11 +20,6 @@
             CURSOR_LAZYNESS : 200,
             DEFAULT_REDIRECT : '/'
         })
-        .constant('State', {
-            IDLE : '3',
-            LOADING : '2',
-            INIT : '1'
-        })
         .constant('Categories', {
             MAGAZINE : [
                 'magazine-1',
@@ -49,7 +44,7 @@
         })
         .constant('Status', {
             INIT : 1,
-            LOADING : 1,
+            LOADING : 2,
             FAILED : 3,
             IDLE : 4
         })       
