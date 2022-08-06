@@ -23,7 +23,7 @@
 
     <!--------------------- Sezione articolo--------------------->
 
-    <div ng-if="vm.postInfo != null && vm.postInfo!== undefined"  class="container-fluid px-0 container-main" >
+    <div ng-if="isIdle()"  class="container-fluid px-0 container-main animate__animated animate__fadeIn" >
 
         <!-- Contenitore -->
         <div class="content-container row mx-0 sezione-articolo-magazine">
@@ -97,7 +97,7 @@
                             <div class="col-12 px-0">
                                 <div class="row mx-0">
                                     <div class="col-12 col-sm-8 px-0 mb-3 order-2 order-sm-1"></div>
-                                    <div class="col-12 col-sm-8 px-0 mb-3 d-table order-1 order-sm-2 text-center categoria">
+                                    <div class="col-12 col-sm-4 px-0 mb-3 d-table order-1 order-sm-2 text-center categoria">
                                         <p class="p-2 d-table-cell align-middle">{{vm.postInfo.category_slug | translate}}</p>
                                     </div>
                                 </div>
@@ -116,10 +116,19 @@
         </div>
     </div>
 
+    <!-- SKELETRON -->
+
+    <div ng-if="isLoading() || isInitial()" class="skeletron">
+        <h2></h2>
+        <p></p>
+        <h2></h2>
+        <p></p>
+    </div>
+
     <!-- 404 meet us -->
-    <div ng-if="vm.postInfo == null || vm.postInfo === undefined" class="col mx-0 pl-5 pt-4 pb-5">
-        <h1>{{'404_MEET_US_TITLE' | translate}}</h1>
-        <h3>{{'404_MEET_US_DESCRIPTION' | translate}}</h3>
+    <div ng-if="isFailed()" class="col mx-0 pl-5 pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
+        <h1>{{'404_MAGAZINE_ARTICLE_TITLE' | translate}}</h1>
+        <h3>{{'404_MAGAZINE_ARTICLE_DESCRIPTION' | translate}}</h3>
         <hr class="my-4">
-        <p>{{'404_MEET_US_SUBTITLE' | translate}}</p>
+        <p>{{'404_MAGAZINE_ARTICLE_SUBTITLE' | translate}}</p>
     </div>

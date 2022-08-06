@@ -8,15 +8,29 @@
     MeetUsController.$inject = ['$scope','UserService', 'FlashService', 'Status'];
     function MeetUsController($scope, UserService, FlashService, Status) {
         
+        //Init pointer to controller for inner functions
         var vm = this;
+
+        //Declaring local variables
         vm.profiles = [];
         vm.status = Status.INIT;
 
+        //Scope functions
+        $scope.isFailed = isFailed;
+        $scope.isInitial = isInitial;
+        $scope.isLoading = isLoading;
+        $scope.isIdle = isIdle;
+
+        //Init controller
         initController();
 
         function initController() {
             loadAllProfile();
         }
+
+        
+        /*************Implementig functions*************/
+
 
         function loadAllProfile(){
 
@@ -66,19 +80,19 @@
         }
 
         
-        $scope.isFailed = function(){
+        function isFailed(){
             return (vm.profiles == null || vm.profiles === undefined || vm.profiles.length == 0 || vm.status == Status.FAILED)
         }
 
-        $scope.isInitial = function(){
+        function isInitial(){
             return (vm.status == Status.INIT);
         }
 
-        $scope.isLoading = function(){
+        function isLoading(){
             return (vm.status == Status.LOADING);
         }
 
-        $scope.isIdle = function(){
+        function isIdle(){
             return (vm.profiles != null && vm.profiles!== undefined && vm.profiles.length > 0 && vm.status == Status.IDLE);
         }
 

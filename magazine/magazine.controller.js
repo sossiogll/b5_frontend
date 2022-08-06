@@ -15,6 +15,12 @@
         vm.categoriesInfos = [];
         vm.status = Status.INIT;
 
+        //Scope functions
+        $scope.isFailed = isFailed;
+        $scope.isInitial = isInitial;
+        $scope.isLoading = isLoading;
+        $scope.isIdle = isIdle;  
+
 
         //Init controller
         initController();
@@ -46,20 +52,22 @@
                                 $translate('ERROR_404').then(function (errorMessage) {
                                     FlashService.Error(errorMessage);
                                 });    
+                                vm.status = Status.FAILED;
+
                             }
 
                             else {
     
                                 vm.categoriesInfos.push(res.data.data);
 
-                                if(index == Categories.MAGAZINE.length-1 && vm.status!= Status.ERROR)
+                                if(index == Categories.MAGAZINE.length-1 && vm.status!= Status.FAILED)
                                     vm.status = Status.IDLE;
                             }
 
                         }catch (error) {
 
                             FlashService.Error(error);
-                            vm.status = Status.ERROR;
+                            vm.status = Status.FAILED;
 
                         }
                     },
@@ -71,30 +79,28 @@
                             FlashService.Error(errorMessage);
                           });
 
-                          vm.status = Status.ERROR;
+                          vm.status = Status.FAILED;
 
                     })
 
 
             });
 
-            console.log(vm.status);
-
         };
 
-        $scope.isFailed = function(){
-            return (vm.categoriesInfos == null || vm.categoriesInfos === undefined || vm.categoriesInfos.length == 0 && vm.status == Status.FAILED)
+        function isFailed(){
+            return (vm.categoriesInfos == null || vm.categoriesInfos === undefined || vm.categoriesInfos.length == 0 || vm.status == Status.FAILED)
         }
 
-        $scope.isInitial = function(){
+        function isInitial(){
             return (vm.status == Status.INIT);
         }
 
-        $scope.isLoading = function(){
+        function isLoading(){
             return (vm.status == Status.LOADING);
         }
 
-        $scope.isIdle = function(){
+        function isIdle(){
             return (vm.categoriesInfos != null && vm.categoriesInfos!== undefined && vm.categoriesInfos.length > 0 && vm.status == Status.IDLE);
         }
 

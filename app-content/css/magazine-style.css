@@ -93,6 +93,11 @@
     font-size: 1.3rem;
 }
 
+.marquee-container{
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 

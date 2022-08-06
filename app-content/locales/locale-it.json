@@ -28,6 +28,9 @@
     "404_MAGAZINE_TITLE" :  "OOPS!",
     "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_MAGAZINE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_MAGAZINE_ARTICLE_TITLE" :  "OOPS!",
+    "404_MAGAZINE_ARTICLE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
+    "404_MAGAZINE_ARTICLE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
 
     "_comment": "---------------------- WORKS ----------------------",
 
@@ -39,9 +42,12 @@
     "AMOUNT" : "Importo lavori",
     "EXECUTING_COMPANY" : "Impresa esecutrice",
     "CLOSE_BTN" : "Chiudi",
-     "404_WORKS_TITLE" :  "OOPS!",
+    "404_WORKS_TITLE" :  "OOPS!",
     "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_WORKS_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_WORKS_ARTICLE_TITLE" :  "OOPS!",
+    "404_WORKS_ARTICLE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
+    "404_WORKS_ARTICLE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
 
     "_comment": "---------------------- MEET US ----------------------",
 

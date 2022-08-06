@@ -5,57 +5,95 @@
         .module('app')
         .controller('MagazineArticleController', MagazineArticleController);
 
-    MagazineArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService'];
-    function MagazineArticleController($scope, $routeParams, PostService, FlashService) {
+    MagazineArticleController.$inject = ['$rootScope', '$scope', '$routeParams', 'PostService', 'FlashService', 'Status', '$translate',];
+    function MagazineArticleController($rootScope, $scope, $routeParams, PostService, FlashService, Status, $translate) {
              
         //Init pointer to controller for inner functions
         var vm = this;
 
-        initController();
+        //Declaring local variables
+        vm.status = Status.INIT;
+        vm.postInfo = [];
+
+        //Scope functions
+        $scope.isFailed = isFailed;
+        $scope.isInitial = isInitial;
+        $scope.isLoading = isLoading;
+        $scope.isIdle = isIdle;  
 
         //Init controller
+        initController();
+
         function initController() {
             getPostInfo();
         }
 
         function getPostInfo(){
-            PostService.Post($routeParams.postSlug,
-                //Good callback
-                function(res){
 
-                    try{
+            vm.status =  Status.LOADING;
+
+            try{
+
+                PostService.Post($routeParams.postSlug,
+                    //Good callback
+                    function(res){               
 
                         if(res.data == null) {
 
                             $translate('ERROR_404').then(function (errorMessage) {
                                 FlashService.Error(errorMessage);
-                            });    
+                            });
+                            vm.status = Status.FAILED;
+
                         }
 
                         else {
 
                             vm.postInfo = res.data.data;
-                            $scope.postContent = vm.postInfo.content
+                            $scope.postContent = vm.postInfo.content;
 
-                            console.log(vm.postInfo);
+                            vm.status = Status.IDLE;
                         }
 
-                    }catch (error) {
 
-                        FlashService.Error(error);
-
-                    }
-                },
+                    },
                 
-                //bad callback
-                function(){
+                    //bad callback
+                    function(){
 
-                    $translate('ERROR_400').then(function (errorMessage) {
-                        FlashService.Error(errorMessage);
-                      });
+                        $translate('ERROR_400').then(function (errorMessage) {
+                            FlashService.Error(errorMessage);
+                        });
 
-                })
+                        vm.status = Status.FAILED;
 
+
+                    })
+
+                }
+
+            catch (error) {
+
+                FlashService.Error(error);
+                vm.status = Status.FAILED;
+
+            }
+        }
+
+        function isFailed(){
+            return (vm.postInfo == null || vm.postInfo === undefined || vm.status == Status.FAILED)
+        }
+
+        function isInitial(){
+            return (vm.status == Status.INIT);
+        }
+
+        function isLoading(){
+            return (vm.status == Status.LOADING);
+        }
+
+        function isIdle(){
+            return (vm.postInfo != null && vm.postInfo!== undefined && vm.status == Status.IDLE);
         }
 
     }

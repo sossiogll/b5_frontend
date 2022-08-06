@@ -226,6 +226,7 @@ font-weight: 700;
 .card-articolo{
   border: 2px solid var(--b5blu);
   width: 350px;
+  padding-bottom: 50px;
 }
 
 .card-articolo-img {
@@ -260,6 +261,49 @@ color: var(--b5blu);
   font-size: 20px;
   line-height: 24px;
 }
+
+
+/* MARQUEE CARD ARTICOLO */
+
+.marquee-card-articolo {
+  height: 49px;
+}
+
+.marquee-card-articolo p{
+  font-size: 1.3rem;
+}
+
+.marquee-card-articolo p:hover{
+  font-size: 1.3rem;
+}
+
+.marquee-container{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+/* MARQUEE CARD ARTICOLO */
+
+.marquee-card-articolo {
+  height: 49px;
+}
+
+.marquee-card-articolo p{
+  font-size: 1.3rem;
+}
+
+.marquee-card-articolo p:hover{
+  font-size: 1.3rem;
+}
+
+.marquee-container{
+  position: absolute;
+  bottom: 0;
+}
+
 
 
 /*CARD MAGAZINE MOBILE */
@@ -305,6 +349,22 @@ color: var(--b5blu);
   font-size: 1rem;
   line-height: 1.3rem;
 }
+
+/* MARQUEE CARD ARTICOLO MOBILE */
+
+.marquee-card-articolo {
+  height: 49px;
+}
+
+.marquee-card-articolo p{
+  font-size: 1.3rem;
+}
+
+.marquee-card-articolo p:hover{
+  font-size: 1.3rem;
+}
+
+
 }
 
 
