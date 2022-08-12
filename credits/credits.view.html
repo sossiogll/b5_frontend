@@ -3,46 +3,257 @@
 <div class="container-fluid px-0 container-main">
 
     <!-- Contenitore -->
-    <div class="content-container row mx-0">
-            <div class="col-12 px-0 mt-3">
-                    <div class="row mx-0 pl-5 pt-4 ">
-                            <div class="col-12 px-0">
-                                    <h1 class="">Crediti e riconoscimenti</h1>
-                            </div>
-                    </div>
-
+            <div class="content-container row mx-0">
+                <div class="col-12 px-0 mt-3">
                     <div class="row mx-0 pl-5 pt-4 ">
                         <div class="col-12 px-0">
-                                <p class="mr-5">Il sito è stato sviluppato in stretta collaborazione con B5 Srl da parte di Sossio Giallaurito
-                                    e Vincenzo Guida che insieme fanno parte della Beautiful Life Creative Studio.<br>
-                                    Si ringrazia Francesca Brancaccio, il team di B5 e Andrea Detry per la collaborazione.<br>
-                                    Particolare menzione per Giuseppe Esposito per aver scattato alcune foto per il sito,
-                                    Simone Rositani per averci prestato l'apparecchiaturo per lo scatto di alcune foto del sito.
-                                </p>
+                            <h1 class="">
+                                {{ "CREDITS_TITLE" | translate }}
+                            </h1>
                         </div>
-                </div>
-
-
-                <div class="row mx-0 pl-5 pt-4 ">
-                    <div class="col-12 px-0">
-                            <h2 class="mr-5"> Crediti di sviluppo
-                            </h2>
                     </div>
+                </div>
             </div>
 
-            <div class="row mx-0 pl-5 pt-1 ">
+            <div class="row mx-0 pl-5 pt-4 ">
                 <div class="col-12 px-0">
-                        <a class="mr-5">
-                        </a>
+                    <p class="mr-5">
+                        {{ "CREDITS_DESCRIPTION" | translate }}
+                    </p>
                 </div>
+
+            </div>
+
+            <div class="row mx-0 pl-5 pt-4 ">
+                <div class="col-12 px-0">
+                    <h2 class="mr-5"> {{ "DEVELOPMENT_CREDIT_TITLE" | translate }}
+                    </h2>
+                </div>
+            </div>
+
+    <!-- TECNOLOGIE UTILIZZATE -->
+
+            <div class="row mx-0 pl-5 pt-4 ">
+                <div class="col-12 px-0">
+                    <h3 class="mr-5"> {{ "TECHNOLOGIES_EMPLOYED_SUBTITLE" | translate }}
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 text-center">
+                <div class="col-12 col-sm-4 px-0 py-5">
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <i class="credit-image angular-img"></i>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0 mt-4">
+                            <h3>Angular JS</h3>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <p>ver. ^1.8.3</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-4 px-0 py-5">
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <i class="credit-image bootstrap-img"></i>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0 mt-4">
+                            <h3>Bootstrap</h3>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <p>ver. 4</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-4 px-0 py-5">
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <i class="credit-image jquery-img"></i>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0 mt-4">
+                            <h3>jQuery</h3>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 ">
+                        <div class="col-12 p-0">
+                            <p>ver. 3</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    <!-- ESTENSIONI -->
+
+    <div class="row mx-0 pl-5 pt-4 ">
+        <div class="col-12 px-0">
+            <h3 class="mr-5">
+                {{ "EXTENSION_SUBTITLE" | translate }}
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mx-0 text-center">
+        <div class="col-12 col-sm-6 px-0 py-5">
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <i class="fa fa-mouse-pointer fa-5x credit-image" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0 mt-4">
+                    <h3>gllCursor</h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <p>a Beautiful Life Software</p>
+                </div>
+            </div>
+
         </div>
 
+        <div class="col-12 col-sm-6 px-0 py-5">
 
-
-
-
-
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <i class="credit-image fa-5x masonry-logo">Masonry</i>
+                </div>
             </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0 mt-4">
+                    <h3>Masonry</h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <p>by David DeSandro </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BACKEND -->
+
+    <div class="row mx-0 pl-5 pt-4 ">
+        <div class="col-12 px-0">
+            <h3 class="mr-5">
+                {{ "BACKEND_SUPPORT_SUBTITLE" | translate }}
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mx-0 text-center">
+        <div class="col-12 px-0 py-5">
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <i class="fa fa-pen-to-square fa-5x credit-image" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0 mt-4">
+                    <h3>BeautifulCMS</h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <p>a Beautiful Life Software</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FONTS -->
+
+    <div class="row mx-0 pl-5 pt-4 ">
+        <div class="col-12 px-0">
+            <h3 class="mr-5"> {{ "FONTS_SUBTITLE" | translate }}
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mx-0 text-center">
+        <div class="col-12 col-sm-6 px-0 py-5">
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <i class="credit-image fontawesome-img"></i>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0 mt-4">
+                    <h3>Font Awesome</h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <p>ver. ^6.1.2</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 px-0 py-5">
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <i class="credit-image googlefont-img"></i>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0 mt-4">
+                    <h3>Google font</h3>
+                </div>
+            </div>
+
+            <div class="row mx-0 ">
+                <div class="col-12 p-0">
+                    <p>by Google</p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 

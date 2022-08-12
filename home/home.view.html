@@ -306,7 +306,7 @@
 
 <!--------------------- Sezione progetti --------------------->
 
-<div class="container-fluid px-0 container-main container-sezione-progetti">
+<div ng-if="areWorksInit()" class="container-fluid px-0 container-main container-sezione-progetti">
 
     <!-- Contenitore main -->
     <div class="content-container row mx-0 sezione-progetti">
@@ -324,7 +324,7 @@
             <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
                 <div  class="col-12 col-sm-6 px-0 box-left-lp">
                     <div ng-repeat="work in vm.worksInfos track by $index" class="row mx-0 px-0 button-lista-progetti">
-                        <div ng-mouseenter="selectCategory($index)" class="col-12 px-0">
+                        <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 pt-3">
                                 <div class="col px-0 ml-3">
                                     <h3 class="titolo-progetto-lista">{{work.title}}</h3>
@@ -399,7 +399,7 @@
 
     <!--------------------- Sezione Magazine --------------------->
 
-    <div class="container-fluid px-0 container-main">
+    <div ng-if="areMagazineInit()" class="container-fluid px-0 container-main">
 
         <!-- Contenitore main -->
         <div class="content-container row mx-0 sezione-magazine">

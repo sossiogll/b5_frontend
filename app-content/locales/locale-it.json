@@ -26,28 +26,24 @@
     "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
     "COMUNICATO-STAMPA" : "Comunicati stampa",
     "404_MAGAZINE_TITLE" :  "OOPS!",
-    "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
-    "404_MAGAZINE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni sugli ultimi articoli.",
+    "404_MAGAZINE_SUBTITLE" :  "Torneranno presto disponibili.",
     "404_MAGAZINE_ARTICLE_TITLE" :  "OOPS!",
-    "404_MAGAZINE_ARTICLE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
-    "404_MAGAZINE_ARTICLE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_MAGAZINE_ARTICLE_DESCRIPTION" :  "Questo articolo non è presente negli archivi.",
+    "404_MAGAZINE_ARTICLE_SUBTITLE" :  "Per ora.",
 
     "_comment": "---------------------- WORKS ----------------------",
 
     "WORKS_TITLE" : "I nostri lavori",
     "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
     "ALL_CATEGORIES_BTN" : "Tutte le categorie",
-    "PLACE" : "Luogo",
-    "CLIENT" : "Committente",
-    "AMOUNT" : "Importo lavori",
-    "EXECUTING_COMPANY" : "Impresa esecutrice",
     "CLOSE_BTN" : "Chiudi",
     "404_WORKS_TITLE" :  "OOPS!",
-    "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
-    "404_WORKS_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_WORKS_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni sui lavori di B5.",
+    "404_WORKS_SUBTITLE" :  "Ma se dai uno sguardo al Colosseo, c'è anche il nostro tocco.",
     "404_WORKS_ARTICLE_TITLE" :  "OOPS!",
-    "404_WORKS_ARTICLE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
-    "404_WORKS_ARTICLE_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+    "404_WORKS_ARTICLE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni su questo lavoro.",
+    "404_WORKS_ARTICLE_SUBTITLE" :  "Ma se dai uno sguardo al Colosseo, c'è anche il nostro tocco.",
 
     "_comment": "---------------------- MEET US ----------------------",
 
@@ -56,6 +52,16 @@
     "404_MEET_US_TITLE" :  "OOPS!",
     "404_MEET_US_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_MEET_US_SUBTITLE" :  "Sicuramente Francesca c'è però.",
+
+    "_comment": "---------------------- CREDITS ----------------------",
+
+    "CREDITS_TITLE" : "Crediti e riconoscimenti",
+    "CREDITS_DESCRIPTION" : "Il sito è stato sviluppato in stretta collaborazione con B5 Srl da parte di Sossio Giallaurito e Vincenzo Guida che insieme fanno parte della Beautiful Life Creative Studio.\nSi ringrazia Francesca Brancaccio, il team di B5 e Andrea Detry per la collaborazione.\nParticolare menzione per Giuseppe Esposito per aver scattato alcune foto per il sito, Simone Rositani per averci prestato l'apparecchiatura per lo scatto di alcune foto del sito.",
+    "DEVELOPMENT_CREDIT_TITLE" :  "Crediti di sviluppo",
+    "TECHNOLOGIES_EMPLOYED_SUBTITLE" :  "Tecnologie utilizzate",
+    "EXTENSION_SUBTITLE" :  "Estensioni",
+    "BACKEND_SUPPORT_SUBTITLE" :  "Supporto backend",
+    "FONTS_SUBTITLE" :  "Fonts",
 
     "_comment": "---------------------- FOOTER ----------------------",
 
@@ -78,7 +84,7 @@
     "_comment": "---------------------- ERRORS ----------------------",
 
 
-    "ERROR_404" : "Risorsa non trovata.",
+    "ERROR_404" : "Risorse remote non trovate.",
     "ERROR_400" : "Richiesta informazioni errata.",
 
     "_comment": "---------------------- DAYS WEEK ----------------------",
@@ -142,17 +148,24 @@
 
     "_comment" : "---------------------- CATEGORIES ----------------------",
 
-    "magazine-1" : "Magazine fico",
-    "magazine-2" : "Magazine più fico",
-    "work-1" : "Lavori 1",
-    "work-2" : "Lavori 2",
+    "restauro" : "Restauro",
+    "consolidamento" : "Consolidamento",
+    "ex-novo" : "Ex-novo",
+    "scala-urbana" : "Scala Urbana",
+    "paesaggio" : "Paesaggio",
+    "design" : "Design",
+    "comunicati-stampa" : "Comunicati stampa",
+    "rassegna-stampa" : "Rassegna stampa",
+    "eventi" : "Eventi",
+    "pubblicazioni" : "Pubblicazioni",
 
     "_comment" : "---------------------- CUSTOMFIELDS ----------------------",
+    "PLACE" : "Luogo",
+    "CLIENT" : "Committente",
+    "AMOUNT" : "Importo Lavori",
+    "EXECUTING_COMPANY" : "Impresa esecutrice",
+    "DATE" : "Data",
 
-    "custom-1" : "Magazine fico",
-    "custom-2" : "Magazine più fico",
-    "custom-3" : "Lavori 1",
-    "custom-4" : "Lavori 2",
 
     "_comment": "---------------------- END OF FILE ----------------------"
 }

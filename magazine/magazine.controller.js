@@ -37,7 +37,6 @@
 
             vm.status = Status.LOADING;
 
-
             Categories.MAGAZINE.forEach((categorySlug, index) => {
                 
                 CategoryService.Category(categorySlug,
@@ -47,7 +46,7 @@
 
                         try{
 
-                            if(res.data == null) {
+                            if(res.data.data == null) {
     
                                 $translate('ERROR_404').then(function (errorMessage) {
                                     FlashService.Error(errorMessage);
@@ -60,7 +59,7 @@
     
                                 vm.categoriesInfos.push(res.data.data);
 
-                                if(index == Categories.MAGAZINE.length-1 && vm.status!= Status.FAILED)
+                                if(index == Categories.MAGAZINE.length-1 && !isFailed())
                                     vm.status = Status.IDLE;
                             }
 
@@ -68,6 +67,7 @@
 
                             FlashService.Error(error);
                             vm.status = Status.FAILED;
+                            return;
 
                         }
                     },
@@ -77,12 +77,11 @@
 
                         $translate('ERROR_400').then(function (errorMessage) {
                             FlashService.Error(errorMessage);
-                          });
+                        });
 
-                          vm.status = Status.FAILED;
+                        vm.status = Status.FAILED;
 
                     })
-
 
             });
 

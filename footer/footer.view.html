@@ -35,8 +35,8 @@
 		<div class="col-12 col-sm-5 px-0 text-center text-sm-left my-auto footer-info-section">
 			<p><strong> B5 s.r.l. Engineering </strong></p>
 			<p>Via S. Anna dei Lombardi, 16<br>80134 - Napoli - Italia </p>
-			<p class="ng-binding">P.IVA/C.F. 05258581213<br>CCIAA di Napoli N. REA 742617</p>
-			<p class="ng-binding">Capitale sociale € 10.000,00</p>
+			<p class="ng-binding">{{ "VAT_NUMBER_TAX_CODE" | translate}} 05258581213<br>CCIAA di Napoli N. REA 742617</p>
+			<p class="ng-binding">{{ "SHARE_CAPITAL" | translate}} € 10.000,00</p>
 		</div>
 
 		<div class="col-12 col-sm-2 px-0 my-auto">
@@ -44,19 +44,27 @@
 
 		<div class="col-12 col-sm-3 px-0 my-3 my-sm-auto text-center text-sm-left link-utili-custom">
 			<h6 class="mb-3 ng-binding">
-				Link utili
+				{{ "USEFUL_LINKS" | translate}}
 			</h6>
 			<p>
-				<a href="#!/privacy-policy" class="ng-binding">Privacy Policy</a>
+				<a href="#!/privacy-policy" class="ng-binding">
+					{{ "PRIVACY_POLICY" | translate}}
+				</a>
 			</p>
 			<p>
-				<a href="#!/cookie-policy" class="ng-binding">Cookie Policy</a>
+				<a href="#!/cookie-policy" class="ng-binding">
+					{{ "COOKIE_POLICY" | translate }}
+				</a>
 			</p>
 			<p>
-				<a href="#!/" class="ng-binding">Area admin</a>
+				<a href="#!/" class="ng-binding">
+					{{ "ADMIN_AREA" | translate }}
+				</a>
 			</p>
 			<p>
-				<a href="#!/credits" class="ng-binding">Crediti e riconoscimenti</a>
+				<a href="#!/credits" class="ng-binding">
+					{{ "CREDITS" | translate }}
+				</a>
 			</p>
 		</div>
 	</div>

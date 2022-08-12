@@ -49,7 +49,7 @@
 
                         try{
 
-                            if(res.data == null) {
+                            if(res.data.data == null) {
 
                                 $translate('ERROR_404').then(function (errorMessage) {
                                     FlashService.Error(errorMessage);
@@ -76,8 +76,8 @@
                         }catch (error) {
 
                             FlashService.Error(error);
-
                             vm.status = Status.FAILED;
+                            return;
 
                         }
                     },
@@ -88,7 +88,6 @@
                         $translate('ERROR_400').then(function (errorMessage) {
                             FlashService.Error(errorMessage);
                         });
-
 
                         vm.status = Status.FAILED;
 

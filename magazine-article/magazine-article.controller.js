@@ -51,7 +51,6 @@
 
                             vm.postInfo = res.data.data;
                             $scope.postContent = vm.postInfo.content;
-
                             vm.status = Status.IDLE;
                         }
 
@@ -76,6 +75,7 @@
 
                 FlashService.Error(error);
                 vm.status = Status.FAILED;
+                return;
 
             }
         }

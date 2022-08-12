@@ -5,8 +5,8 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService'];
-    function HomeController($scope, HomeSettings, PostService, FlashService, Categories, CategoryService) {
+    HomeController.$inject = ['$scope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService', '$translate'];
+    function HomeController($scope, HomeSettings, PostService, FlashService, Categories, CategoryService, $translate) {
         var vm = this;
         vm.worksInfos = [];
         vm.articlesInfos = [];
@@ -14,7 +14,17 @@
         $scope.selectedArticle = 0;
         $scope.colosseoArticleSlug = HomeSettings.COLOSSEO_ARTICLE_SLUG;
 
+        //Scope functions
+        $scope.areWorksInit = areWorksInit
+        $scope.areMagazineInit = areMagazineInit
+        $scope.selectProject = selectProject
+
+        //Init controller
         initController();
+
+
+
+        /*************Implementig functions*************/
 
         function initController() {
             drawSVGOnViewEnter("draw-container-2", "draw_2", "draw_2");
@@ -25,7 +35,10 @@
             getCategoriesInfo();
         }
 
-        /***********
+
+
+
+        /**
          * Static drawing on scroll triggering
          */
 
@@ -118,6 +131,10 @@
 
         }
 
+        /***********
+         * Getting info from backend
+         */
+
         function getHomeWorksArticle(){
 
             HomeSettings.WORK_ARTICLES.forEach(postSlug => {
@@ -128,7 +145,7 @@
     
                         try{
     
-                            if(res.data == null) {
+                            if(res.data.data == null) {
     
                                 $translate('ERROR_404').then(function (errorMessage) {
                                     FlashService.Error(errorMessage);
@@ -172,7 +189,7 @@
 
                         try{
 
-                            if(res.data == null) {
+                            if(res.data.data == null) {
     
                                 $translate('ERROR_404').then(function (errorMessage) {
                                     FlashService.Error(errorMessage);
@@ -182,7 +199,6 @@
                             else {
     
                                 vm.magazinePostsInfos = vm.magazinePostsInfos.concat(res.data.data.posts);
-                                console.log(vm.magazinePostsInfos);
 
                             }
 
@@ -206,11 +222,19 @@
 
         };
 
-        $scope.selectCategory = function(article){
+        function selectProject(article){
             $scope.selectedArticle = article;
         };
 
+        function areWorksInit(){
 
+            return (vm.worksInfos == null || vm.worksInfos === undefined)
+
+        }
+
+        function areMagazineInit(){
+            return (vm.magazinePostsInfos == null || vm.magazinePostsInfos === undefined)
+        }
 
 
     }

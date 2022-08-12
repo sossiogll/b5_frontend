@@ -5,8 +5,8 @@
         .module('app')
         .controller('MeetUsController', MeetUsController);
 
-    MeetUsController.$inject = ['$scope','UserService', 'FlashService', 'Status'];
-    function MeetUsController($scope, UserService, FlashService, Status) {
+    MeetUsController.$inject = ['$scope','UserService', 'FlashService', 'Status', '$translate'];
+    function MeetUsController($scope, UserService, FlashService, Status, $translate) {
         
         //Init pointer to controller for inner functions
         var vm = this;
@@ -42,18 +42,18 @@
 
                     try{
 
-                        if(res.data == null) {
+                        if(res.data.data == null) {
 
                             $translate('ERROR_404').then(function (errorMessage) {
                                 FlashService.Error(errorMessage);
-                            });  
+                            });
+                            vm.status = Status.FAILED;
+
                         }
                         else {
 
                             vm.profiles = res.data.data;
-
                             vm.status = Status.IDLE;
-
 
                         }
 
@@ -62,6 +62,7 @@
                         
                         FlashService.Error(error);
                         vm.status = Status.FAILED;
+                        return;
 
                     }
 
@@ -73,7 +74,6 @@
                     $translate('ERROR_400').then(function (errorMessage) {
                         FlashService.Error(errorMessage);
                     });
-
                     vm.status = Status.FAILED;
 
                 });

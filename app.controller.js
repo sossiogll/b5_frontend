@@ -8,12 +8,9 @@
     AppController.$inject = ['$scope', '$rootScope', '$translate', 'gllCursorService'];
     function AppController($scope, $rootScope, $translate, gllCursorService){
 
-        var apiURL = $rootScope.APIUrl;
-
         $scope.changeLanguage = function (key) {
             $rootScope.lang = key;
             $translate.use(key);
-
         };
 
 

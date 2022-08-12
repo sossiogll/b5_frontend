@@ -71,6 +71,7 @@
             // remove the warning from console log by putting the sanitize strategy
             .useSanitizeValueStrategy('sanitizeParameters')
             .preferredLanguage(Settings.DEFAULT_LANG);
+        $translateProvider.useCookieStorage();
 
         $cursorProvider.cursorTheme(Settings.CURSOR_THEME);
         $cursorProvider.cursorLazyness(Settings.CURSOR_LAZYNESS);
@@ -83,8 +84,6 @@
         // keep user logged in after page refresh
         $rootScope.globals = $cookies.getObject('globals') || {};
         $rootScope.lang = Settings.DEFAULT_LANG;
-
-
     }
 
 

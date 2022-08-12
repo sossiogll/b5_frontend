@@ -9,6 +9,7 @@
     "angular-sanitize": "^1.8.3",
     "angular-translate": "^2.19.0",
     "angular-translate-loader-static-files": "^2.19.0",
+    "angular-translate-storage-cookie": "^2.19.0",
     "animate.css": "^4.1.1",
     "bootstrap": "4",
     "gllCursor": "sossiogll/gllCursor",

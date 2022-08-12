@@ -60,3 +60,6 @@ fabric.properties
 package-lock.json
 node_modules
 yarn.lock
+
+#App
+app.settings.js

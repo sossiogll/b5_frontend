@@ -18,7 +18,6 @@
       </ul>
     </li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -45,26 +44,19 @@
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Clona il repository del beckend
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/sossiogll/b5_backend.git
+   git clone https://github.com/sossiogll/b5_frontend.git
    ```
-3. Install Dipencencies
-   ```sh
-   yarn install
-   ```
-4. Enter your API in `app.js`
-   ```js
-   $rootScope.api = 'urToApi';
-3. Install dipendencies
+2. Install Dipencencies
    ```sh
    yarn install
    ```
-4. Enter your API in `app.js` inside `config() ` function
+3. Create your `app.settings.js` file
    ```js
-   $rootScope.APIUrl = `api.url`;
-   ```
+   cp app.settings.js.example app.settings.js
+4. Edit your setting file with your references
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -76,18 +68,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 

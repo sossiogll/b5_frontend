@@ -5,8 +5,8 @@
         .module('app')
         .controller('WorkArticleController', WorkArticleController);
 
-    WorkArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService', 'Status'];
-    function WorkArticleController($scope, $routeParams, PostService, FlashService, Status) {
+    WorkArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService', 'Status', '$translate'];
+    function WorkArticleController($scope, $routeParams, PostService, FlashService, Status, $translate) {
         
         //Init pointer to controller for inner functions
         var vm = this;
@@ -50,7 +50,6 @@
                         else {
 
                             vm.postInfo = res.data.data;
-
                             vm.status = Status.IDLE;
 
                         }
@@ -58,8 +57,8 @@
                     }catch (error) {
 
                         FlashService.Error(error);
-
                         vm.status = Status.FAILED;
+                        return;
 
                     }
                 },

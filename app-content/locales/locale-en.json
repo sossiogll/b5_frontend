@@ -1,10 +1,169 @@
 {
     "_comment": "---------------------- NAVBAR ----------------------",
+
     "WORKS_BTN" : "works",
     "MAGAZINE_BTN" : "magazine",
-    "FIND-US_BTN" : "find us",
+    "MEET_US_BTN" : "meet us",
     "LANGUAGE_BTN": "eng",
 
-    "_comment": "---------------------- HOME ----------------------"
+    "_comment": "---------------------- HOME ----------------------",
 
+    "QUOTE" : "Sometimes architecture seeks the silence and the emptiness in which our conscience can be found.",
+    "AUTHOR_QUOTE" : "Renzo Piano",
+    "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
+    "FIRST_PARAGRAPH" : "B5 srl si occupa di restauro di edifici civili e monumentali, di progettazione architettonica, strutturale, urbana e di dettaglio. Dal 2005, anno in cui è stata fondata, lavora sulle relazioni tra antico e nuovo, sul recupero filologico.",
+    "SECOND_PARAGRAPH_TITLE" : "Lorem ipsum",
+    "SECOND_PARAGRAPH" : "Lorem, ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla. Amet augue sem neque luctus. Id ante faucibus amet mattis risus, eu adipiscing sagittis. Interdum ut sed consequat ac et. Quam commodo eget semper massa vestibulum risus, tellus scelerisque. Nam scelerisque neque at facilisi at faucibus ut quis. Ac varius tellus lectus morbi neque diam. Nec.",
+    "THIS_IS_US" : "This is us",
+    "OUR_WORKS" : "Our works",
+    "LAST_ARTICLES" : "Last articles",
+    "GO_TO_PROJECT_BTN" : "Go to project",
+    "GO_TO_ALL_PROJECTS_BTN" : "See all projects",
+
+    "_comment": "---------------------- MAGAZINE ----------------------",
+
+    "MAGAZINE_TITLE" :  "Magazine",
+    "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "COMUNICATO-STAMPA" : "Comunicati stampa",
+    "404_MAGAZINE_TITLE" :  "WHOOPS!",
+    "404_MAGAZINE_DESCRIPTION" :  "It seems we can't find any informations on recent articles.",
+    "404_MAGAZINE_SUBTITLE" :  "They will be back soon.",
+    "404_MAGAZINE_ARTICLE_TITLE" :  "WHOOPS!",
+    "404_MAGAZINE_ARTICLE_DESCRIPTION" :  "This article is not in the archives.",
+    "404_MAGAZINE_ARTICLE_SUBTITLE" :  "For now.",
+
+    "_comment": "---------------------- WORKS ----------------------",
+
+    "WORKS_TITLE" : "Our works",
+    "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
+    "ALL_CATEGORIES_BTN" : "All categories",
+    "CLOSE_BTN" : "Close",
+    "404_WORKS_TITLE" :  "WHOOPS!",
+    "404_WORKS_DESCRIPTION" :  "It seems we can’t find any information on B5’s work.",
+    "404_WORKS_SUBTITLE" :  "But if you take a look at the Colosseum, there is also our touch.",
+    "404_WORKS_ARTICLE_TITLE" :  "WHOOPS!",
+    "404_WORKS_ARTICLE_DESCRIPTION" :  "It seems we can’t find the information on this job.",
+    "404_WORKS_ARTICLE_SUBTITLE" :  "But if you take a look at the Colosseum, there is also our touch.",
+
+    "_comment": "---------------------- MEET US ----------------------",
+
+    "MEET_US_TITLE" : "B5 world",
+    "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "404_MEET_US_TITLE" :  "WHOOPS!",
+    "404_MEET_US_DESCRIPTION" :  "It seems we can’t find the information of the B5 workers.",
+    "404_MEET_US_SUBTITLE" :  "Even though Francesca is definitely there.",
+
+    "_comment": "---------------------- CREDITS ----------------------",
+
+    "CREDITS_TITLE" : "Credits",
+    "CREDITS_DESCRIPTION" : "Il sito è stato sviluppato in stretta collaborazione con B5 Srl da parte di Sossio Giallaurito e Vincenzo Guida che insieme fanno parte della Beautiful Life Creative Studio.\nSi ringrazia Francesca Brancaccio, il team di B5 e Andrea Detry per la collaborazione.\nParticolare menzione per Giuseppe Esposito per aver scattato alcune foto per il sito, Simone Rositani per averci prestato l'apparecchiaturo per lo scatto di alcune foto del sito.",
+    "DEVELOPMENT_CREDIT_TITLE" :  "Development credit",
+    "TECHNOLOGIES_EMPLOYED_SUBTITLE" :  "Technologies",
+    "EXTENSION_SUBTITLE" :  "Extensions",
+    "BACKEND_SUPPORT_SUBTITLE" :  "Backend support",
+    "FONTS_SUBTITLE" :  "Fonts",
+
+    "_comment": "---------------------- FOOTER ----------------------",
+
+    "VAT_NUMBER_TAX_CODE" : "VAT/Tax code",
+    "SHARE_CAPITAL" : "Share capital",
+    "USEFUL_LINKS" : "Useful Links",
+    "PRIVACY_POLICY" : "Privacy Policy",
+    "COOKIE_POLICY" : "Cookie Policy",
+    "ADMIN_AREA" : "Admin area",
+    "CREDITS" : "Credits",
+
+    "_comment": "---------------------- SHARED ----------------------",
+
+    "BACK_BUTTON" : "Go back",
+    "SHARE_LABEL" : "Share",
+    "READ_FULL_ARTICLE_BTN" : "Read more",
+
+    "_comment": "---------------------- ERRORS ----------------------",
+
+
+    "ERROR_404" : "Resource not found.",
+    "ERROR_400" : "Bad request.",
+
+    "_comment": "---------------------- DAYS WEEK ----------------------",
+
+    "Monday" : "Monday",
+    "Tuesday" : "Tuesday",
+    "Wednesday" : "Wednesday",
+    "Thurdsay" : "Thurdsay",
+    "Friday" : "Friday",
+    "Saturday" : "Saturday",
+    "Sunday" : "Sunday",
+
+    "_comment" : "---------------------- MONTHS ----------------------",
+
+    "January" : "January",
+    "February" : "February",
+    "March" : "March",
+    "April" : "April",
+    "May" : "May",
+    "June" : "June",
+    "July" : "July",
+    "August" : "August",
+    "September" : "September",
+    "October" : "October",
+    "November" : "November",
+    "December" : "December",
+
+    "_comment" : "---------------------- DAYS ----------------------",
+
+    "1" : "1st",
+    "2" : "2nd",
+    "3" : "3rd",
+    "4" : "4th",
+    "5" : "5th",
+    "6" : "6th",
+    "7" : "7th",
+    "8" : "8th",
+    "9" : "9th",
+    "10" : "10th",
+    "11" : "11th",
+    "12" : "12th",
+    "13" : "13th",
+    "14" : "14th",
+    "15" : "15th",
+    "16" : "16th",
+    "17" : "17th",
+    "18" : "18th",
+    "19" : "19th",
+    "20" : "20th",
+    "21" : "21th",
+    "22" : "22nd",
+    "23" : "23rd",
+    "24" : "24th",
+    "25" : "25th",
+    "26" : "26th",
+    "27" : "27th",
+    "28" : "28th",
+    "29" : "29th",
+    "30" : "30th",
+    "31" : "31st",
+
+    "_comment" : "---------------------- CATEGORIES ----------------------",
+
+    "restauro" : "Restoration",
+    "consolidamento" : "Consolidation ",
+    "ex-novo" : "From scratch",
+    "scala-urbana" : "City scale",
+    "paesaggio" : "Landscape",
+    "design" : "Design",
+    "comunicati-stampa" : "Press releases",
+    "rassegna-stampa" : "Press review",
+    "eventi" : "Events",
+    "pubblicazioni" : "Publications",
+
+    "_comment" : "---------------------- CUSTOMFIELDS ----------------------",
+    "PLACE" : "Place",
+    "CLIENT" : "Client",
+    "AMOUNT" : "Amount",
+    "EXECUTING_COMPANY" : "Executing Company",
+    "DATE" : "Date",
+
+
+    "_comment": "---------------------- END OF FILE ----------------------"
 }

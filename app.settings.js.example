@@ -12,35 +12,31 @@
             NAME : "B5 Frontend"
         })
         .constant('Settings',{
-            APIURL : 'http://localhost/laravel/laravel-blog/public/api/v1',
+            APIURL : 'api url here',
             LOCALE_FILE_PREFIX : 'app-content/locales/locale-',
             LOCALE_FILE_SUFFIX : '.json',
             DEFAULT_LANG : 'it',
-            CURSOR_THEME : 'RED', //See gllCursor documentation for changes
+            CURSOR_THEME : 'RED',  //See gllCursor documentation for changes
             CURSOR_LAZYNESS : 200,
             DEFAULT_REDIRECT : '/'
         })
         .constant('Categories', {
             MAGAZINE : [
-                'magazine-1',
-                'magazine-2'
+                'magazine category slug here',
+                '...'
             ],
             WORKS : [
-                'work-1',
-                'work-2',
+                'work category slug here',
+                '...',
             ]
         })
         .constant('HomeSettings', {
             WORK_ARTICLES : [
-                'hello-world',
-                'test-magazine-1',
-                'test-2-magazine-1',
-                'test-3-magazine-1',
-                'test-magazine-2',
-                'lavoro-1'
+                'work slug article here',
+                '...',
             ],
 
-            COLOSSEO_ARTICLE_SLUG : 'restauro-dellanfiteatro-flavio-colosseo'
+            COLOSSEO_ARTICLE_SLUG : 'anfiteatro flavio slug here'
         })
         .constant('Status', {
             INIT : 1,
