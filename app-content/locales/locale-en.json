@@ -82,7 +82,7 @@
     "_comment": "---------------------- ERRORS ----------------------",
 
 
-    "ERROR_404" : "Resource not found.",
+    "ERROR_404" : "Resources not found.",
     "ERROR_400" : "Bad request.",
 
     "_comment": "---------------------- DAYS WEEK ----------------------",
