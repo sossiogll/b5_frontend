@@ -457,8 +457,8 @@ color: var(--b5blu);
 }
 
 .error-content{
-  min-height: 500px;
   position: relative;
+  min-height: 500px;
 }
 
 
