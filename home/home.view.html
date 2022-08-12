@@ -323,7 +323,7 @@
 
             <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
                 <div  class="col-12 col-sm-6 px-0 box-left-lp">
-                    <div ng-repeat="work in vm.worksInfos track by $index" class="row mx-0 px-0 button-lista-progetti">
+                    <div ng-repeat="work in vm.workPostsInfos track by $index" class="row mx-0 px-0 button-lista-progetti">
                         <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 pt-3">
                                 <div class="col px-0 ml-3">
@@ -353,7 +353,7 @@
 
                 <div class="col-12 col-sm-6 px-0 articoloshow-progetti">
                     <div class="row mx-0 px-0">
-                        <div class="col-12 px-0" ng-bind-html="vm.worksInfos[selectedArticle].content">
+                        <div class="col-12 px-0" ng-bind-html="vm.workPostsInfos[selectedArticle].content">
                            
                         </div>
                     </div>
@@ -373,16 +373,16 @@
                           <div class="col-12 py-2 px-0">
                               <div class="track">
                                     <p class="content">
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
                                     </p>
                                
                               </div>
@@ -445,27 +445,27 @@
                         </div>
 
                         <div class="row mx-0">
-                            <div class="col-12 px-0 pt-3">
-                            <a href="#!/magazine/{{work.slug}}" rel="noopener noreferrer" target="_blank">
-                                <div class="row mx-0 marquee-blu marquee-card-articolo">
-                                <div class="col-12 py-2 px-0">
-                                    <div class="track-blu">
-                                    <p class="content-blu">
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
-                                    </p>
+                            <div class="col-12 px-0 pt-0 pt-sm-3 marquee-container">
+                                <a href="#!/magazine/{{work.slug}}" rel="noopener noreferrer" target="_blank">
+                                    <div class="row mx-0 marquee-blu marquee-card-articolo">
+                                        <div class="col-12 py-2 px-0">
+                                            <div class="track-blu">
+                                                <p class="content-blu">
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                    <span style="padding-left: 10px;"> {{'GO_TO_PROJECT_BTN' | translate}} </span>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                </div>
-                            </a>
+                                </a>
                             </div>
                         </div>
                     </div>

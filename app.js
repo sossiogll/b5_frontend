@@ -78,11 +78,10 @@
 
     }
 
-    run.$inject = ['$rootScope', '$location', '$cookies', '$http', 'Settings'];
-    function run($rootScope, $location, $cookies, $http, Settings) {
+    run.$inject = ['$rootScope', 'Settings'];
+    function run($rootScope, Settings) {
 
         // keep user logged in after page refresh
-        $rootScope.globals = $cookies.getObject('globals') || {};
         $rootScope.lang = Settings.DEFAULT_LANG;
     }
 

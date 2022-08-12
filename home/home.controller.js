@@ -8,8 +8,7 @@
     HomeController.$inject = ['$scope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService', '$translate'];
     function HomeController($scope, HomeSettings, PostService, FlashService, Categories, CategoryService, $translate) {
         var vm = this;
-        vm.worksInfos = [];
-        vm.articlesInfos = [];
+        vm.workPostsInfos = [];
         vm.magazinePostsInfos = [];
         $scope.selectedArticle = 0;
         $scope.colosseoArticleSlug = HomeSettings.COLOSSEO_ARTICLE_SLUG;
@@ -154,13 +153,15 @@
     
                             else {
     
-                                vm.worksInfos.push(res.data.data);
+                                vm.workPostsInfos.push(res.data.data);
         
                             }
     
                         }catch (error) {
     
                             FlashService.Error(error);
+                            vm.workPostsInfos = [];
+                            return;
     
                         }
                     },
@@ -228,12 +229,12 @@
 
         function areWorksInit(){
 
-            return (vm.worksInfos == null || vm.worksInfos === undefined)
+            return (vm.workPostsInfos != null && vm.workPostsInfos !== undefined && vm.workPostsInfos.length>0)
 
         }
 
         function areMagazineInit(){
-            return (vm.magazinePostsInfos == null || vm.magazinePostsInfos === undefined)
+            return (vm.magazinePostsInfos != null && vm.magazinePostsInfos !== undefined && vm.magazinePostsInfos.length>0)
         }
 
 

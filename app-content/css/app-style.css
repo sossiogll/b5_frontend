@@ -42,9 +42,11 @@ body{
 .gllText > *,
 .gllBlock > *,
 .gllText:hover,
-.gllBlock:hover
+.gllBlock:hover,
+button,
+a
 {
-  cursor:none;
+  cursor:none!important;
 }
 
 #flash-container{
