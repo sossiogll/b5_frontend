@@ -152,10 +152,12 @@
     <!-- 404 magazine -->
 
 
-  <div ng-if="isFailed()" class="col mx-0 pl-5 pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
-    <h1>{{'404_MAGAZINE_TITLE' | translate}}</h1>
-    <h3>{{'404_MAGAZINE_DESCRIPTION' | translate}}</h3>
-    <hr class="my-4">
-    <p>{{'404_MAGAZINE_SUBTITLE' | translate}}</p>
+  <div ng-if="isFailed()" class="content-container row mx-0 error-content pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
+    <div class="col px-0 ml-5">
+      <h1>{{'404_MAGAZINE_TITLE' | translate}}</h1>
+      <h3>{{'404_MAGAZINE_DESCRIPTION' | translate}}</h3>
+      <hr class="my-4">
+      <p>{{'404_MAGAZINE_SUBTITLE' | translate}}</p>
+    </div>
   </div>
 </div>

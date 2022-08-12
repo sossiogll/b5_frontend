@@ -38,7 +38,7 @@
                     //Good callback
                     function(res){               
 
-                        if(res.data == null) {
+                        if(res.data.data == null) {
 
                             $translate('ERROR_404').then(function (errorMessage) {
                                 FlashService.Error(errorMessage);

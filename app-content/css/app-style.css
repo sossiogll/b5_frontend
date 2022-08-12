@@ -456,6 +456,11 @@ color: var(--b5blu);
   font-weight: bold;
 }
 
+.error-content{
+  min-height: 500px;
+  position: relative;
+}
+
 
 
 
