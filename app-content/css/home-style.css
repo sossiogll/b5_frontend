@@ -169,6 +169,11 @@
     color: var(--b5blu);
 }
 
+.titolo-progetto-lista:hover {
+    text-decoration: none;
+}
+
+
 .tipologie-progetto-lista-box {
     background-color: var(--b5bianco);
     border-top: 2px solid var(--b5blu);
