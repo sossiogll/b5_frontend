@@ -393,7 +393,7 @@ animation-play-state: paused;
 
 /* RESPONSIVE HOME */
 
-@media (max-width: 575px){
+@media (max-width: 991px){
     .draw-container{
         display: none;
     }
@@ -414,44 +414,32 @@ animation-play-state: paused;
     
     
     .container-hero{
-        height: 700px;
+        height: auto;
     }
 
 
 
     .container-hero .disegno1-mobile{
-        background-image: url(../img/logo.png);
+        background-image: url("../img/home/logo.png");
         aspect-ratio: 1/1;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
-        height: 100%;
+        height: 400px;
         width: 100%;
     }
 
     .disegno2-mobile{
-        background-image: url(../img/disegno.png);
+        background-image: url("../img/home/disegno2.png");
         aspect-ratio: 1/1;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
-        height: 100%;
+        background-color: var(--b5bianco);;
+        height: 350px;
         width: 100%;
     }
 
-    .disegno3-mobile{
-        background-image: url(../img/Anfiteatro.png);
-        aspect-ratio: 1/1;
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-    }
-
-
-
-    
     
      .hero  h3 {
         color: var(--b5blu);
@@ -474,7 +462,7 @@ animation-play-state: paused;
     
     .container-seconda-sezione{
         border-top: 2px solid var(--b5blu);
-        height: 500px;
+        height: auto;
     }
     
     .seconda-sezione > div{
@@ -501,7 +489,7 @@ animation-play-state: paused;
     /* TERZA SEZIONE */
     
     .container-terza-sezione{
-        height: 376px;
+        height: auto;
         background-color: var(--b5blu);
     }
     
@@ -764,25 +752,35 @@ animation-play-state: paused;
       }
     
     /* SEZIONE COSTRUZIONI */
-    
+
     .sezione-costruzioni{
-        height: 371px;
+        background-image: url("../img/home/disegno3.svg");
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 135px;
+        width: 100%;
         border-bottom: 2px solid var(--b5blu);
+
     }
-    
-    
+
     /* SEZIONE COLOSSEO */
-    
+
     .sezione-colosseo{
-        height: 730px;
+        background-image: url("../img/home/anfiteatro.png");
+        background-size: cover;
+        background-position: top right;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 100%;
     }
-    
+
+
     
     /*SEZIONE CHI SIAMO*/
     
     .sezione-chisiamo{
-        background-color: var(--b5blu);
-        height: 30vh;
+        display: none;
     }
     
     .sezione-chisiamo h3{
@@ -796,26 +794,10 @@ animation-play-state: paused;
     }
     
     .sezione-foto-chisiamo {
-            height: 100vh;    
-            overflow: hidden;
+            display: none;
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .chi-siamo-home-float{
