@@ -394,6 +394,9 @@ animation-play-state: paused;
 /* RESPONSIVE HOME */
 
 @media (max-width: 991px){
+
+
+
     .draw-container{
         display: none;
     }

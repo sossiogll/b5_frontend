@@ -107,6 +107,18 @@
     background-color: var(--b5blu);
 }
 
+@media (max-width: 991px){
+
+    .container-heading h1{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.5rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+}
+
 /* MOBILE */
 
 @media (max-width: 575px) {

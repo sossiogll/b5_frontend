@@ -122,6 +122,17 @@ line-height: 1.6rem;
 text-align: left;
 }
 
+@media (max-width: 991px){
+
+  .sezione-heading-conoscici h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.5rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+}
 
 
 @media (max-width: 575px){
