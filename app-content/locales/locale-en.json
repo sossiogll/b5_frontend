@@ -8,7 +8,7 @@
 
     "_comment": "---------------------- HOME ----------------------",
 
-    "QUOTE" : "Sometimes architecture seeks the silence and the emptiness in which our conscience can be found.",
+    "QUOTE" : "Sometimes architecture looks for the silence and the emptiness in which our conscience can be found.",
     "AUTHOR_QUOTE" : "Renzo Piano",
     "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
     "FIRST_PARAGRAPH" : "B5 srl deals with the restoration of civil and monumental buildings, architectural, structural, urban and detail design. Since 2005, the year in which it was founded, it has been working on the relations between old and new, on historical recovery.",
@@ -24,9 +24,9 @@
 
     "MAGAZINE_TITLE" :  "Magazine",
     "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
-    "COMUNICATO-STAMPA" : "Comunicati stampa",
+    "COMUNICATO-STAMPA" : "Press releases",
     "404_MAGAZINE_TITLE" :  "WHOOPS!",
-    "404_MAGAZINE_DESCRIPTION" :  "It seems we can't find any informations on recent articles.",
+    "404_MAGAZINE_DESCRIPTION" :  "It seems we can't find any information on recent articles.",
     "404_MAGAZINE_SUBTITLE" :  "They will be back soon.",
     "404_MAGAZINE_ARTICLE_TITLE" :  "WHOOPS!",
     "404_MAGAZINE_ARTICLE_DESCRIPTION" :  "This article is not in the archives.",
@@ -42,7 +42,7 @@
     "404_WORKS_DESCRIPTION" :  "It seems we can’t find any information on B5’s work.",
     "404_WORKS_SUBTITLE" :  "But if you take a look at the Colosseum, there is also our touch.",
     "404_WORKS_ARTICLE_TITLE" :  "WHOOPS!",
-    "404_WORKS_ARTICLE_DESCRIPTION" :  "It seems we can’t find the information on this job.",
+    "404_WORKS_ARTICLE_DESCRIPTION" :  "It seems we can’t find any information on this job.",
     "404_WORKS_ARTICLE_SUBTITLE" :  "But if you take a look at the Colosseum, there is also our touch.",
 
     "_comment": "---------------------- MEET US ----------------------",
@@ -50,13 +50,13 @@
     "MEET_US_TITLE" : "B5 world",
     "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
     "404_MEET_US_TITLE" :  "WHOOPS!",
-    "404_MEET_US_DESCRIPTION" :  "It seems we can’t find the information of the B5 workers.",
+    "404_MEET_US_DESCRIPTION" :  "It seems we can’t find any information of the B5 workers.",
     "404_MEET_US_SUBTITLE" :  "Even though Francesca is definitely there.",
 
     "_comment": "---------------------- CREDITS ----------------------",
 
     "CREDITS_TITLE" : "Credits",
-    "CREDITS_DESCRIPTION" : "The website was developed in close cooperation with B5 Srl by Sossio Giallaurito and Vincenzo Guida who together form the Beautiful Life Creative Studio. Thanks to Francesca Brancaccio, the B5 team and Andrea Detry for the collaboration. Honorable mention for Giuseppe Esposito for taking some photos for the site, Simone Rositani for lending us the equipment for the photo shoot for the website",
+    "CREDITS_DESCRIPTION" : "The website was developed in close cooperation with B5 Srl by Sossio Giallaurito and Vincenzo Guida who form together the Beautiful Life Creative Studio. Thanks to Francesca Brancaccio, the B5 team and Andrea Detry for the collaboration. Honorable mention for Giuseppe Esposito for taking some photos for the site, Simone Rositani for lending us the equipment for the photo shoot for the website. And last but the least, thanka to Maria Michela Giallaurito and Francesca Marino for the localisation of the website.",
     "DEVELOPMENT_CREDIT_TITLE" :  "Development credits",
     "TECHNOLOGIES_EMPLOYED_SUBTITLE" :  "Technologies",
     "EXTENSION_SUBTITLE" :  "Extensions",
