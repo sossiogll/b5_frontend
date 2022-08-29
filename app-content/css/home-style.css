@@ -50,7 +50,7 @@
     height: 500px;
 }
 
-.seconda-sezione > div{
+.seconda-sezione > .text{
     background-color: var(--b5blu);
 }
 
@@ -90,7 +90,7 @@
         color: var(--b5bianco);
         font-style: normal;
         font-weight: 400;
-        font-size: 23px;
+        font-size: 1.2rem;
         line-height: 30px;
 }
 
@@ -398,7 +398,7 @@ animation-play-state: paused;
 
 /* RESPONSIVE HOME */
 
-@media (max-width: 991px){
+@media (max-width: 1165px){
 
 
 
@@ -435,6 +435,7 @@ animation-play-state: paused;
         background-repeat: no-repeat;
         height: 400px;
         width: 100%;
+        margin-top: 50px;
     }
 
     .disegno2-mobile{
@@ -444,7 +445,7 @@ animation-play-state: paused;
         background-position: top center;
         background-repeat: no-repeat;
         background-color: var(--b5bianco);;
-        height: 350px;
+        height: 472px;
         width: 100%;
     }
 
@@ -480,7 +481,7 @@ animation-play-state: paused;
     .seconda-sezione h2 {
         color: var(--b5bianco);
         font-weight: 600;
-        font-size: 4.6rem;
+        font-size: calc(3vw + 2vh + 2vmin);
         letter-spacing: 0.12em;
         text-transform: uppercase;
     }
@@ -489,7 +490,7 @@ animation-play-state: paused;
         color: var(--b5bianco);
         font-style: normal;
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: calc(0.5vw + 0.5vh + 0.6vmin);
         line-height: 1.5rem;
     }
     
@@ -505,7 +506,7 @@ animation-play-state: paused;
     .terza-sezione h2{
         color: var(--b5bianco);
         font-weight: 600;
-        font-size: 4.6rem;
+        font-size: calc(3vw + 2vh + 2vmin);
         letter-spacing: 0.12em;
         text-transform: uppercase;
     }
@@ -514,7 +515,7 @@ animation-play-state: paused;
             color: var(--b5bianco);
         font-style: normal;
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: calc(0.5vw + 0.5vh + 0.6vmin);
         line-height: 1.5rem;
     }
     
@@ -766,7 +767,7 @@ animation-play-state: paused;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
-        height: 135px;
+        height: 323px;
         width: 100%;
         border-bottom: 2px solid var(--b5blu);
 
@@ -776,10 +777,10 @@ animation-play-state: paused;
 
     .sezione-colosseo{
         background-image: url("../img/home/anfiteatro.png");
-        background-size: cover;
-        background-position: top right;
+        background-size: contain;
+        background-position: top center;
         background-repeat: no-repeat;
-        height: 450px;
+        height: 713px;
         width: 100%;
     }
 
@@ -805,6 +806,40 @@ animation-play-state: paused;
             display: none;
     }
     
+}
+
+@media only screen and (max-width: 992px)  {
+
+    .container-hero .disegno1-mobile{
+        margin-top: 0;
+        background-image: url("../img/home/logo_mobile.png");
+
+    }
+
+    .disegno2-mobile{
+        height: 350px;
+        background-image: url("../img/home/disegno2_mobile.png");
+    }
+
+    .sezione-costruzioni{
+        height: 170px;
+        background-image: url("../img/home/disegno3_mobile.svg");
+
+    }
+
+    .sezione-colosseo{
+        height: 368px;
+        background-image: url("../img/home/anfiteatro_mobile.png");
+
+    }
+
+    .terza-sezione p,.seconda-sezione p {
+        font-size: 1.2rem;
+    }
+
+    .terza-sezione h2, .seconda-sezione h2 {
+        font-size: 4.6rem;
+    }
 }
 
 
@@ -909,9 +944,10 @@ animation-play-state: paused;
 }
 
 .draw_3 {
-    stroke-dasharray: 1606.502197265625;
+    /*stroke-dasharray: 1606.502197265625;
     stroke-dashoffset: 1606.502197265625;
-    animation: draw-3 5s ease-in-out forwards;
+    animation: draw-3 5s ease-in-out forwards;*/
+    max-width: 100%;
 }
 
 @keyframes draw-3 {
@@ -929,7 +965,7 @@ animation-play-state: paused;
 }
 
 .draw_4 {
-
+    max-width: 100%;
     animation: draw-4 7s ease-in-out forwards;
 }
 
@@ -948,7 +984,7 @@ animation-play-state: paused;
 }
 
 .draw_5 {
-
+    max-width: 100%;
     animation: draw-5 5s ease-in-out forwards;
 }
 
