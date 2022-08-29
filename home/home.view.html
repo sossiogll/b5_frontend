@@ -323,7 +323,7 @@
 
             <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
                 <div  class="col-12 col-lg-6 px-0 box-left-lp">
-                    <div ng-repeat="work in vm.workPostsInfos track by $index" class="row mx-0 px-0 button-lista-progetti">
+                    <div ng-repeat="work in vm.workPostsInfos track by $index" id="project_{{$index}}" ng-class="{'highlight_project': $first}" class="row mx-0 px-0 button-lista-progetti">
                         <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 pt-3">
                                 <div class="col px-0 ml-3">
