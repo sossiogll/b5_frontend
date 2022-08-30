@@ -46,7 +46,7 @@
                                         <div class="row mx-0 px-3 px-sm-5">
                                                 <div class="col-12 col-sm-5 col-lg-4 px-0 box-custom-field  animate__animated animate__fadeIn animate__slow">
 
-                                                        <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" class="row mx-0 pb-2">
+                                                        <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" ng-if="value != null && value !== undefinited && value.length > 0" class="row mx-0 pb-2">
 
                                                                 <div class="col-6 col-sm-12 col-lg-6 py-2 text-left d-table info-titolo">
                                                                         <p class="px-auto px-sm-1 pt-1 pt-sm-1 d-table-cell align-middle">{{key | translate}}</p>
