@@ -487,31 +487,31 @@
 
 
 .articolo-lavoro h1 {
-    font-size: 1.525rem;
+    font-size: 2.525rem;
     line-height: 1.975rem;
 }
 
 .articolo-lavoro h2 {
     color: var(--b5blu);
-    font-size: 1.325rem;
+    font-size: 2.325rem;
     line-height: 1.625rem;
 }
 
 .articolo-lavoro h3 {
     color: var(--b5blu);
-    font-size: 1.15rem;
+    font-size: 2.15rem;
     line-height: 1.65rem;
 }
 
 .articolo-lavoro h4 {
     color: var(--b5blu);
-    font-size: 0.953rem;
+    font-size: 1.953rem;
     line-height: 1.175rem;
 }
 
 .articolo-lavoro h5 {
     color: var(--b5blu);
-    font-size: 0.875rem;
+    font-size: 1.875rem;
     line-height: 1.125rem;
 }
 
@@ -524,7 +524,7 @@
 .articolo-lavoro blockquote p {
     color: var(--b5bianco);
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3rem;
 }
 
@@ -536,7 +536,8 @@
 
 .articolo-lavoro ul {
     color: var(--b5blu);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
     margin-left: 5%;
 }
 
@@ -603,6 +604,11 @@
 
 
 @media (min-width: 992px){
+
+    .modal-header h5 {
+    color: var(--b5blu);
+    font-size: 28px;
+}
 
     .bl-modal-lg {
     max-width: 80%;
