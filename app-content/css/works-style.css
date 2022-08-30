@@ -603,12 +603,20 @@
 }
 
 
-@media (min-width: 992px){
+
+@media (max-width: 991px){
 
     .modal-header h5 {
-    color: var(--b5blu);
-    font-size: 28px;
+        color: var(--b5blu);
+        font-size: 28px;
+    }
+
 }
+
+
+@media (min-width: 992px){
+
+
 
     .bl-modal-lg {
     max-width: 80%;
