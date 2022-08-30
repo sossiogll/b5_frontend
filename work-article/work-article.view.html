@@ -13,7 +13,11 @@
                                         </div>
 
                                         <div class="col-11 col-sm-3 px-0 my-auto text-right">
-                                                <a href="#!/works"><span>{{"BACK_BUTTON" | translate}}</span></a>
+                                                <a href="javascript:history.back()">
+                                                        <span>
+                                                                {{"BACK_BUTTON" | translate}}
+                                                        </span>
+                                                </a>
                                         </div>
                                 </div>
 
@@ -40,16 +44,16 @@
                         <div class="content-container row mx-0 sezione-heading-info">
                                 <div class="col-12 px-0 py-4 py-sm-5">
                                         <div class="row mx-0 px-3 px-sm-5">
-                                                <div class="col-12 col-sm-4 px-0 box-custom-field  animate__animated animate__fadeIn animate__slow">
+                                                <div class="col-12 col-sm-5 col-lg-4 px-0 box-custom-field  animate__animated animate__fadeIn animate__slow">
 
                                                         <div ng-repeat="(key, value) in vm.postInfo.custom_fields_values" class="row mx-0 pb-2">
 
-                                                                <div class="col-6 py-2 text-left d-table info-titolo">
+                                                                <div class="col-6 col-sm-12 col-lg-6 py-2 text-left d-table info-titolo">
                                                                         <p class="px-auto px-sm-1 pt-1 pt-sm-1 d-table-cell align-middle">{{key | translate}}</p>
                                                                 </div>
 
 
-                                                                <div class="col-6 py-2 text-left d-table info-descrizione">
+                                                                <div class="col-6 col-sm-12 col-lg-6 py-2 text-left d-table info-descrizione">
                                                                         <p class="px-auto px-sm-1 pt-1 pt-sm-1 d-table-cell align-middle">{{value}}</p>
                                                                 </div>
 
@@ -57,14 +61,13 @@
 
                                                 </div>
 
-                                                <div class="col-12 col-sm-8 px-0 py-4 py-sm-0">
+                                                <div class="col-12 col-sm-7 col-lg-8 px-0 py-4 py-sm-0">
 
                                                         <div class="row mx-0 ml-0 ml-sm-5 d-flex flex-column justify-content-between box-heading-lavori">
                 
                                                                 <div class="row mx-0">
                 
-                                                                        <div class="row mx-0">
-                
+
                                                                         <div class="col-12 px-0 py-3 py-sm-0 text-left text-sm-left titolo animate__animated animate__fadeIn animate__slow">
                                                                                 <h1>{{vm.postInfo.title}}</h1>
                                                                         </div>
@@ -73,21 +76,20 @@
                                                                                 <p>{{vm.postInfo.summary_content}}</p>
                                                                         </div>
                 
-                                                                        </div>
                 
                                                                 </div>
                 
                                                         
                                                                 <div class="row mx-0">
                 
-                                                                <didv ng-if="vm.postInfo.content != null && vm.postInfo.content !== undefinited" class="col-12 px-0 py-3 py-sm-0 text-center text-sm-left">
+                                                                <div ng-if="vm.postInfo.content != null && vm.postInfo.content !== undefinited" class="col-12 px-0 py-3 py-sm-0 text-center text-sm-left">
                 
-                                                                        <a class="btn btn-primary leggi-tutto animate__animated animate__fadeIn animate__slow" data-toggle="modal" data-target="#full-article">
+                                                                        <a class="btn btn-primary gllBlock leggi-tutto animate__animated animate__fadeIn animate__slow" data-toggle="modal" data-target="#full-article">
                                                                                 {{'READ_FULL_ARTICLE_BTN' | translate}}
                                                                         </a>
                 
                                                                         <div id="full-article" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                                                <div class="modal-dialog modal-lg">
+                                                                                <div class="modal-dialog bl-modal-lg">
                                                                                         <div class="modal-content p-0 p-sm-4">
                                                                                                 <div class="modal-header text-left">
                                                                                                         <h5 class="modal-title">
@@ -147,7 +149,7 @@
 
                                 <div class="row mx-0 px-1 px-sm-4 py-0 py-sm-3">
 
-                                        <div class="col-12 col-sm-12 px-0 pb-0">
+                                        <div class="col-12 px-0 pb-0">
 
                                                 <div masonry load-images="true" reload-on-resize class="masonry-container">
                                                         <div class="masonry-brick"
@@ -175,8 +177,7 @@
                                                                                                         class="close"
                                                                                                         data-dismiss="modal"
                                                                                                         aria-label="Close">
-                                                                                                        <span
-                                                                                                                aria-hidden="true">&times;</span>
+                                                                                                        <span aria-hidden="true">&times;</span>
                                                                                                 </button>
 
                                                                                         </div>

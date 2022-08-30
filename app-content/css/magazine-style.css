@@ -491,15 +491,15 @@ color: var(--b5blu);
     
     .sezione-contenuto-articolo p{
         color: var(--b5blu);
-        font-size: 1rem;
-    line-height: 1.3rem;
-    padding-top: 0.5rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
     }
     
     .sezione-contenuto-articolo ul{
         color: var(--b5blu);
         font-size: 0.9rem;
-    margin-left: 5%;
+        margin-left: 5%;
     }
     
     .sezione-contenuto-articolo ol{
@@ -511,8 +511,9 @@ color: var(--b5blu);
     .sezione-contenuto-articolo a{
         color: var(--b5rosso);
         font-weight: 500;
-    font-size: 1.2rem;
-    text-decoration: underline;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-decoration: underline;
     }
     
     .sezione-contenuto-articolo img{
@@ -520,6 +521,8 @@ color: var(--b5blu);
     
     }
 }
+
+
 
 
 

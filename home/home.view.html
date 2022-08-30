@@ -74,7 +74,7 @@
         <div class="col-12 col-lg-4 px-0 text">
             <div class="row mx-0">
                 <div class="col-12 px-0">
-                    <h2 class="gllText pl-3 pl-lg-5 pt-5">
+                    <h2 class="gllText px-3 px-sm-5 pt-3">
 
                         {{'FIRST_PARAGRAPH_TITLE' | translate}}
 
@@ -83,7 +83,7 @@
             </div>
 
             <div class="row py-3 mx-0">
-                <p class="gllText px-3 px-lg-5">
+                <p class="gllText px-3 px-sm-5">
 
                     {{'FIRST_PARAGRAPH' | translate}}
 
@@ -226,7 +226,7 @@
     <!-- Contenitore button -->
     <div class="content-container row mx-0">
         <div class="col-12 px-0 pt-0 pb-5">
-            <a href="#!/works/{{colosseoArticleSlug}}" rel="noopener noreferrer" target="_blank">
+            <a href="#!/works/{{colosseoArticleSlug}}">
                 <div class="row mx-0 marquee">
                   <div class="col-12 py-2 px-0">
                       <div class="track">
@@ -327,7 +327,7 @@
                         <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 pt-3">
                                 <div class="col px-0 ml-3">
-                                    <a href='#!/works/{{work.slug}}' class="titolo-progetto-lista">{{work.title}}</a>
+                                    <h3 class="titolo-progetto-lista">{{work.title}}</h3>
                                 </div>
                             </div>
                             <div class="row mx-0">
@@ -368,7 +368,7 @@
         <div class="col-12 px-0">
             <div class="row mx-0">
                 <div class="col-12 px-0 py-3">
-                    <a href="#!/works" rel="noopener noreferrer" target="_blank">
+                    <a href="#!/works">
                         <div class="row mx-0 marquee">
                           <div class="col-12 py-2 px-0">
                               <div class="track">
@@ -413,7 +413,7 @@
                 </div>
 
                 <div class="row mx-0 pl-3 pl-sm-5 pb-5 pt-3 pt-sm-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
-                    <div  ng-repeat="work in vm.magazinePostsInfos track by $index"  class="col-9 col-lg-3 col-sm-4 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
+                    <div  ng-repeat="work in vm.magazinePostsInfos track by $index"  class="col-9 col-lg-3 col-sm-5 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
                         <div class="row mx-0 ">
                             <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>
@@ -446,7 +446,7 @@
 
                         <div class="row mx-0">
                             <div class="col-12 px-0 pt-0 pt-sm-3 marquee-container">
-                                <a href="#!/magazine/{{work.slug}}" rel="noopener noreferrer" target="_blank">
+                                <a href="#!/magazine/{{work.slug}}">
                                     <div class="row mx-0 marquee-blu marquee-card-articolo">
                                         <div class="col-12 py-2 px-0">
                                             <div class="track-blu">

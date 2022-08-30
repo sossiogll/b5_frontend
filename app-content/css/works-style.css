@@ -229,7 +229,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 30vw;
+    height: 35vw;
 }
 
 .sezione-heading span {
@@ -294,9 +294,7 @@
 }
 
 .box-custom-field .info-descrizione {
-    border-top: 2px solid var(--b5blu);
-    border-bottom: 2px solid var(--b5blu);
-    border-right: 2px solid var(--b5blu);
+    border: 2px solid var(--b5blu);
 }
 
 .box-custom-field .info-descrizione p {
@@ -326,8 +324,8 @@
 .box-heading-lavori .descrizone p {
     font-style: normal;
     font-weight: 300;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
     color: var(--b5blu);
 }
 
@@ -348,6 +346,20 @@
 }
 
 /* RESPONSIVE PAGINA ARTICOLO SINGOLO */
+
+
+@media (max-width: 992px) {
+
+    /* MASONRY MOBILE*/
+
+    .masonry-brick {
+        float: left;
+        height: fit-content;
+        width: 50%;
+    }
+
+}
+
 
 @media (max-width: 575px) {
 
@@ -517,8 +529,8 @@
 }
 
 .articolo-lavoro p {
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
     padding-top: 0.5rem;
 }
 
@@ -538,6 +550,7 @@
     color: var(--b5rosso);
     font-weight: 500;
     font-size: 1.2rem;
+    line-height: 2.25rem;;
     text-decoration: underline;
 }
 
@@ -546,12 +559,14 @@
     border-radius: 0px;
     border: 2px solid var(--b5rosso);
     color: var(--b5rosso);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding: .575rem 1rem;
 }
 
 .modal-header h5 {
     color: var(--b5blu);
+    font-size: 40px;
 }
 
 .modal-content {
@@ -584,4 +599,13 @@
     font-size: 20px;
     text-decoration-line: underline;
     color: var(--b5blu);
+}
+
+
+@media (min-width: 992px){
+
+    .bl-modal-lg {
+    max-width: 80%;
+    }
+
 }

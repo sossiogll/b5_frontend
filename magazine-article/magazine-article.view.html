@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="col-11 col-sm-3 px-0 text-right">
-                    <a href="#!/magazine">
+                    <a href="javascript:history.back()">
                         <span>
                             {{'BACK_BUTTON' | translate}}
                         </span>
@@ -29,7 +29,7 @@
         <div class="content-container row mx-0 sezione-articolo-magazine">
             <div class="col-12 px-0 py-3 py-sm-4">
                 <div class="row mx-0 px-3 px-sm-5">
-                    <div class="col-12 col-sm-4 px-0 box-left">
+                    <div class="col-12 col-md-4 px-0 box-left">
 
                         <div class="row mx-0 pb-1 m-3 m-sm-4">
                             <div class="col-12 px-0 img-fluid img" style="background-image: url('{{vm.postInfo.thumbnail_url}}');">
@@ -39,7 +39,7 @@
                         <div class="row mx-0 py-1 py-sm-2 px-3 px-sm-4">
                             <div class="col-12 px-0 text-left d-table">
                                 <div class="row mx-0">
-                                    <p class="titolo">{{vm.postInfo.title}}</p>
+                                    <p class="titolo gllText">{{vm.postInfo.title}}</p>
                                 </div>
                             
 
@@ -63,13 +63,13 @@
                                 </div>
 
                                 <div class="row mx-0 py-0 py-sm-0 justify-content-around">
-                                    <div class="col-6 px-0">
+                                    <div class="col-12 col-lg-6 px-0">
                                         <a href="">
                                             <p class="link">facebook</p>
                                         </a>
                                     </div>
 
-                                    <div class="col-6 px-0">
+                                    <div class="col-12 col-lg-6 px-0">
                                         <a href="">
                                             <p class="link">linkedin</p>
                                         </a>
@@ -91,7 +91,7 @@
 
 
 
-                    <div class="col-12 col-sm-8 px-0 pt-5 pt-sm-0 pb-5 pb-sm-0 pl-0 pl-sm-3 box-right">
+                    <div class="col-12 col-md-8 px-0 pt-5 pt-sm-0 pb-5 pb-sm-0 pl-0 pl-sm-3 box-right">
 
                         <div class="row mx-0 box-right-border">
                             <div class="col-12 px-0">
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="row mx-0 p-4 sezione-contenuto-articolo">
                             
-                                        <div ng-bind-html="postContent" class="col-12 px-0"></div>
+                                        <div ng-bind-html="postContent" class="col-12 px-0 gllText"></div>
                                     
                                 </div>
                             </div>
@@ -128,10 +128,10 @@
     <!-- 404 meet us -->
     <div ng-if="isFailed()" class="row mx-0 error-content pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
         <div class="col px-0 pt-3 pt-sm-4 ml-3 ml-sm-5">
-            <h1>{{'404_MAGAZINE_ARTICLE_TITLE' | translate}}</h1>
-            <h3>{{'404_MAGAZINE_ARTICLE_DESCRIPTION' | translate}}</h3>
+            <h1 class="gllText">{{'404_MAGAZINE_ARTICLE_TITLE' | translate}}</h1>
+            <h3 class="gllText">{{'404_MAGAZINE_ARTICLE_DESCRIPTION' | translate}}</h3>
             <hr class="my-4">
-            <p>{{'404_MAGAZINE_ARTICLE_SUBTITLE' | translate}}</p>
+            <p  class="gllText">{{'404_MAGAZINE_ARTICLE_SUBTITLE' | translate}}</p>
         </div>
     </div>
 </div>
