@@ -450,7 +450,7 @@ animation-play-state: paused;
     }
 
     
-     .hero  h3 {
+     .hero h3 {
         color: var(--b5blu);
         font-weight: 400;
         font-size: 1.6rem;
@@ -628,25 +628,18 @@ animation-play-state: paused;
     .categoria-progetto-lista-box{
         background-color: var(--b5bianco);
         border-top: 2px solid var(--b5blu);
-      
-    
     }
-    
-    .articoloshow-progetti{
-        display: none;
-    
-    }
-    
+
+
     /* SEZIONE MAGAZINE*/
     
     .sezione-magazine h2{
         color: var(--b5blu);
-    font-weight: 600;
-    font-size: 2.7rem;
-    line-height: 3rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    
+        font-weight: 600;
+        font-size: 2.7rem;
+        line-height: 3rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
     }
 
     .row-scorrevole-mag{
@@ -677,11 +670,11 @@ animation-play-state: paused;
       }
     
       .content{
-        font-family: 'Jost';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.4rem;
-      color: var(--b5blu);
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.4rem;
+          color: var(--b5blu);
       }
       
       @keyframes marquee {
@@ -690,10 +683,9 @@ animation-play-state: paused;
       }
     
       .marquee:hover .track{
-    
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
       }
     
       .marquee:hover {
@@ -728,11 +720,11 @@ animation-play-state: paused;
       }
     
       .content-blu{
-        font-family: 'Jost';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.8rem;
-      color: var(--b5bianco);
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.8rem;
+          color: var(--b5bianco);
       }
       
       @keyframes marquee-blu {
@@ -840,6 +832,11 @@ animation-play-state: paused;
     .terza-sezione h2, .seconda-sezione h2 {
         font-size: 4.6rem;
     }
+
+    .articoloshow-progetti{
+        display: none;
+    }
+
 }
 
 

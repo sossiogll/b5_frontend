@@ -24,6 +24,10 @@
 
         function initController() {
 
+            if(window.matchMedia("(pointer: coarse)").matches) {
+                $('#gllCursor').css("display: none");
+            }
+
         }
 
     }

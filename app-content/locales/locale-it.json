@@ -8,6 +8,7 @@
 
     "_comment": "---------------------- HOME ----------------------",
 
+    "HOME_TITLE" : "Home",
     "QUOTE" : "Talvolta l'architettura cerca il silenzio e il vuoto in cui la nostra coscienza si possa ritrovare.",
     "AUTHOR_QUOTE" : "Renzo Piano",
     "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
@@ -62,6 +63,16 @@
     "EXTENSION_SUBTITLE" :  "Estensioni",
     "BACKEND_SUPPORT_SUBTITLE" :  "Supporto backend",
     "FONTS_SUBTITLE" :  "Fonts",
+
+    "_comment": "---------------------- PRIVACY POLICY ----------------------",
+
+    "PRIVACY_POLICY_TITLE" : "Privacy Policy",
+    "PRIVACY_POLICY_DESCRIPTION" : "",
+
+    "_comment": "---------------------- COOKIE POLICY ----------------------",
+
+    "COOKIE_POLICY_TITLE" : "Cookie Policy",
+    "COOKIE_POLICY_DESCRIPTION" : "",
 
     "_comment": "---------------------- FOOTER ----------------------",
 

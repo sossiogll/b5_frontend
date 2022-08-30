@@ -5,8 +5,8 @@
         .module('app')
         .controller('MagazineController', MagazineController);
 
-    MagazineController.$inject = ['$scope', 'CategoryService', 'FlashService', '$translate', 'Categories', 'Status'];
-    function MagazineController($scope, CategoryService, FlashService, $translate, Categories, Status) {
+    MagazineController.$inject = ['$scope', '$rootScope', 'CategoryService', 'FlashService', '$translate', 'Categories', 'Status'];
+    function MagazineController($scope, $rootScope, CategoryService, FlashService, $translate, Categories, Status) {
 
         //Init pointer to controller for inner functions
         var vm = this;
@@ -26,9 +26,9 @@
         initController();
 
 
-        //Implementig functions
+        //Implementing functions
         function initController() {
-
+            updateMetaInformation();
             getCategoriesInfo();
 
         };
@@ -86,6 +86,16 @@
             });
 
         };
+
+        function updateMetaInformation(){
+            $translate('MAGAZINE_TITLE').then(function (pageTitle) {
+                $rootScope.meta.title=pageTitle;
+            });
+
+            $translate('MAGAZINE_DESCRIPTION').then(function (pageDescrition) {
+                $rootScope.meta.description=pageDescrition;
+            });
+        }
 
         function isFailed(){
             return (vm.categoriesInfos == null || vm.categoriesInfos === undefined || vm.categoriesInfos.length == 0 || vm.status == Status.FAILED)

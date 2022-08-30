@@ -5,8 +5,8 @@
         .module('app')
         .controller('MeetUsController', MeetUsController);
 
-    MeetUsController.$inject = ['$scope','UserService', 'FlashService', 'Status', '$translate'];
-    function MeetUsController($scope, UserService, FlashService, Status, $translate) {
+    MeetUsController.$inject = ['$scope', '$rootScope', 'UserService', 'FlashService', 'Status', '$translate'];
+    function MeetUsController($scope, $rootScope, UserService, FlashService, Status, $translate) {
         
         //Init pointer to controller for inner functions
         var vm = this;
@@ -25,6 +25,7 @@
         initController();
 
         function initController() {
+            updateMetaInformation();
             loadAllProfile();
         }
 
@@ -77,6 +78,16 @@
                     vm.status = Status.FAILED;
 
                 });
+        }
+
+        function updateMetaInformation(){
+            $translate('MEET_US_TITLE').then(function (pageTitle) {
+                $rootScope.meta.title=pageTitle;
+            });
+
+            $translate('MEET_US_DESCRIPTION').then(function (pageDescrition) {
+                $rootScope.meta.description=pageDescrition;
+            });
         }
 
         

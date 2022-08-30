@@ -5,8 +5,8 @@
         .module('app')
         .controller('WorksController', WorksController);
 
-    WorksController.$inject = ['$scope', 'CategoryService', 'FlashService', '$translate', 'Categories', 'Status'];
-    function WorksController($scope, CategoryService, FlashService, $translate, Categories, Status) {
+    WorksController.$inject = ['$scope', '$rootScope', 'CategoryService', 'FlashService', '$translate', 'Categories', 'Status'];
+    function WorksController($scope, $rootScope, CategoryService, FlashService, $translate, Categories, Status) {
 
         //Init pointer to controller for inner functions
         var vm = this;
@@ -29,6 +29,7 @@
 
         function initController() {
 
+            updateMetaInformation();
             getCategoriesInfo();
 
         };
@@ -96,6 +97,16 @@
             });
 
         };
+
+        function updateMetaInformation(){
+            $translate('WORKS_TITLE').then(function (pageTitle) {
+                $rootScope.meta.title=pageTitle;
+            });
+
+            $translate('WORKS_DESCRIPTION').then(function (pageDescrition) {
+                $rootScope.meta.description=pageDescrition;
+            });
+        }
 
         function isFailed(){
             return (vm.worksInfos == null || vm.worksInfos === undefined || vm.worksInfos.length == 0 || vm.status == Status.FAILED)

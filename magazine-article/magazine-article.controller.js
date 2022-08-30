@@ -25,6 +25,7 @@
         initController();
 
         function initController() {
+            updateMetaInformation();
             getPostInfo();
         }
 
@@ -52,8 +53,10 @@
                             vm.postInfo = res.data.data;
                             $scope.postContent = vm.postInfo.content;
                             vm.status = Status.IDLE;
+
                         }
 
+                        updateMetaInformation();
 
                     },
                 
@@ -66,6 +69,8 @@
 
                         vm.status = Status.FAILED;
 
+                        updateMetaInformation();
+
 
                     })
 
@@ -75,9 +80,31 @@
 
                 FlashService.Error(error);
                 vm.status = Status.FAILED;
+                updateMetaInformation();
                 return;
 
             }
+
+        }
+
+        function updateMetaInformation(){
+
+            if (isIdle()) {
+                $translate('WORKS_TITLE').then(function (pageTitle) {
+                    $rootScope.meta.title = vm.postInfo.title;
+                });
+
+                $translate('WORKS_DESCRIPTION').then(function (pageDescrition) {
+                    $rootScope.meta.description = vm.postInfo.summary_content;
+                });
+            }
+
+            else if (isFailed()){
+                $translate('ERROR_404').then(function (errorMessage) {
+                    $rootScope.meta.title = errorMessage;
+                });
+            }
+
         }
 
         function isFailed(){

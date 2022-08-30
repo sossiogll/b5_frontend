@@ -5,8 +5,8 @@
         .module('app')
         .controller('WorkArticleController', WorkArticleController);
 
-    WorkArticleController.$inject = ['$scope', '$routeParams', 'PostService', 'FlashService', 'Status', '$translate'];
-    function WorkArticleController($scope, $routeParams, PostService, FlashService, Status, $translate) {
+    WorkArticleController.$inject = ['$scope', '$rootScope' ,'$routeParams', 'PostService', 'FlashService', 'Status', '$translate'];
+    function WorkArticleController($scope, $rootScope, $routeParams, PostService, FlashService, Status, $translate) {
         
         //Init pointer to controller for inner functions
         var vm = this;
@@ -54,10 +54,13 @@
 
                         }
 
+                        updateMetaInformation();
+
                     }catch (error) {
 
                         FlashService.Error(error);
                         vm.status = Status.FAILED;
+                        updateMetaInformation();
                         return;
 
                     }
@@ -69,8 +72,30 @@
                     $translate('ERROR_400').then(function (errorMessage) {
                         FlashService.Error(errorMessage);
                       });
+                    vm.status = Status.FAILED;
+                    updateMetaInformation();
 
                 })
+
+        }
+
+        function updateMetaInformation(){
+
+            if (isIdle()) {
+                $translate('WORKS_TITLE').then(function (pageTitle) {
+                    $rootScope.meta.title = vm.postInfo.title;
+                });
+
+                $translate('WORKS_DESCRIPTION').then(function (pageDescrition) {
+                    $rootScope.meta.description = vm.postInfo.summary_content;
+                });
+            }
+
+            else if (isFailed()){
+                $translate('ERROR_404').then(function (errorMessage) {
+                    $rootScope.meta.title = errorMessage;
+                });
+            }
 
         }
 

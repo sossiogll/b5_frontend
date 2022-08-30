@@ -507,3 +507,28 @@ color: var(--b5blu);
 }
 
 
+@media (max-width: 1165px) {
+
+  .gllText,
+  .gllBlock,
+  .gllText > *,
+  .gllBlock > *,
+  .gllText:hover,
+  .gllBlock:hover,
+  button,
+  a
+  {
+    cursor:auto!important;
+  }
+
+  body {
+    cursor: pointer;
+  }
+
+  #gllCursor {
+    display: none;
+  }
+
+}
+
+

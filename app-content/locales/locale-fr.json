@@ -8,6 +8,7 @@
 
     "_comment": "---------------------- HOME ----------------------",
 
+    "HOME_TITLE" : "Page d'accueil",
     "QUOTE" : "Parfois, l'architecture recherche le silence et le vide dans lesquels notre conscience peut se retrouver",
     "AUTHOR_QUOTE" : "Renzo Piano",
     "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
@@ -62,6 +63,16 @@
     "EXTENSION_SUBTITLE" :  "Extensions",
     "BACKEND_SUPPORT_SUBTITLE" :  "Soutien backend",
     "FONTS_SUBTITLE" :  "Polices",
+
+    "_comment": "---------------------- PRIVACY POLICY ----------------------",
+
+    "PRIVACY_POLICY_TITLE" : "Politique de confidentialité",
+    "PRIVACY_POLICY_DESCRIPTION" : "",
+
+    "_comment": "---------------------- COOKIE POLICY ----------------------",
+
+    "COOKIE_POLICY_TITLE" : "Politique Cookie",
+    "COOKIE_POLICY_DESCRIPTION" : "",
 
     "_comment": "---------------------- FOOTER ----------------------",
 

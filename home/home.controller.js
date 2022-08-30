@@ -5,8 +5,8 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService', '$translate'];
-    function HomeController($scope, HomeSettings, PostService, FlashService, Categories, CategoryService, $translate) {
+    HomeController.$inject = ['$scope', '$rootScope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService', '$translate'];
+    function HomeController($scope, $rootScope, HomeSettings, PostService, FlashService, Categories, CategoryService, $translate) {
         var vm = this;
         vm.workPostsInfos = [];
         vm.magazinePostsInfos = [];
@@ -26,6 +26,7 @@
         /*************Implementig functions*************/
 
         function initController() {
+            updateMetaInformation();
             drawSVGOnViewEnter("draw-container-2", "draw_2", "draw_2");
             drawSVGOnScroll("draw-container-3", "draw_3");
             drawSVGOnViewEnter("draw-container-4", "draw_4", "draw_4");
@@ -229,15 +230,23 @@
             $('#project_'+article).addClass("highlight_project")
         };
 
+        function updateMetaInformation(){
+            $translate('HOME_TITLE').then(function (pageTitle) {
+                $rootScope.meta.title=pageTitle;
+            });
+
+            $translate('FIRST_PARAGRAPH').then(function (pageDescrition) {
+                $rootScope.meta.description=pageDescrition;
+            });
+        };
+
         function areWorksInit(){
-
             return (vm.workPostsInfos != null && vm.workPostsInfos !== undefined && vm.workPostsInfos.length>0)
-
-        }
+        };
 
         function areMagazineInit(){
             return (vm.magazinePostsInfos != null && vm.magazinePostsInfos !== undefined && vm.magazinePostsInfos.length>0)
-        }
+        };
 
 
     }

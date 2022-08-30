@@ -83,6 +83,7 @@
 
         // keep user logged in after page refresh
         $rootScope.lang = Settings.DEFAULT_LANG;
+        $rootScope.meta = [];
     }
 
 
