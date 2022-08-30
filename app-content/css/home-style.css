@@ -131,7 +131,7 @@
 }
 
 
-.button-lista-progetti:hover{
+.highlight_project{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -139,25 +139,25 @@
     background-color: var(--b5blu);
 }
 
-.button-lista-progetti:hover .titolo-progetto-lista{
+.highlight_project .titolo-progetto-lista{
     color: var(--b5bianco);
 }  
 
-.button-lista-progetti:hover .tipologie-progetto-lista-box{
+.highlight_project .tipologie-progetto-lista-box{
     border-top: 2px solid var(--b5blu);
     border-right: 2px solid var(--b5blu);
     background-color: var(--b5bianco);
 }
 
-.button-lista-progetti:hover .tipologie-progetto-lista-box > h3{
+.highlight_project .tipologie-progetto-lista-box > h3{
     color: var(--b5blu);
 }
 
-.button-lista-progetti:hover .luogo-progetto-lista{
+.highlight_project .luogo-progetto-lista{
     color: var(--b5bianco);
 }  
 
-.button-lista-progetti:hover .tipologie-progetto-lista-box{
+.highlight_project .tipologie-progetto-lista-box{
     background-color: var(--b5bianco);
 }
 

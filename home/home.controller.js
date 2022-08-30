@@ -224,7 +224,9 @@
         };
 
         function selectProject(article){
+            $('#project_'+$scope.selectedArticle).removeClass("highlight_project")
             $scope.selectedArticle = article;
+            $('#project_'+article).addClass("highlight_project")
         };
 
         function areWorksInit(){
