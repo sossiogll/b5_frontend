@@ -692,11 +692,12 @@
  .card-progetto.ng-move,
  .card-progetto.ng-enter {
    max-width: 0;
-
+   opacity: 0;
  }
  
  .card-progetto.ng-leave,
  .card-progetto.ng-move.ng-move-active,
  .card-progetto.ng-enter.ng-enter-active {
    max-width: 100%;
+   opacity: 1;
  }
