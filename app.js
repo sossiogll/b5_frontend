@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate', 'gllCursor', 'ngSanitize', 'wu.masonry'])
+        .module('app', ['ngRoute', 'ngCookies', 'vcRecaptcha', 'pascalprecht.translate', 'gllCursor', 'ngSanitize', 'wu.masonry', 'ngAnimate'])
         .config(config)
         .run(run);
 

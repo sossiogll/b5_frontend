@@ -2,6 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
     "angular": "^1.8.3",
+    "angular-animate": "^1.8.3",
     "angular-cookies": "^1.8.3",
     "angular-masonry": "^0.17.0",
     "angular-recaptcha": "^4.2.0",

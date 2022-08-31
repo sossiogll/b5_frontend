@@ -25,7 +25,22 @@
                 </div>
             </div>
 
+            <!-- BARRA DI RICERCA -->
+
+            <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-0">
+
+                <div class="main-search-input-wrap col-12 px-0">     
+                    <div class="main-search-input fl-wrap">    
+                        <div class="main-search-input-item">                                                        
+                            <input type="text" value="" ng-model="vm.filters['title']" placeholder="{{ 'SEARCH_BAR_PLACEHOLDER' | translate }}">
+                        </div>
+                                                        
+                    </div>
+                </div>
+            </div>
+
             <!-- LISTA CATEGORIE -->
+            
 
             <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-0 sezione-lista-categorie">
                 <div class="col-12 px-0">
@@ -46,12 +61,11 @@
                 </div>
 
             </div>
-            
-
+          
 
             <div ng-if="isIdle()" class="row mx-0 py-5 px-3 px-sm-5 container-card-progetto">
                 
-                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters" class="col-6 col-sm-3 px-0 pt-3 card-progetto">
+                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-6 col-sm-3 px-0 pt-3 card-progetto">
                         <a href="#!/works/{{work.slug}}">
                         <div class="row mx-0 pr-2 pr-sm-3">
                             <div class="col-12 px-0 pt-3 mr-3 card-progetto-img" style="background-image: url('{{work.thumbnail_url}}');">
@@ -82,7 +96,6 @@
                         
                         </div>
                
-                
                     </a>
                     
                 </div>

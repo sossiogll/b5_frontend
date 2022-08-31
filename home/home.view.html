@@ -413,7 +413,7 @@
                 </div>
 
                 <div class="row mx-0 pl-3 pl-sm-5 pb-5 pt-3 pt-sm-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
-                    <div  ng-repeat="work in vm.magazinePostsInfos track by $index"  class="col-9 col-lg-3 col-sm-5 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
+                    <div  ng-repeat="work in vm.magazinePostsInfos | orderBy:'-posted_at'"  class="col-9 col-lg-3 col-sm-5 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
                         <div class="row mx-0 ">
                             <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>

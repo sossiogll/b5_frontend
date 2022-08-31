@@ -38,6 +38,7 @@
     "WORKS_TITLE" : "Nos travaux",
     "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
     "ALL_CATEGORIES_BTN" : "Toutes les catégories",
+    "SEARCH_BAR_PLACEHOLDER" : "Recherche parmi les noms des projets...",
     "CLOSE_BTN" : "Fermer",
     "404_WORKS_TITLE" :  "OOPS!",
     "404_WORKS_DESCRIPTION" :  "On dirait qu’on ne peut pas trouver d'informations sur les travaux de B5.",

@@ -15,6 +15,7 @@
         vm.worksCategoryInfos = [];
         vm.worksInfos = [];
         vm.filters = [];
+        vm.filters['category_slug'] = "";
         vm.status = Status.INIT;
 
         //Scope functions
