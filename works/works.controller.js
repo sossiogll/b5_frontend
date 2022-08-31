@@ -93,7 +93,10 @@
 
                         vm.status = Status.FAILED;
 
-                    })
+                    },
+                    
+                    //limit
+                    1000)
 
             });
 

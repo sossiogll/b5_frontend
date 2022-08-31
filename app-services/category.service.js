@@ -20,12 +20,12 @@
         return service;
 
 
-        function Index(goodCallback, badCallback) {
-            $http.get(apiURL+"/categories").then(goodCallback, badCallback);
+        function Index(goodCallback, badCallback, limit=20) {
+            $http.get(apiURL+"/categories?limit="+limit).then(goodCallback, badCallback);
         }
 
-        function Category(categorySlug, goodCallback, badCallback){
-            $http.get(apiURL+"/categories/"+categorySlug).then(goodCallback, badCallback);
+        function Category(categorySlug, goodCallback, badCallback, limit=20){
+            $http.get(apiURL+"/categories/"+categorySlug+"?limit="+limit).then(goodCallback, badCallback);
         }
 
     }

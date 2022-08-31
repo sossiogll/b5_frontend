@@ -19,8 +19,8 @@
         return service;
 
 
-        function Index(goodCallback, badCallback) {
-            $http.get(apiURL+"/posts").then(goodCallback, badCallback);
+        function Index(goodCallback, badCallback, limit = 20) {
+            $http.get(apiURL+"/posts?limit="+limit).then(goodCallback, badCallback);
         }
 
         function Post(postSlug, goodCallback, badCallback){
