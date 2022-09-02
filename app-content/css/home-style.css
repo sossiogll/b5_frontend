@@ -217,7 +217,7 @@
     border-right: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
     color: var(--b5blu);
-    height: 650px;
+    height: 671.5px;
     overflow-y: scroll;
 
 }
@@ -918,7 +918,7 @@ animation-play-state: paused;
 
 .edo-sch{
     top: 0%;
-    left: 0 %;
+    left: 0%;
 }
 
 .gia-mas{
@@ -940,14 +940,6 @@ animation-play-state: paused;
     top: 30%;
     left: 23%;
 }
-
-
-
-
-
-
-
-
 /* DRAWS */
 
 .svg-container{
