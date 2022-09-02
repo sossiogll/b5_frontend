@@ -156,7 +156,6 @@
     
                                 vm.workPostsInfos.push(res.data.data);
 
-        
                             }
     
                         }catch (error) {

@@ -216,6 +216,9 @@
     border-top: 2px solid var(--b5blu);
     border-right: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
+    color: var(--b5blu);
+    height: 650px;
+    overflow-y: scroll;
 
 }
 
