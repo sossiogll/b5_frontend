@@ -317,33 +317,37 @@ color: var(--b5blu);
 .sezione-contenuto-articolo blockquote p{
     color: var(--b5bianco);
     font-style: italic;
-    font-size: 1.2rem;
+     font-size: 1.3368rem;
+    line-height: 1.86rem;
     line-height: 0px;
 }
 
 .sezione-contenuto-articolo p{
     color: var(--b5blu);
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.3368rem;
+    line-height: 1.86rem;
     padding-top: 0.5rem;
 }
 
 .sezione-contenuto-articolo ul{
     color: var(--b5blu);
-    font-size: 1rem;
+    font-size: 1.3368rem;
+    line-height: 1.86rem;
     margin-left: 2%;
 }
 
 .sezione-contenuto-articolo ol{
     color: var(--b5blu);
-    font-size: 1rem;
+    font-size: 1.3368rem;
+    line-height: 1.86rem;
     margin-left: 3%;
 }
 
 .sezione-contenuto-articolo a{
     color: var(--b5rosso);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.3368rem;
+    line-height: 1.86rem;
     text-decoration: underline;
 }
 
@@ -491,28 +495,30 @@ color: var(--b5blu);
     
     .sezione-contenuto-articolo p{
         color: var(--b5blu);
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.146rem;
+        line-height: 1.634rem;
         padding-top: 0.5rem;
     }
     
     .sezione-contenuto-articolo ul{
         color: var(--b5blu);
-        font-size: 0.9rem;
+        font-size: 1.146rem;
+        line-height: 1.634rem;
         margin-left: 5%;
     }
     
     .sezione-contenuto-articolo ol{
         color: var(--b5blu);
-        font-size: 0.9rem;
+        font-size: 1.146rem;
+        line-height: 1.634rem;
         margin-left: 3%;
     }
     
     .sezione-contenuto-articolo a{
         color: var(--b5rosso);
         font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.146rem;
+        line-height: 1.634rem;
         text-decoration: underline;
     }
     
@@ -521,11 +527,4 @@ color: var(--b5blu);
     
     }
 }
-
-
-
-
-
-
-
 

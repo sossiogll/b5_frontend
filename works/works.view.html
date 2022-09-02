@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="row mx-0 ml-3 ml-sm-5">
+            <div class="row mx-0 ml-3 ml-sm-5 mr-3 mr-sm-0">
                 <div class="col-12 col-sm-9 px-0 text-left animate__animated animate__fadeIn animate__slow">
                     <p class="gllText">
 
@@ -27,7 +27,7 @@
 
             <!-- BARRA DI RICERCA -->
 
-            <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-0">
+            <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-3">
 
                 <div class="main-search-input-wrap col-12 px-0">     
                     <div class="main-search-input fl-wrap">    
@@ -62,10 +62,9 @@
 
             </div>
           
-
             <div ng-if="isIdle()" class="row mx-0 py-5 px-3 px-sm-5 container-card-progetto">
                 
-                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-6 col-sm-3 px-0 pt-3 card-progetto">
+                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-8 col-sm-3 px-0 pt-3 card-progetto">
                         <a href="#!/works/{{work.slug}}">
                         <div class="row mx-0 pr-2 pr-sm-3">
                             <div class="col-12 px-0 pt-3 mr-3 card-progetto-img" style="background-image: url('{{work.thumbnail_url}}');">

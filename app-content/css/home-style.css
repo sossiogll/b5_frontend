@@ -101,7 +101,7 @@
     color: var(--b5blu);
     font-style: normal;
     font-weight: 600;
-    font-size: 95px;
+    font-size: 5.6rem;
     line-height: 156px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -163,8 +163,8 @@
 
 .titolo-progetto-lista {
     font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 1.7rem;
     text-transform: uppercase;
     color: var(--b5blu);
 }
@@ -224,7 +224,7 @@
 .sezione-magazine h2{
     color: var(--b5blu);
 font-weight: 600;
-font-size: 135px;
+font-size: 5.6rem;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 
@@ -366,8 +366,8 @@ animation-play-state: paused;
     color: var(--b5bianco);
     font-style: normal;
     font-weight: 600;
-    font-size: 5.2rem;
-    letter-spacing: 0.4em;
+    font-size: 5.6rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
@@ -378,7 +378,7 @@ animation-play-state: paused;
 
 #foto-gruppo{
 
-    background-image: url(../img/home/find-us-foto-test.jpg);
+    background-image: url(../img/home/b5_chi_siamo_home.jpg);
     aspect-ratio: 16/9;
     background-size: cover;
     background-position: top center;
@@ -453,16 +453,16 @@ animation-play-state: paused;
      .hero h3 {
         color: var(--b5blu);
         font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        letter-spacing: 0em;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+     
     }
     
     .hero h4 {
         color: var(--b5blu);
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.2rem;
     
     }
     
@@ -636,9 +636,8 @@ animation-play-state: paused;
     .sezione-magazine h2{
         color: var(--b5blu);
         font-weight: 600;
-        font-size: 2.7rem;
-        line-height: 3rem;
-        letter-spacing: 0.1em;
+        font-size: 5.6rem;
+        letter-spacing: 0.2;
         text-transform: uppercase;
     }
 
@@ -883,6 +882,65 @@ animation-play-state: paused;
     top: 45%;
     left: 40%;
 }
+
+.giu-dan{
+    top: 40%;
+    left: 80%;
+}
+
+.dav-pon{
+    top: 18%;
+    left: 38%;
+}
+
+.fab-min{
+    top: 0;
+    left: 0%;
+}
+
+.ang-lat{
+    top: 50%;
+    left: 60%;
+}
+
+.ste-gua{
+    top: 48%;
+    left: 68%;
+}
+
+.ale-fus{
+    top: 55%;
+    left: 53%;
+}
+
+.edo-sch{
+    top: 0%;
+    left: 0 %;
+}
+
+.gia-mas{
+    top: 46%;
+    left: 75%;
+}
+
+.chi-val{
+    top: 42%;
+    left: 10%;
+}
+
+.mar-lil{
+    top: 35%;
+    left: 18%;
+}
+
+.sil-con{
+    top: 30%;
+    left: 23%;
+}
+
+
+
+
 
 
 

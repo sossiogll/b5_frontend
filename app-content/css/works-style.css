@@ -33,9 +33,9 @@
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--b5blu);
+    color: var(--b5rosso);
     float: left;
-    border: 2px solid var(--b5blu);
+    border: 2px solid var(--b5rosso);
     font-size: 13px;
     position: relative;
 
@@ -43,7 +43,7 @@
 
 .sezione-lista-categorie input[type="radio"]:checked+label {
     color: var(--b5bianco);
-    background-color: var(--b5blu);
+    background-color: var(--b5rosso);
 }
 
 .sezione-lista-categorie input[type="radio"] {
@@ -194,14 +194,14 @@
         text-transform: uppercase;
         color: var(--b5blu);
         font-weight: 600;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
 
     .card-progetto h4 {
         font-style: normal;
         font-weight: 400;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: var(--b5blu);
     }
 
@@ -245,17 +245,17 @@
 .leggi-tutto {
     background-color: var(--b5bianco);
     border-radius: 0px;
-    border: 2px solid var(--b5blu);
-    color: var(--b5blu);
+    border: 2px solid var(--b5rosso);
+    color: var(--b5rosso);
     font-size: 1.2rem;
     font-weight: 500;
     width: 40%;
 }
 
 .leggi-tutto:hover {
-    background-color: var(--b5blu);
+    background-color: var(--b5rosso);
     border-radius: 0px;
-    border: 2px solid var(--b5blu);
+    border: 2px solid var(--b5rosso);
     color: var(--b5bianco);
     font-size: 1.2rem;
     font-weight: 500;
@@ -388,17 +388,21 @@
     .leggi-tutto {
         background-color: var(--b5bianco);
         border-radius: 0px;
-        border: 2px solid var(--b5blu);
-        color: var(--b5blu);
+        border: 2px solid var(--b5rosso);
+        color: var(--b5rosso);
         font-size: 1.2rem;
         font-weight: 500;
         width: 90%;
     }
+    
+    .leggi-tutto a{
+        color: var(--b5rosso);
+    }
 
     .leggi-tutto:hover {
-        background-color: var(--b5blu);
+        background-color: var(--b5rosso);
         border-radius: 0px;
-        border: 2px solid var(--b5blu);
+        border: 2px solid var(--b5rosso);
         color: var(--b5bianco);
         font-size: 1.2rem;
         font-weight: 500;
@@ -599,7 +603,7 @@
     font-weight: 600;
     font-size: 20px;
     text-decoration-line: underline;
-    color: var(--b5blu);
+    color: var(--b5rosso);
 }
 
 
@@ -658,7 +662,7 @@
 .main-search-input-wrap {
     margin: 8px 4px;
     position: relative;
-    border: 2px var(--b5blu) solid;
+    border: 2px var(--b5rosso) solid;
 }
 
 :focus {

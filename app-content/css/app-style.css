@@ -241,6 +241,10 @@ font-weight: 700;
   background-size: cover;
 }
 
+.card-articolo:hover a{
+  text-decoration: none;
+}
+
 .card-articolo .data {
   color: var(--b5blu);
   font-size: 16px;
@@ -265,7 +269,33 @@ color: var(--b5blu);
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  color: var(--b5blu);
+
 }
+
+.card-articolo:hover {
+  background-color: var(--b5blu);
+}
+
+
+.card-articolo:hover .data {
+  color: var(--b5bianco);
+
+}
+
+.card-articolo:hover .categoria {
+  color: var(--b5bianco);
+
+}
+
+.card-articolo:hover .riassunto{
+  color: var(--b5bianco);
+}
+
+.card-articolo:hover .titolo{
+  color: var(--b5bianco);
+}
+
 
 
 /* MARQUEE CARD ARTICOLO */

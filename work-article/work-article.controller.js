@@ -52,6 +52,8 @@
                             vm.postInfo = res.data.data;
                             vm.status = Status.IDLE;
 
+                            console.log(vm.postInfo);
+
                         }
 
                         updateMetaInformation();
