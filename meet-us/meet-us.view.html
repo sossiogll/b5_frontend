@@ -40,14 +40,14 @@
         <div ng-if="isIdle()" class="row mx-0 px-3 px-sm-5 py-3 py-sm-5 d-flex flex-row flex-nowrap animate__animated animate__fadeIn animate__slow animate__delay-1s">
 
             <!-- SINGLE PROFILE -->
-            <div ng-repeat="profile in vm.profiles"  class="col-11 col-sm-4 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
+            <div ng-repeat="profile in vm.profiles"  class="col-11 col-sm-3 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
 
               <!-- PROFILE IMAGE -->
 
               <div ng-if="profile.profile_picture != null && profile.profile_picture !== undefinited" class="row mx-0 pr-3 pr-sm-5">
                 <div class="col-12 px-0 card-conoscici-img">
 
-                  <div class="thumbnail">
+                  <div class="thumbnail"> 
                     <div class="profile">
                         <img class="my-1 img-fluid" ng-src="{{profile.profile_picture.url}}" alt="{{profile.profile_picture.description}}">
                     </div>

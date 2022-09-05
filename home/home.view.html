@@ -382,44 +382,6 @@
                 </div>
             </div>
 
-            <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
-                <div  class="col-12 col-lg-6 px-0 box-left-lp">
-                    <div ng-repeat="work in vm.workPostsInfos track by $index" id="project_{{$index}}" ng-class="{'highlight_project': $first}" class="row mx-0 px-0 button-lista-progetti">
-                        <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
-                            <div class="row mx-0 pt-3">
-                                <div class="col px-0 ml-3">
-                                    <h3 class="titolo-progetto-lista">{{work.title}}</h3>
-                                </div>
-                            </div>
-                            <div class="row mx-0">
-                                <div class="col px-0 ml-3 mb-2">
-                                    <h3 class="luogo-progetto-lista">{{work.custom_field_values['PLACE']}}</h3>
-                                </div>
-                            </div>
-
-                            <div class="row mx-0">
-                                <div class="col-7 px-0 d-table tipologie-progetto-lista-box text-left">
-                                    <h3 class="my-0 ml-3 p-3 d-table-cell align-middle tipologie-progetto-lista-text">{{work.custom_fields_values['PLACE']}}</h3>
-                                </div>
-
-                                <div class="col-5 px-0 categoria-progetto-lista-box text-center">
-                                    <h3 class="my-0 py-3 categoria-progetto-lista-text align-midle">{{work.category_slug | translate}}</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="col-12 col-lg-6 p-3 articoloshow-progetti">
-                    <div class="row mx-0 px-0">
-                        <div class="col-12 px-0" ng-bind-html="vm.workPostsInfos[selectedArticle].content">
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>  
 
         </div>
     </div>
