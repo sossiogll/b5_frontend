@@ -140,6 +140,24 @@ box-sizing: border-box;
   height: 200px;
 }
 
+.footer-info-section p{
+  color: var(--b5blu);
+}
+
+.link-utili-custom h6{
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--b5blu);
+}
+
+.link-section-custom p a{
+  color: var(--b5rosso);
+}
+
+.media-link-custom:hover a{
+  color: var(--b5rosso);
+}
+
 .link-utili-custom a{
   color: var(--b5blu);
   text-decoration-line: underline;
@@ -247,28 +265,28 @@ font-weight: 700;
 
 .card-articolo .data {
   color: var(--b5blu);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   position:relative;
 }
 
 .card-articolo .categoria {
   color: var(--b5blu);
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
   position:relative;
 }
 
 .card-articolo .titolo{
   font-weight: 700;
-  font-size: 20px;  
+  font-size: 1.235rem;  
 color: var(--b5blu);
 }
 
 .card-articolo .riassunto{
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.1rem;
   color: var(--b5blu);
 
 }

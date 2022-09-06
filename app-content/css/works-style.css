@@ -301,7 +301,7 @@
     font-style: normal;
     font-weight: 400;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--b5blu);
 }
 
@@ -315,17 +315,16 @@
 .box-heading-lavori .titolo h1 {
     color: var(--b5blu);
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.4rem;
     text-transform: uppercase;
 }
-
 
 
 .box-heading-lavori .descrizone p {
     font-style: normal;
     font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 1.6rem;
+    font-size: 1.45rem;
+    line-height: 1.764rem;
     color: var(--b5blu);
 }
 

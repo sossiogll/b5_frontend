@@ -30,15 +30,14 @@
  .hero  h3 {
     color: var(--b5blu);
     font-weight: 400;
-    font-size: 26px;
-    letter-spacing: 0.11em;
+    font-size: 1.6rem;
 }
 
 .hero h4 {
     color: var(--b5blu);
     font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 1.6em;
 
 }
 
@@ -228,7 +227,7 @@
     color: var(--b5blu);
 font-weight: 600;
 font-size: 5.6rem;
-letter-spacing: 0.1em;
+letter-spacing: 0.135em;
 text-transform: uppercase;
 
 }
@@ -245,7 +244,7 @@ text-transform: uppercase;
 .marquee {
     width: 100%;
     max-width: 100%;
-    height: 63px;
+    height: 56px;
     white-space: nowrap;
     overflow: hidden; 
     border-top: 2px solid var(--b5blu);
@@ -262,8 +261,8 @@ text-transform: uppercase;
   .content{
     font-family: 'Jost';
   font-style: normal;
-  font-weight: 600;
-  font-size: 1.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   color: var(--b5blu);
   }
   
@@ -370,7 +369,7 @@ animation-play-state: paused;
     font-style: normal;
     font-weight: 600;
     font-size: 5.6rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.135em;
     text-transform: uppercase;
 }
 

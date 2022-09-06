@@ -28,7 +28,7 @@
         <div class="col-12 pt-5 pt-sm-0 col-lg-5 pb-4 pb-sm-0 px-0 order-1 order-lg-2">
             <div class="row mx-0 pr-0 pr-sm-5">
                 <div class="col-12 px-0">
-                    <h3 class="pr-5 pt-0 pt-sm-5 text-right">
+                    <h3 class="gllText pr-5 pt-0 pt-sm-5 text-right">
 
                         {{'QUOTE' | translate}}
 
@@ -37,7 +37,7 @@
             </div>
             <div class="row mx-0 ml-3 pr-0 pr-sm-5 text-right">
                 <div class="col-12 px-0">
-                    <h4 class="pr-5">
+                    <h4 class="gllText pr-5">
 
                         {{'AUTHOR_QUOTE' | translate}}
 
@@ -257,12 +257,11 @@
 <!--------------------- Sezione Chi Siamo Headline--------------------->
 
 <div class="container-fluid px-0 container-main container-chisiamo-headline">
-
     <div class="content-container row mx-0 sezione-chisiamo">
         <div class="col-12 px-0 d-flex flex-nowrap align-items-end">
             <div class="row mx-0">
                 <div class="col-12 px-0 ml-5 mb-3 text-left">
-                    <h3>{{'THIS_IS_US' | translate}}</h3>
+                    <h3 class="gllText">{{'THIS_IS_US' | translate}}</h3>
                 </div>
             </div>
         </div>
@@ -365,60 +364,6 @@
 
     </div>
 
-<!--------------------- Sezione progetti --------------------->
-
-<div ng-if="areWorksInit()" class="container-fluid px-0 container-main container-sezione-progetti">
-
-    <!-- Contenitore main -->
-    <div class="content-container row mx-0 sezione-progetti">
-        <div class="col-12 px-0">
-            <div class="row mx-0 px-3 px-sm-5">
-                <div class="col-12 px-0 pt-5 text-left">
-                    <h2>
-
-                        {{'OUR_WORKS' | translate}}
-
-                    </h2>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <!-- Contenitore main -->
-    <div class="content-container row mx-0">
-        <div class="col-12 px-0">
-            <div class="row mx-0">
-                <div class="col-12 px-0 py-3">
-                    <a href="#!/works">
-                        <div class="row mx-0 marquee">
-                          <div class="col-12 py-2 px-0">
-                              <div class="track">
-                                    <p class="content">
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
-                                    </p>
-                               
-                              </div>
-                            </div>
-                          </div>
-                      </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
 
     <!--------------------- Sezione Magazine --------------------->
 
@@ -429,14 +374,16 @@
             <div class="col-12 px-0">
                 <div class="row mx-0 px-3 px-sm-5">
                     <div class="col-12 px-0 pt-5 text-left">
-                        <h2>
+                        <h2 class="gllText">
                             {{'LAST_ARTICLES' | translate}}
                         </h2>
                     </div>
                 </div>
 
                 <div class="row mx-0 pl-3 pl-sm-5 pb-5 pt-3 pt-sm-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
+                   
                     <div  ng-repeat="work in vm.magazinePostsInfos | orderBy:'-posted_at'"  class="col-9 col-lg-3 col-sm-5 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
+                        <a href="#!/magazine/{{post.slug}}">
                         <div class="row mx-0 ">
                             <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>
@@ -491,6 +438,7 @@
                                 </a>
                             </div>
                         </div>
+                    </a>
                     </div>
 
                 </div>
@@ -499,5 +447,36 @@
 
 
         </div>
+
+        <div class="container-fluid px-0 container-main">
+            <!-- Contenitore button -->
+            <div class="content-container row mx-0">
+                <div class="col-12 px-0 pt-0 pb-5">
+                    <a href="#!/magazine">
+                        <div class="row mx-0 marquee">
+                          <div class="col-12 py-2 px-0">
+                              <div class="track">
+                                    <p class="content">
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_ARTICOLE_BTN' | translate}} </span>
+                                    </p>
+                               
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+                </div>
+            </div>
+        
+        </div>
+
     </div>
 </div>

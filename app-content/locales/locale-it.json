@@ -3,7 +3,7 @@
 
     "WORKS_BTN" : "lavori",
     "MAGAZINE_BTN" : "magazine",
-    "MEET_US_BTN" : "conoscici",
+    "MEET_US_BTN" : "chi siamo",
     "LANGUAGE_BTN": "ita",
 
     "_comment": "---------------------- HOME ----------------------",
@@ -12,19 +12,20 @@
     "QUOTE" : "Talvolta l'architettura cerca il silenzio e il vuoto in cui la nostra coscienza si possa ritrovare.",
     "AUTHOR_QUOTE" : "Renzo Piano",
     "FIRST_PARAGRAPH_TITLE" : "B5 è un luogo",
-    "FIRST_PARAGRAPH" : "Ci occupiamo di restauro di edifici civili e monumentali, di progettazione architettonica, strutturale, urbana e di dettaglio. Dal 2005, anno in cui è stata fondata, lavora sulle relazioni tra antico e nuovo, sul recupero filologico.",
-    "SECOND_PARAGRAPH_TITLE" : "Non siamo solo una società di ingegneria",
+    "FIRST_PARAGRAPH" : "Ci occupiamo di restauro di edifici civili e monumentali, di progett",
+    "SECOND_PARAGRAPH_TITLE" : "Non siamo solo",
     "SECOND_PARAGRAPH" : "E’ una felice combinazione di passione, competenza, cantieri, notti insonni, viaggi, un pizzico di autoironia e tanto lavoro. E, oltre questo, uno sguardo attento al futuro e a ciò che si muove nel mondo del restauro, dell’architettura, del consolidamento e dell’ingegneria strutturale.",
     "THIS_IS_US" : "Questi siamo noi",
     "OUR_WORKS" : "I nostri lavori",
     "LAST_ARTICLES" : "Ultimi articoli",
     "GO_TO_PROJECT_BTN" : "Vai al progetto completo",
     "GO_TO_ALL_PROJECTS_BTN" : "Vedi tutti i nostri progetti",
+    "GO_TO_ALL_ARTICOLE_BTN" : "Vedi tutti i nostri articoli",
 
     "_comment": "---------------------- MAGAZINE ----------------------",
 
     "MAGAZINE_TITLE" :  "Magazine",
-    "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "MAGAZINE_DESCRIPTION" : "Questa sezione è un contenitore: lo riempiremo raccontando il nostro punto di vista, facendone una piccola agorà del confronto sia teorico che delle scelte concrete, spiegando le soluzioni adottate per incontrare le esigenze dei committenti, e quelle, a volte più affascinanti, nate dalle difficoltà e dal lavoro collettivo.",
     "COMUNICATO-STAMPA" : "Comunicati stampa",
     "404_MAGAZINE_TITLE" :  "OOPS!",
     "404_MAGAZINE_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni sugli ultimi articoli.",
@@ -36,7 +37,7 @@
     "_comment": "---------------------- WORKS ----------------------",
 
     "WORKS_TITLE" : "I nostri lavori",
-    "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
+    "WORKS_DESCRIPTION" : "A oggi B5 srl vanta un curriculum di respiro internazionale con numerosi lavori e incarichi di consulenza, come la progettazione del restauro del Colosseo finanziato dalla Tod’s e delle Terme del Foro e dell’insula dei Casti Amanti nel sito archeologico di Pompei.",
     "ALL_CATEGORIES_BTN" : "Tutte le categorie",
     "SEARCH_BAR_PLACEHOLDER" : "Cerca tra i nomi dei progetti...",
     "CLOSE_BTN" : "Chiudi",
@@ -50,7 +51,7 @@
     "_comment": "---------------------- MEET US ----------------------",
 
     "MEET_US_TITLE" : "il mondo di b5",
-    "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "MEET_US_DESCRIPTION" : "B5 è un luogo. E’ un andirivieni di professionalità, idee, contributi, intelligenze, generosità, senza i quali non avrebbe fatto un lungo cammino. Una buona parte vengono da coloro che ci lavorano. Anche se alcuni sono andati via, altri continuano ad arrivare ed arricchirne il bagaglio professionale ed umano.",
     "404_MEET_US_TITLE" :  "OOPS!",
     "404_MEET_US_DESCRIPTION" :  "A quanto pare non riusciamo a trovare le informazioni dei lavoratori di B5.",
     "404_MEET_US_SUBTITLE" :  "Sicuramente Francesca c'è però.",
