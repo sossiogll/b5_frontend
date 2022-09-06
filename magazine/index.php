@@ -44,34 +44,38 @@
         $url = $base_api."/".$slug."?lang=".$language;
 
         $data = callAPI("GET", $url);
-
+        
         return $data;
 
     }
 
     function generateDOM($title, $description, $language, $redirect){
 
-        echo'
+        ?>
             <html>
                 <head>
-                    <meta name="title" content="'.$title.'">
-                    <meta name="description" content="'.$description.'">
+                    <title> <?php echo $title ?> | B5 - Idee in cammino </title>
+                    <meta name="title" content="<?php echo $title ?>">
+                    <meta name="description" content="<?php echo $description ?>">
                     <meta name="keywords" content="B5, architettura, architect, architecture, ristrutturazione, restructuration, Francesca, Brancaccio, Francesca Brancaccio, engeneering, Idee in cammino, idee in cammino, idee, cammino, ingegneria, engeneering">
                     <meta name="robots" content="index, follow">
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                    <meta name="language" content="'.$language.'">
+                    <meta name="language" content="<?php echo $language ?>">
                 </head>
 
                 <body>
+                    
+
                 </body>
 
             </html>
 
+
             <script>
                 // Simulate an HTTP redirect:
-                window.location.replace("'.$redirect.'");
+                window.location.replace("<?php echo $redirect ?>");
             </script>
-        ';
+        <?php
 
     }
 
@@ -79,7 +83,7 @@
 
         //Settings
         $base_api_url = "https://b5srl.eu/b5_backend/public/api/v1";
-        $base_redirect_url = "https://b5srl.eu/b5_frontend/";
+        $base_redirect_url = "https://b5srl.eu/b5_frontend";
         $locale_prefix = "app-content/locales/locale-";
         $locale_suffix = ".json";
 
@@ -118,7 +122,7 @@
 
         //Get infos and generate page
         $post = json_decode(postRequest($api_url, $lang, $slug));
-
+        
         if($post == NULL){
 
             $locale_info = file_get_contents("../".$locale_prefix.$lang.$locale_suffix);
@@ -135,9 +139,7 @@
             $redirect_url = $redirect_url."/".$slug;
 
         }
-
+        
         generateDOM($title, $description, $lang, $redirect_url);
-
-
 
     }
