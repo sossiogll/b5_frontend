@@ -9,12 +9,6 @@
     config.$inject = ['$routeProvider', '$locationProvider', '$translateProvider', '$cursorProvider', 'Settings'];
     function config($routeProvider, $locationProvider, $translateProvider, $cursorProvider, Settings) {
 
-        $locationProvider.html5Mode({
-            enabled: false,
-            requireBase: false,
-            rewriteLinks: true
-          })
-
         $routeProvider
             .when('/', {
                 controller: 'HomeController',
@@ -62,6 +56,7 @@
                 controllerAs: 'vm'
             })
             .otherwise({ redirectTo: Settings.DEFAULT_REDIRECT });
+
 
         $translateProvider
             .useStaticFilesLoader({

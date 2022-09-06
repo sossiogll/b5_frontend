@@ -84,14 +84,16 @@
         function updateMetaInformation(){
 
             if (isIdle()) {
-                $translate('WORKS_TITLE').then(function (pageTitle) {
-                    $rootScope.meta.title = vm.postInfo.title;
-                });
 
-                $translate('WORKS_DESCRIPTION').then(function (pageDescrition) {
-                    $rootScope.meta.description = vm.postInfo.summary_content;
+                $(document).ready(function() {
+                    document.title = vm.postInfo.title + " | B5 - Idee in cammino";
                 });
-            }
+    
+                $(document).ready(function() {
+                    $("meta[property='og\\description']").attr("content", vm.postInfo.summary_content);
+                });
+            } 
+        
 
             else if (isFailed()){
                 $translate('ERROR_404').then(function (errorMessage) {

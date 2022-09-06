@@ -201,7 +201,7 @@
                             else {
     
                                 vm.magazinePostsInfos = vm.magazinePostsInfos.concat(res.data.data.posts);
-
+                                console.log(vm.magazinePostsInfos);
                             }
 
                         }catch (error) {
@@ -231,14 +231,19 @@
         };
 
         function updateMetaInformation(){
+
             $translate('HOME_TITLE').then(function (pageTitle) {
-                $rootScope.meta.title=pageTitle;
+                $(document).ready(function() {
+                    document.title = pageTitle + " | B5 - Idee in cammino";
+                });
             });
 
-            $translate('FIRST_PARAGRAPH').then(function (pageDescrition) {
-                $rootScope.meta.description=pageDescrition;
+            $translate('FIRST_PARAGRAPH').then(function (pageDescrition) {            
+                $(document).ready(function() {
+                    $("meta[property='og\\description']").attr("content", pageDescrition);
+                });
             });
-        };
+        }
 
         function areWorksInit(){
             return (vm.workPostsInfos != null && vm.workPostsInfos !== undefined && vm.workPostsInfos.length>0)
