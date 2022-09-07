@@ -82,11 +82,15 @@
 
         function updateMetaInformation(){
             $translate('MEET_US_TITLE').then(function (pageTitle) {
-                $rootScope.meta.title=pageTitle;
+                $(document).ready(function() {
+                    document.title = pageTitle + " | B5 - Idee in cammino";
+                });
             });
 
             $translate('MEET_US_DESCRIPTION').then(function (pageDescrition) {
-                $rootScope.meta.description=pageDescrition;
+                $(document).ready(function() {
+                    $("meta[property='og\\description']").attr("content", pageDescrition);
+                });
             });
         }
 
