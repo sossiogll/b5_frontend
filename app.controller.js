@@ -12,12 +12,14 @@
             $rootScope.lang = key;
             $translate.use(key);
             $route.reload();
+            $(window).scrollTop()
         };
 
 
         $scope.$on('$viewContentLoaded', function () {
 
             gllCursorService.findTriggeringElements();
+            $(window).scrollTop();
 
         });
 
