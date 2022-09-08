@@ -890,14 +890,24 @@ animation-play-state: paused;
     left: 80%;
 }
 
+.raf-pin{
+    top: 43%;
+    left: 30%;
+}
+
+.fed-mon{
+    top: 55%;
+    left: 28%;
+}
+
 .dav-pon{
     top: 18%;
     left: 38%;
 }
 
 .fab-min{
-    top: 0;
-    left: 0%;
+    top: 20%;
+    left: 50%;
 }
 
 .ang-lat{
@@ -939,6 +949,23 @@ animation-play-state: paused;
     top: 30%;
     left: 23%;
 }
+
+.ste-ben{
+    top: 10%;
+    left: 55%;
+}
+
+.ann-buo{
+    top: 55%;
+    left: 76%;
+}
+
+.alb-san{
+    top: 46%;
+    left: 90%;
+}
+
+
 /* DRAWS */
 
 .svg-container{
