@@ -815,9 +815,7 @@ animation-play-state: paused;
     }
 
     .sezione-costruzioni{
-        height: 170px;
-        background-image: url("../img/home/disegno3_mobile.svg");
-
+        display: none;
     }
 
     .sezione-colosseo{

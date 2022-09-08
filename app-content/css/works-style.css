@@ -38,7 +38,7 @@
     border: 2px solid var(--b5rosso);
     font-size: 13px;
     position: relative;
-
+    cursor: none;
 }
 
 .sezione-lista-categorie input[type="radio"]:checked+label {
@@ -48,8 +48,7 @@
 
 .sezione-lista-categorie input[type="radio"] {
     display: none;
-    float: right;
-
+    float: right
 }
 
 
@@ -213,6 +212,9 @@
         color: var(--b5bianco);
     }
 
+    .sezione-lista-categorie label {
+        cursor: pointer;
+    }
 }
 
 
@@ -662,6 +664,7 @@
     margin: 8px 4px;
     position: relative;
     border: 2px var(--b5rosso) solid;
+    cursor: none;
 }
 
 :focus {

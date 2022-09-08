@@ -23,19 +23,29 @@
       </li>
 
       <li class="nav-item nav-mobile-item">
-        <button class="nav-link gllBlock btn btn-link" onclick="location.href='#!/works'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="nav-link btn btn-link" onclick="location.href='#!/works'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           {{'WORKS_BTN' | translate}}
         </button>
       </li>
       <li class="nav-item nav-mobile-item">
-        <button class="nav-link gllBlock btn btn-link" onclick="location.href='#!/magazine'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="nav-link btn btn-link" onclick="location.href='#!/magazine'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           {{'MAGAZINE_BTN' | translate}}
         </button>
       </li>
       <li class="nav-item nav-mobile-item">
-        <button class="nav-link gllBlock btn btn-link" onclick="location.href='#!/meet-us'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="nav-link btn btn-link" onclick="location.href='#!/meet-us'" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           {{'MEET_US_BTN' | translate}}
         </button>
+      </li>
+      <li class="nav-item nav-mobile-item dropdown">
+        <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{'LANGUAGE_BTN' | translate}}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" ng-click="changeLanguage('en')">eng</a>
+          <a class="dropdown-item" ng-click="changeLanguage('it')">ita </a>
+          <a class="dropdown-item" ng-click="changeLanguage('fr')">fra </a>
+        </div>
       </li>
 
 
@@ -44,7 +54,7 @@
 
     <ul class="navbar-nav mr-5 navbar-nav-custom">
       <li class="nav-item dropdown">
-        <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link gllBlock" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{'LANGUAGE_BTN' | translate}}
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
