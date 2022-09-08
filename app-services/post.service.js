@@ -6,8 +6,8 @@
         .module('app')
         .factory('PostService', PostService);
 
-    PostService.$inject = ['$http',  '$rootScope', 'Settings'];
-    function PostService($http, $rootScope, Settings) {
+    PostService.$inject = ['$http',  '$translate', 'Settings'];
+    function PostService($http, $translate, Settings) {
         var service = {};
         var apiURL = Settings.APIURL;
 
@@ -20,7 +20,8 @@
 
 
         function Index(goodCallback, badCallback, limit = 20) {
-            $http.get(apiURL+"/posts?limit="+limit).then(goodCallback, badCallback);
+            var language = $translate.proposedLanguage() || $translate.use();
+            $http.get(apiURL+"/posts?language="+language+"&limit="+limit).then(goodCallback, badCallback);
         }
 
         function Post(postSlug, goodCallback, badCallback){

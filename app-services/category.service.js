@@ -6,8 +6,8 @@
         .module('app')
         .factory('CategoryService', CategoryService);
 
-    CategoryService.$inject = ['$http',  '$rootScope', 'Settings'];
-    function CategoryService($http, $rootScope, Settings) {
+    CategoryService.$inject = ['$http','$translate', 'Settings'];
+    function CategoryService($http, $translate, Settings) {
 
         var service = {};
         var apiURL = Settings.APIURL;
@@ -21,11 +21,13 @@
 
 
         function Index(goodCallback, badCallback, limit=20) {
-            $http.get(apiURL+"/categories?limit="+limit).then(goodCallback, badCallback);
+            var language = $translate.proposedLanguage() || $translate.use();
+            $http.get(apiURL+"/categories?language="+language+"&limit="+limit).then(goodCallback, badCallback);
         }
 
         function Category(categorySlug, goodCallback, badCallback, limit=20){
-            $http.get(apiURL+"/categories/"+categorySlug+"?limit="+limit).then(goodCallback, badCallback);
+            var language = $translate.proposedLanguage() || $translate.use();
+            $http.get(apiURL+"/categories/"+categorySlug+"?language="+language+"&limit="+limit).then(goodCallback, badCallback);
         }
 
     }

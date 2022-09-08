@@ -105,7 +105,7 @@
         }
 
         function isFailed(){
-            return (vm.categoriesInfos == null || vm.categoriesInfos === undefined || vm.categoriesInfos.length == 0 || vm.status == Status.FAILED)
+            return (vm.categoriesInfos == null || vm.categoriesInfos === undefined || vm.categoriesInfos.length == 0 && vm.status == Status.FAILED)
         }
 
         function isInitial(){

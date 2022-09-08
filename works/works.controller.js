@@ -94,7 +94,7 @@
                         vm.status = Status.FAILED;
 
                     },
-                    
+
                     //limit
                     1000)
 
@@ -117,7 +117,7 @@
         }
 
         function isFailed(){
-            return (vm.worksInfos == null || vm.worksInfos === undefined || vm.worksInfos.length == 0 || vm.status == Status.FAILED)
+            return ((vm.worksInfos == null || vm.worksInfos === undefined || vm.worksInfos.length == 0) && vm.status == Status.FAILED)
         }
 
         function isInitial(){
