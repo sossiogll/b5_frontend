@@ -473,6 +473,24 @@ color: var(--b5blu);
 }
 
 
+/* PAGINA CREDITI */
+
+.titolo-crediti{
+  font-size: 4.5rem;
+  color: var(--b5blu);
+}
+
+.sviluppo-crediti{
+  font-size: 2.5rem;
+  color: var(--b5blu);
+}
+
+.sottotitoli-crediti{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--b5blu);
+}
+
 .credit-image {
   width: 50%;
   background-size: contain;
@@ -510,6 +528,7 @@ color: var(--b5blu);
   font-style: normal;
   font-weight: bold;
 }
+
 
 .error-content{
   position: relative;
@@ -553,8 +572,56 @@ color: var(--b5blu);
     display: block;
   }
 
+  .titolo-crediti{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--b5blu);
+  }
+  
+  .sviluppo-crediti{
+    font-size: 2.1rem;
+    color: var(--b5blu);
+  }
+  
+  .sottotitoli-crediti{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--b5blu);
+  }
+  
+
+  .masonry-logo{
+    color: #D26;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+
+
+.credit-image {
+  width: 50%;
+  background-size: contain;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  line-height: 2.5;
+}
+
+  .fa-pen-to-square{
+    font-size: 3rem;
+  }
+
+  .fa-mouse-pointer{
+    font-size: 3rem;
+  }
+
 
 }
+
+
 
 
 @media (max-width: 1165px) {
@@ -581,12 +648,23 @@ color: var(--b5blu);
   }
 
 
+
 }
 
 @media (max-width: 991px) {
 
 
 .navbar-nav{    height: 100vh;}
+
+.logo-b5{
+  width: 100%;
+  height: 90px;
+}
+
+.footer-info-section p{
+  font-size: 0.9rem;
+}
+
 
 
 }
