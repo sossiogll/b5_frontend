@@ -200,8 +200,11 @@
 
                             else {
     
-                                vm.magazinePostsInfos = vm.magazinePostsInfos.concat(res.data.data.posts);
-                                console.log(vm.magazinePostsInfos);
+                                res.data.data.posts.forEach(post => {
+                                    post.category_slug = categorySlug;
+                                    vm.magazinePostsInfos.push(post);
+                                })
+
                             }
 
                         }catch (error) {
