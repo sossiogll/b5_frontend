@@ -56,7 +56,7 @@
 .seconda-sezione h2 {
     color: var(--b5bianco);
     font-weight: 600;
-    font-size: calc(5vw + 3vmin);
+    font-size: 3.5rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
@@ -80,7 +80,7 @@
 .terza-sezione h2{
     color: var(--b5bianco);
     font-weight: 600;
-    font-size: calc(5vw + 3vmin);
+    font-size: 6rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
