@@ -74,7 +74,7 @@
         <div class="col-12 col-lg-4 px-0 text">
             <div class="row mx-0">
                 <div class="col-12 px-0">
-                    <h2 class="gllText px-3 px-sm-5 pt-3">
+                    <h2 class="gllText px-3 px-sm-5 pt-5">
 
                         {{'FIRST_PARAGRAPH_TITLE' | translate}}
 
@@ -120,7 +120,7 @@
         <div class="col-12 px-0">
             <div class="row mx-0">
                 <div class="col-12 px-0 py-0">
-                    <h2 class="gllText px-3 px-sm-5 pt-3">
+                    <h2 class="gllText px-3 px-sm-5 pt-5">
                         {{'SECOND_PARAGRAPH_TITLE' | translate}}
                     </h2>
                 </div>
@@ -253,6 +253,138 @@
 </div>
 
 
+<div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
+    <div  class="col-12 col-lg-6 px-0 box-left-lp">
+        <div ng-repeat="work in vm.workPostsInfos track by $index" id="project_{{$index}}" ng-class="{'highlight_project': $first}" class="row mx-0 px-0 button-lista-progetti">
+            <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
+                <div class="row mx-0 pt-3">
+                    <div class="col px-0 ml-3">
+                        <h3 class="titolo-progetto-lista">{{work.title}}</h3>
+                    </div>
+                </div>
+                <div class="row mx-0">
+                    <div class="col px-0 ml-3 mb-2">
+                        <h3 class="luogo-progetto-lista">{{work.custom_field_values['PLACE']}}</h3>
+                    </div>
+                </div>
+
+                <div class="row mx-0">
+                    <div class="col-7 px-0 d-table tipologie-progetto-lista-box text-left">
+                        <h3 class="my-0 ml-3 p-3 d-table-cell align-middle tipologie-progetto-lista-text">{{work.custom_fields_values['PLACE']}}</h3>
+                    </div>
+
+                    <div class="col-5 px-0 categoria-progetto-lista-box text-center">
+                        <h3 class="my-0 py-3 categoria-progetto-lista-text align-midle">{{work.category_slug | translate}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="col-12 col-lg-6 p-3 articoloshow-progetti">
+        <div class="row mx-0 px-0">
+            <div class="col-12 px-0" ng-bind-html="vm.workPostsInfos[selectedArticle].content">
+
+            </div>
+        </div>
+    </div>
+</div>  
+
+<!--------------------- Sezione progetti --------------------->
+
+<div ng-if="areWorksInit()" class="container-fluid px-0 container-main container-sezione-progetti">
+
+    <!-- Contenitore main -->
+    <div class="content-container row mx-0 sezione-progetti">
+        <div class="col-12 px-0">
+            <div class="row mx-0 px-3 px-sm-5">
+                <div class="col-12 px-0 pt-5 text-left">
+                    <h2>
+
+                        {{'OUR_WORKS' | translate}}
+
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row mx-0 px-3 px-sm-5 pt-3 pt-sm-0 pb-5">
+                <div  class="col-12 col-lg-6 px-0 box-left-lp">
+                    <div ng-repeat="work in vm.workPostsInfos track by $index" id="project_{{$index}}" ng-class="{'highlight_project': $first}" class="row mx-0 px-0 button-lista-progetti">
+                        <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
+                            <div class="row mx-0 pt-3">
+                                <div class="col px-0 ml-3">
+                                    <h3 class="titolo-progetto-lista">{{work.title}}</h3>
+                                </div>
+                            </div>
+                            <div class="row mx-0">
+                                <div class="col px-0 ml-3 mb-2">
+                                    <h3 class="luogo-progetto-lista">{{work.custom_field_values['PLACE']}}</h3>
+                                </div>
+                            </div>
+
+                            <div class="row mx-0">
+                                <div class="col-7 px-0 d-table tipologie-progetto-lista-box text-left">
+                                    <h3 class="my-0 ml-3 p-3 d-table-cell align-middle tipologie-progetto-lista-text">{{work.custom_fields_values['PLACE']}}</h3>
+                                </div>
+
+                                <div class="col-5 px-0 categoria-progetto-lista-box text-center">
+                                    <h3 class="my-0 py-3 categoria-progetto-lista-text align-midle">{{work.category_slug | translate}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-12 col-lg-6 p-3 articoloshow-progetti">
+                    <div class="row mx-0 px-0">
+                        <div class="col-12 px-0" ng-bind-html="vm.workPostsInfos[selectedArticle].content">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+    <!-- Contenitore main -->
+    <div class="content-container row mx-0">
+        <div class="col-12 px-0">
+            <div class="row mx-0">
+                <div class="col-12 px-0 py-3">
+                    <a href="#!/works">
+                        <div class="row mx-0 marquee">
+                          <div class="col-12 py-2 px-0">
+                              <div class="track">
+                                    <p class="content">
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                        <span style="padding-left: 10px;"> {{'GO_TO_ALL_PROJECTS_BTN' | translate}} </span>
+                                    </p>
+                               
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 
 <!--------------------- Sezione Chi Siamo Headline--------------------->
 
@@ -290,7 +422,7 @@
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float giu-dan"><p>Giuseppe Brancaccio</p><p><strong>Architetto</strong></p>
+                <div class="chi-siamo-home-float giu-dan"><p>Giuseppe D'angelo</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
@@ -310,33 +442,33 @@
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float raf-pin"><p>Raffaele Bruno Pinto</p><p><strong>Collaboratore</strong></p>
+                <div class="chi-siamo-home-float raf-pin"><p>Raffaele Bruno Pinto</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float fed-mon"><p>Federica Montone</p><p><strong>Collaboratorice</strong></p>
+                <div class="chi-siamo-home-float fed-mon"><p>Federica Montone</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float ste-gua"><p>Stefano Guadagno</p><p><strong>Collaboratore</strong></p>
+                <div class="chi-siamo-home-float ste-gua"><p>Stefano Guadagno</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float ale-fus"><p>Alessia Fusciello</p><p><strong>Collaboratrice</strong></p>
+                <div class="chi-siamo-home-float ale-fus"><p>Alessia Fusciello</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
         
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float gia-mas"><p>Gianluigi Mascolo</p><p><strong>Collaboratore</strong></p>
+                <div class="chi-siamo-home-float gia-mas"><p>Gianluigi Mascolo</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float chi-val"><p>Chiara Vallefuoco</p><p><strong>Collaboratrice</strong></p>
+                <div class="chi-siamo-home-float chi-val"><p>Chiara Vallefuoco</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
@@ -347,7 +479,7 @@
             </div>
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float sil-con"><p>Silvia Consolino</p><p><strong>Collaboratrice</strong></p>
+                <div class="chi-siamo-home-float sil-con"><p>Silvia Consolino</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
 
@@ -355,19 +487,20 @@
                 <div class="chi-siamo-home-float alb-san"><p>Alberto Sanseverino</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
-
+<!--
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float ann-buo"><p>Anna Buonfiglio</p><p><strong>Collaboratrice</strong></p>
+                <div class="chi-siamo-home-float ann-buo"><p>Anna Buonfiglio</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
+-->
 
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float sil-con"><p>Alberto Sanseverino</p><p><strong>Collaboratrice</strong></p>
+                <div class="chi-siamo-home-float sil-con"><p>Silvia Consolino</p><p><strong>Architetto</strong></p>
                 </div>
             </div>
             
             <div class="row mx-0 justify-content-center">
-                <div class="chi-siamo-home-float ste-ben"><p>Stefano Di Benedetto</p><p><strong>Unkn</strong></p>
+                <div class="chi-siamo-home-float ste-ben"><p>Stefano Di Benedetto</p><p><strong>Architetto Progettista Senior</strong></p>
                 </div>
             </div>
             
