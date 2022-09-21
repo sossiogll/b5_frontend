@@ -57,14 +57,17 @@
                             vm.status = Status.IDLE;
 
                             $("document").ready(function(){
-                                $("#scrollTop div").width($("#meetUsContainer")[0].scrollWidth);
 
-                                $("#scrollTop").on("scroll", function(){
-                                    $("#container-card-conoscici").scrollLeft($(this).scrollLeft());
-                                });
-                                $("#container-card-conoscici").on("scroll", function(){
-                                    $("#scrollTop").scrollLeft($(this).scrollLeft());
-                                });
+                                if(!isTouchDevice){
+                                    $("#scrollTop div").width($("#meetUsContainer")[0].scrollWidth);
+
+                                    $("#scrollTop").on("scroll", function(){
+                                        $("#container-card-conoscici").scrollLeft($(this).scrollLeft());
+                                    });
+                                    $("#container-card-conoscici").on("scroll", function(){
+                                        $("#scrollTop").scrollLeft($(this).scrollLeft());
+                                    });
+                                }
                             });
 
                         }
@@ -103,6 +106,12 @@
                     $("meta[property='og\\description']").attr("content", pageDescrition);
                 });
             });
+        }
+
+        function isTouchDevice() {
+            return (('ontouchstart' in window) ||
+               (navigator.maxTouchPoints > 0) ||
+               (navigator.msMaxTouchPoints > 0));
         }
 
         
