@@ -1,0 +1,144 @@
+
+/*  COOKIE POLICY */
+
+
+.iub_container h1 {
+    font-size: 2.525rem;
+    line-height: 1.975rem;
+}
+
+.iub_container h2 {
+    color: var(--b5blu);
+    font-size: 2.325rem;
+    line-height: 1.625rem;
+}
+
+.iub_container h3 {
+    color: var(--b5blu);
+    font-size: 2.15rem;
+    line-height: 3.65rem;
+}
+
+.iub_container h4 {
+    color: var(--b5blu);
+    font-size: 1.953rem;
+    line-height: 3.175rem;
+}
+
+.iub_container h5 {
+    color: var(--b5blu);
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+}
+
+.iub_container blockquote {
+    background: var(--b5blu);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.iub_container blockquote p {
+    color: var(--b5bianco);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.iub_container p {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    padding-top: 0.5rem;
+}
+
+.iub_container ul {
+    color: var(--b5blu);
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    margin-left: 5%;
+}
+
+.iub_container ol {
+    color: var(--b5blu);
+    font-size: 0.9rem;
+    margin-left: 3%;
+}
+
+.iub_container a {
+    color: var(--b5rosso);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.25rem;;
+    text-decoration: underline;
+}
+
+/* PRIVACY POLICY */
+
+.iubenda_legal_document h1 {
+    color: var(--b5blu);
+    font-size: 2.525rem;
+    line-height: 1.975rem;
+}
+
+.iubenda_legal_document h2 {
+    color: var(--b5blu);
+    font-size: 2.325rem;
+    line-height: 1.625rem;
+}
+
+.iubenda_legal_document h3 {
+    color: var(--b5blu);
+    font-size: 2.15rem;
+    line-height: 3.65rem;
+}
+
+.iubenda_legal_document h4 {
+    color: var(--b5blu);
+    font-size: 1.953rem;
+    line-height: 3.175rem;
+}
+
+.iubenda_legal_document h5 {
+    color: var(--b5blu);
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+}
+
+.iubenda_legal_document blockquote {
+    background: var(--b5blu);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.iubenda_legal_document blockquote p {
+    color: var(--b5bianco);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.iubenda_legal_document p {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    padding-top: 0.5rem;
+}
+
+.iubenda_legal_document ul {
+    color: var(--b5blu);
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    margin-left: 5%;
+}
+
+.iubenda_legal_document ol {
+    color: var(--b5blu);
+    font-size: 0.9rem;
+    margin-left: 3%;
+}
+
+.iubenda_legal_document a {
+    color: var(--b5rosso);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.25rem;;
+    text-decoration: underline;
+}

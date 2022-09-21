@@ -668,3 +668,158 @@ color: var(--b5blu);
 
 
 }
+
+
+/********************* IUBENDA *********************/
+
+#iubenda-cs-banner {
+	position: relative;
+	z-index: 1029;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	will-change: opacity;
+	transition: opacity .4s ease !important;
+	justify-content: flex-end !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-container{
+  bottom:20px;
+  right: 20px;
+  position: fixed;
+  border: 2px solid var(--b5blu);
+  z-index: 1029 !important;
+  
+}
+
+
+#iubenda-cs-banner .iubenda-cs-content {
+	position: relative !important;
+  z-index: 1029 !important;
+  overflow: hidden !important;
+	transition: -webkit-transform .4s ease !important;
+	transition: transform .4s ease !important;
+	transition: transform .4s ease,-webkit-transform .4s ease !important;
+	background-color: #000 !important;
+	color: #fff !important;
+	font-size: 14px !important;
+	display: flex;
+	flex-direction: column;
+	width: 480px;
+	background-color: #FFFFFF !important;
+	color: #010088 !important;
+	font-size: 14px
+}
+
+#iubenda-cs-banner .iubenda-cs-rationale {
+	position: relative !important;
+	display: flex !important;
+	flex-direction: column !important;
+	flex: 1 1 auto;
+	height: 100% !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-brand {
+	display: flex;
+	padding: 16px !important;
+	flex-shrink: 0 !important;
+	background-color: #EFEFEF !important;
+	color: #010088 !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-brand img {
+	max-width: 192px !important;
+	max-height: 32px !important;
+}
+
+#iubenda-cs-banner .iubenda-banner-content {
+	font-weight: 300 !important;
+	padding: 16px !important;
+	flex: 1 1 auto !important;
+	overflow-y: auto !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-opt-group {
+	align-items: center !important;
+	justify-content: space-between !important;
+	margin-top: 0 !important;
+	flex-shrink: 0 !important;
+	color: #000 !important;
+	margin: 16px !important;
+  	margin-top: 16px;
+	margin-top: 0 !important;
+}
+
+.iubenda-cs-opt-group > div {
+  width: 100% !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-opt-group > div {
+	display: flex !important;
+}
+
+#iubenda-cs-title{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#iubenda-cs-banner .iubenda-cs-opt-group-consent {
+	margin-left: auto !important;
+	align-self: end !important;
+	justify-content: flex-end !important;
+}
+
+#iubenda-cs-banner .iubenda-cs-opt-group button, .iubenda-alert button.iubenda-button-cancel {
+  background-color: #fff !important;
+  color: #010088 !important;
+  width: calc(100% - 8px);
+  border: 2px solid #010088;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+
+#iubenda-cs-banner .iubenda-cs-opt-group button.iubenda-cs-accept-btn, #iubenda-cs-banner .iubenda-cs-opt-group button.iubenda-cs-btn-primary, .iubenda-alert button.iubenda-button-confirm {
+  background-color: #010088 !important;
+  color: #FFFFFF !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  border: 2px solid white;
+}
+
+@media (max-width: 921px){
+
+  #iubenda-cs-banner .iubenda-cs-container {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    top: 45px;
+    border: 0;
+  }
+
+  #iubenda-cs-title {
+    font-size: 25px;
+  }
+
+  #iubenda-cs-banner .iubenda-cs-brand {
+    display: none;
+  }
+
+  #iubenda-cs-banner .iubenda-cs-content {
+    height: calc(100% - 45px);
+    width: 100%;
+    font-size: 20px;
+  }
+
+	#iubenda-cs-banner .iubenda-cs-opt-group {
+		align-items: center !important;
+		justify-content: space-between !important;
+	}
+}

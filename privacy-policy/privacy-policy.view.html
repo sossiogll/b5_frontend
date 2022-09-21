@@ -1,22 +1,38 @@
-﻿<!--------------------- Prima sezione --------------------->
+﻿
+<!--------------------- Prima sezione --------------------->
 
 <div class="container-fluid px-0 container-main">
 
         <!-- Contenitore -->
-        <div class="content-container row mx-0">
+        <div  ng-if="isIdle()" class="content-container row mx-0">
                 <div class="col-12 px-0 mt-3">
                         <div class="row mx-0 pl-5 pt-4 ">
-                                <div class="col-12 px-0">
-                                        <h1 class="">Privacy Policy</h1>
+                                <div class="col-12 px-0" ng-bind-html="privacyPolicy">
+
                                 </div>
                         </div>
+                </div>
+        </div>
 
 
+            <!-- SKELETRON -->
 
-
-
-
-
+        <div ng-if="isLoading() || isInitial()" class="skeletron">
+                <h2></h2>
+                <p></p>
+                <h2></h2>
+                <p></p>
+        </div>
+                    
+                <!-- 404 magazine -->
+            
+            
+        <div ng-if="isFailed()" class="row mx-0 error-content pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
+                <div class="col px-0 pt-3 pt-sm-4 ml-3 ml-sm-5">
+                    <h1>{{'404_GENERIC_TITLE' | translate}}</h1>
+                    <h3>{{'404_GENERIC_DESCRIPTION' | translate}}</h3>
+                    <hr class="my-4">
+                    <p>{{'404_GENERIC_SUBTITLE' | translate}}</p>
                 </div>
         </div>
 

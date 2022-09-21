@@ -18,7 +18,11 @@
             DEFAULT_LANG : 'it',
             CURSOR_THEME : 'RED',  //See gllCursor documentation for changes
             CURSOR_LAZYNESS : 200,
-            DEFAULT_REDIRECT : '/'
+            DEFAULT_REDIRECT : '/',
+            IUBENDA_PRIVACY_POLICY_APIURL : 'iubenda privacy policy api url here',
+            IUBENDA_IT_CODE : 00000000,
+            IUBENDA_EN_CODE : 00000000,
+            IUBENDA_FR_CODE : 00000000,
         })
         .constant('Categories', {
             MAGAZINE : [

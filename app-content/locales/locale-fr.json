@@ -20,7 +20,7 @@
     "LAST_ARTICLES" : "Derniers articles",
     "GO_TO_PROJECT_BTN" : "Voir le projet complet",
     "GO_TO_ALL_PROJECTS_BTN" : "Voir tous nos projets",
-    "GO_TO_ALL_ARTICOLE_BTN" : "Voir tous nos articles",
+    "GO_TO_ALL_ARTICLE_BTN" : "Voir tous nos articles",
 
     "_comment": "---------------------- MAGAZINE ----------------------",
 
@@ -83,6 +83,7 @@
     "USEFUL_LINKS" : "Liens utiles",
     "PRIVACY_POLICY" : "Politique de confidentialité",
     "COOKIE_POLICY" : "Politique Cookie",
+    "COOKIE_PREFERENCES" : "Préférences de gestion des cookies",
     "ADMIN_AREA" : "Zone d'admin",
     "CREDITS" : "Distinctions",
 
