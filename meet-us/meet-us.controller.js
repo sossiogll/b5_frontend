@@ -59,8 +59,6 @@
 
                             $("document").ready(function(){
 
-                                console.log(isTouchDevice());
-
                                 if(!isTouchDevice()){
 
                                     $("#scrollTop div").width($("#meetUsContainer")[0].scrollWidth);

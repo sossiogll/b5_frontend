@@ -220,6 +220,10 @@
 
 }
 
+.articoloshow-progetti ol, .articoloshow-progetti ul{
+    padding-left: 20px;
+}
+
 /* SEZIONE MAGAZINE*/
 
 .sezione-magazine h2{

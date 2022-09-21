@@ -301,3 +301,8 @@ text-align: left;
 #scrollTop, .container-card-conoscici{
 overflow: -moz-scrollbars-vertical; 
 overflow-y: scroll;}
+
+#scrollTop div{
+  height: 10px;
+  margin: 0 1%;
+}
