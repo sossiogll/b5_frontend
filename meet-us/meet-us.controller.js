@@ -56,9 +56,13 @@
                             vm.profiles = res.data.data;
                             vm.status = Status.IDLE;
 
+
                             $("document").ready(function(){
 
-                                if(!isTouchDevice){
+                                console.log(isTouchDevice());
+
+                                if(!isTouchDevice()){
+
                                     $("#scrollTop div").width($("#meetUsContainer")[0].scrollWidth);
 
                                     $("#scrollTop").on("scroll", function(){
@@ -67,6 +71,7 @@
                                     $("#container-card-conoscici").on("scroll", function(){
                                         $("#scrollTop").scrollLeft($(this).scrollLeft());
                                     });
+
                                 }
                             });
 
@@ -112,7 +117,7 @@
             return (('ontouchstart' in window) ||
                (navigator.maxTouchPoints > 0) ||
                (navigator.msMaxTouchPoints > 0));
-        }
+          }
 
         
         function isFailed(){
