@@ -56,6 +56,17 @@
                             vm.profiles = res.data.data;
                             vm.status = Status.IDLE;
 
+                            $("document").ready(function(){
+                                $("#scrollTop div").width($("#meetUsContainer")[0].scrollWidth);
+
+                                $("#scrollTop").on("scroll", function(){
+                                    $("#container-card-conoscici").scrollLeft($(this).scrollLeft());
+                                });
+                                $("#container-card-conoscici").on("scroll", function(){
+                                    $("#scrollTop").scrollLeft($(this).scrollLeft());
+                                });
+                            });
+
                         }
 
                     }catch (error) {

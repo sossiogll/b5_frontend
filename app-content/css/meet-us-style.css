@@ -253,3 +253,51 @@ text-align: left;
 
 
 }
+
+
+/****** SCROLLBAR ******/
+
+/* Works on Firefox */
+#scrollTop {
+  scrollbar-width: thin;
+  scrollbar-color: var(--b5blu) var(--b5rosso);
+}
+
+/* Works on Chrome, Edge, and Safari */
+#scrollTop::-webkit-scrollbar {
+  width: 12px;
+}
+
+#scrollTop::-webkit-scrollbar-track {
+  background: var(--b5rosso);
+}
+
+#scrollTop::-webkit-scrollbar-thumb {
+  background-color: var(--b5blu);
+  border-radius: 0;
+  border: 3px solid var(--b5rosso);
+  
+}/* Works on Firefox */
+.container-card-conoscici {
+  scrollbar-width: thin;
+  scrollbar-color: var(--b5blu) var(--b5rosso);
+}
+
+/* Works on Chrome, Edge, and Safari */
+.container-card-conoscici::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container-card-conoscici::-webkit-scrollbar-track {
+  background: var(--b5rosso);
+}
+
+.container-card-conoscici::-webkit-scrollbar-thumb {
+  background-color: var(--b5blu);
+  border-radius: 0;
+  border: 3px solid var(--b5rosso);
+}
+
+#scrollTop, .container-card-conoscici{
+overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;}

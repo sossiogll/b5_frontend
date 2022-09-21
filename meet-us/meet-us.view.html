@@ -33,12 +33,18 @@
 
 <!--------------------- Sezione Loop Profili --------------------->
   
-  <div class="content-container row mx-0 container-card-conoscici">
+<div id="scrollTop" style="overflow-x:auto;">
+  <div style="height: 10px;margin: 0 1%;"></div>
+</div>
+
+  <div id="container-card-conoscici" class="content-container row mx-0 container-card-conoscici">
+
     <div class="col-12 px-0">
         <!-- PROFILE PRINT LOOP -->
 
-        <div ng-if="isIdle()" class="row mx-0 px-3 px-sm-5 py-3 py-sm-5 d-flex flex-row flex-nowrap animate__animated animate__fadeIn animate__slow animate__delay-1s">
-
+        <div id="meetUsContainer" ng-if="isIdle()" class="row mx-0 px-3 px-sm-5 py-3 py-sm-5 d-flex flex-row flex-nowrap animate__animated animate__fadeIn animate__slow animate__delay-1s">
+         
+            
             <!-- SINGLE PROFILE -->
             <div ng-repeat="profile in vm.profiles"  class="col-11 col-sm-3 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
 
