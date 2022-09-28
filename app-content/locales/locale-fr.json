@@ -1,3 +1,4 @@
+
 {
     "_comment": "---------------------- NAVBAR ----------------------",
 
@@ -11,10 +12,10 @@
     "HOME_TITLE" : "Page d'accueil",
     "QUOTE" : "Parfois, l'architecture recherche le silence et le vide dans lesquels notre conscience peut se retrouver",
     "AUTHOR_QUOTE" : "Renzo Piano",
-    "FIRST_PARAGRAPH_TITLE" : "Lorem ipsum",
+    "FIRST_PARAGRAPH_TITLE" : "ÉMOTIONS AU-DELÀ  DES COMPÉTENCES",
     "FIRST_PARAGRAPH" : "B5 srl s'occupe de la restauration de bâtiments civils et monumentaux, de la planification architecturale, structurelle, urbaine et de détaille. Depuis 2005, année de sa création, elle travaille sur la relation entre l'ancien et le nouveau, sur la rénovation historique.",
-    "SECOND_PARAGRAPH_TITLE" : "Lorem ipsum",
-    "SECOND_PARAGRAPH" : "Lorem, ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla. Amet augue sem neque luctus. Id ante faucibus amet mattis risus, eu adipiscing sagittis. Interdum ut sed consequat ac et. Quam commodo eget semper massa vestibulum risus, tellus scelerisque. Nam scelerisque neque at facilisi at faucibus ut quis. Ac varius tellus lectus morbi neque diam. Nec.",
+    "SECOND_PARAGRAPH_TITLE" : "LES GENS: NOTRE CAPITAL LE PLUS IMPORTANT",
+    "SECOND_PARAGRAPH" : "B5 continue chaque jour à enrichir son bagage professionnel et humain grâce à des professionnels qui offrent des idées, des contributions et tant de générosité à mettre en œuvre. B5 n'est pas seulement une société d'ingénierie. C'est un mélange de passion, de savoir-faire, de chantiers, de nuits sans sommeil, de voyages, d'un peu d'autodérision et beaucoup de travail. C'est un va-et-vient de professionnalité, d'idées, de contributions, d'intelligences, sans lesquelles il n'aurait pas fait un long chemin.",
     "THIS_IS_US" : "Qui sommes-nous",
     "OUR_WORKS" : "Nos travaux",
     "LAST_ARTICLES" : "Derniers articles",
@@ -25,7 +26,7 @@
     "_comment": "---------------------- MAGAZINE ----------------------",
 
     "MAGAZINE_TITLE" :  "Magazine",
-    "MAGAZINE_DESCRIPTION" :  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "MAGAZINE_DESCRIPTION" :  "Cette section est un contenant : nous le remplirons en racontant notre point de vue, en en faisant une petite agora de la confrontation à la fois théorique et des choix concrets, en expliquant les solutions adoptées pour répondre aux besoins des donneurs d'ordre, et celles, parfois plus fascinantes, nées des difficultés et du travail collectif.",
     "COMUNICATO-STAMPA" : "Communiqués de presse",
     "404_MAGAZINE_TITLE" : "OOPS!",
     "404_MAGAZINE_DESCRIPTION" :  "On dirait qu’on ne peut pas trouver d'informations à propos des derniers articles.",
@@ -37,7 +38,7 @@
     "_comment": "---------------------- WORKS ----------------------",
 
     "WORKS_TITLE" : "Nos travaux",
-    "WORKS_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla.",
+    "WORKS_DESCRIPTION" : "Actuellement B5 srl dispose d'un curriculum de souffle international avec de nombreux travaux et tâches de conseil, comme la planification de la restauration du Colisée financée par Tod's et des Thermes du Forum et de l'insula des Castes Amants sur le site archéologique de Pompéi.",
     "ALL_CATEGORIES_BTN" : "Toutes les catégories",
     "SEARCH_BAR_PLACEHOLDER" : "Recherche parmi les noms des projets...",
     "CLOSE_BTN" : "Fermer",
@@ -51,7 +52,7 @@
     "_comment": "---------------------- MEET US ----------------------",
 
     "MEET_US_TITLE" : "Le monde de B5",
-    "MEET_US_DESCRIPTION" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero mattis facilisi fermentum elit consequat pellentesque neque, vitae sit. Tincidunt at consectetur fringilla mauris ipsum fringilla.",
+    "MEET_US_DESCRIPTION" : "B5 est un lieu. C'est un va-et-vient de professionnalité, d'idées, de contributions, d'intelligences, de generosité sans lesquelles il n'aurait pas fait un long chemin. Une bonne partie de ces qualités viennent de ceux qui y travaillent. Bien que certains aient changé de parcours, d'autres continuent d'arriver pour enrichir le bagage professionnel et humain de la société.  ",
     "404_MEET_US_TITLE" :  "OOPS!",
     "404_MEET_US_DESCRIPTION" :  "On dirait qu'on ne peut pas trouver d'informations à propos de l'équipe de B5.",
     "404_MEET_US_SUBTITLE" :  "Certainement il y a Francesca cependant",
@@ -59,7 +60,7 @@
     "_comment": "---------------------- CREDITS ----------------------",
 
     "CREDITS_TITLE" : "Distinctions",
-    "CREDITS_DESCRIPTION" : "Le site web a été développé par Sossio Giallaurito et Vincenzo Guida, qui forment ensemble la Beautiful Life Creative Studio, en étroite collaboration avec B5 Srl. Nous remercions Francesca Brancaccio, l’équipe de B5 et Andrea Detry pour la collaboration. Une mention spéciale pour Giuseppe Esposito pour avoir pris quelques photos pour le site web, et pour Simone Rositani pour nous avoir prêté l’équipement nécessaire pour faire des photos pour le site web. Enfin, mais non pas des moindres, on remercie Maria Michela Giallaurito et Francesca Marino pour le travail de localisation du site web.",
+    "CREDITS_DESCRIPTION" : "Le site web a été développé par Sossio Giallaurito et Vincenzo Guida, qui forment ensemble la Beautiful Life Creative Studio, en étroite collaboration avec B5 Srl. Nous remercions Francesca Brancaccio, l’équipe de B5 et Andrea Detry pour sa collaboration. Une mention spéciale pour Giuseppe Esposito pour avoir pris quelques photos pour le site web, et pour Simone Rositani qui nous a prêté l’équipement nécessaire pour faire des photos pour le site web. Enfin, mais non pas des moindres, on remercie Maria Michela Giallaurito et Francesca Marino pour le travail de localisation du site web.",
     "DEVELOPMENT_CREDIT_TITLE" :  "Crédits de développement",
     "TECHNOLOGIES_EMPLOYED_SUBTITLE" :  "Technologies utilisées",
     "EXTENSION_SUBTITLE" :  "Extensions",
@@ -111,7 +112,7 @@
 
     "_comment" : "---------------------- MONTHS ----------------------",
 
-    "January" : "Janvier", 
+    "January" : "Janvier",
     "February" : "Février",
     "March" : "Mars",
     "April" : "Avril",
