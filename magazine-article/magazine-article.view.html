@@ -39,7 +39,7 @@
                         <div class="row mx-0 py-1 py-sm-2 px-3 px-sm-4">
                             <div class="col-12 px-0 text-left d-table">
                                 <div class="row mx-0">
-                                    <p class="titolo gllText">{{vm.postInfo.title}}</p>
+                                    <p class="titolo">{{vm.postInfo.title}}</p>
                                 </div>
                             
 
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="row mx-0 p-4 sezione-contenuto-articolo">
                             
-                                        <div ng-bind-html="postContent" class="col-12 px-0 gllText"></div>
+                                        <div ng-bind-html="postContent" class="col-12 px-0"></div>
                                     
                                 </div>
                             </div>
@@ -128,10 +128,10 @@
     <!-- 404 meet us -->
     <div ng-if="isFailed()" class="row mx-0 error-content pt-4 pb-5 animate__animated animate__fadeIn animate__slow">
         <div class="col px-0 pt-3 pt-sm-4 ml-3 ml-sm-5">
-            <h1 class="gllText">{{'404_MAGAZINE_ARTICLE_TITLE' | translate}}</h1>
-            <h3 class="gllText">{{'404_MAGAZINE_ARTICLE_DESCRIPTION' | translate}}</h3>
+            <h1>{{'404_MAGAZINE_ARTICLE_TITLE' | translate}}</h1>
+            <h3>{{'404_MAGAZINE_ARTICLE_DESCRIPTION' | translate}}</h3>
             <hr class="my-4">
-            <p  class="gllText">{{'404_MAGAZINE_ARTICLE_SUBTITLE' | translate}}</p>
+            <p >{{'404_MAGAZINE_ARTICLE_SUBTITLE' | translate}}</p>
         </div>
     </div>
 </div>
