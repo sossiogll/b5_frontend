@@ -215,9 +215,8 @@
     border-right: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
     color: var(--b5blu);
-    height: 671.5px;
+    height: 680.65px;
     overflow-y: scroll;
-
 }
 
 .articoloshow-progetti ol, .articoloshow-progetti ul{
@@ -228,11 +227,10 @@
 
 .sezione-magazine h2{
     color: var(--b5blu);
-font-weight: 600;
-font-size: 5.6rem;
-letter-spacing: 0.135em;
-text-transform: uppercase;
-
+    font-weight: 600;
+    font-size: 5.6rem;
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
 }
 
 .row-scorrevole-mag{
