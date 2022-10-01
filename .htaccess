@@ -7,5 +7,31 @@ Order Allow,Deny
 Deny from all
 </Files>
 
+# Protect the htaccess file
+<Files package.json>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect the htaccess file
+<Files package.lock>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect the htaccess file
+<Files yarn.lock>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Protect the htaccess file
+<Files .htpasswds>
+Order Allow,Deny
+Deny from all
+</Files>
+
+
+
 # Disable directory browsing
 Options All -Indexes
