@@ -42,11 +42,11 @@
          
             
             <!-- SINGLE PROFILE -->
-            <div ng-repeat="profile in vm.profiles"  class="col-12 col-sm-3 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
+            <div ng-repeat="profile in vm.profiles"  class="col-12 col-lg-3 px-0 pt-0 pt-sm-0 card-progetto animate__animated animate__fadeIn">
 
               <!-- PROFILE IMAGE -->
 
-              <div ng-if="profile.profile_picture != null && profile.profile_picture !== undefinited" class="row mx-0 pr-3 pr-sm-5">
+              <div ng-if="profile.profile_picture != null && profile.profile_picture !== undefinited" class="row mx-0 pr-0 pr-lg-5">
                 <div class="col-12 px-0 card-conoscici-img">
 
                   <div class="thumbnail"> 
@@ -64,7 +64,7 @@
 
               <!-- PROFILE POSITIONS -->
 
-              <div class="row mx-0 pr-2 pr-sm-4 py-0 py-sm-2 d-flex flex-row flex-wrap justify-content-between container-positions" ng-if="profile.positions != null && profile.positions.length > 0">
+              <div class="row mx-0 pr-0 pr-lg-4 py-0 py-sm-2 d-flex flex-row flex-wrap justify-content-between container-positions" ng-if="profile.positions != null && profile.positions.length > 0">
 
                 <div class="col-auto px-0 my-1 px-2 py-1 justify-content-center text-center primario">
                   <p class="my-2 mx-2">
@@ -83,7 +83,7 @@
               <!-- PROFILE POSITIONS END -->
 
               <!-- PROFILE NAME -->
-              <div class="row mx-0 pr-2 pr-sm-5 py-1 py-sm-1 container-nome">
+              <div class="row mx-0 pr-0 pr-lg-5 py-1 py-sm-1 container-nome">
                 <div class="col-12 px-0 text-left">
                   <p class="mb-0 mt-0 mt-sm-1">
                     {{profile.name}}
@@ -92,7 +92,7 @@
               </div> <!-- PROFILE NAME END -->
 
               <!-- PROFILE DESCRIPTION -->
-              <div class="row mx-0 pr-2 pr-sm-5 container-descrizione">
+              <div class="row mx-0 pr-2 pr-lg-5 container-descrizione">
                 <div class="col-12 px-0 text-left">
                   <p>
 
