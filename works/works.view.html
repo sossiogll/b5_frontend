@@ -27,7 +27,7 @@
 
             <!-- BARRA DI RICERCA -->
 
-            <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-3">
+            <div ng-if="isIdle()" class="row mx-2 mx-sm-5 pt-2 pt-sm-3">
 
                 <div class="main-search-input-wrap col-12 px-0">     
                     <div class="main-search-input fl-wrap">    
@@ -42,18 +42,18 @@
             <!-- LISTA CATEGORIE -->
             
 
-            <div ng-if="isIdle()" class="row mx-3 mx-sm-5 pt-2 pt-sm-0 sezione-lista-categorie">
+            <div ng-if="isIdle()" class="row mx-2 mx-sm-5 pt-2 pt-sm-0 sezione-lista-categorie">
                 <div class="col-12 px-0">
                     <div class="row mx-0 justify-content-start">
                         <div class="justify-content-center text-center">
                             <input type="radio" id="void-category" name="workCategory" value="" ng-model="vm.filters['category_slug']" checked="checked">
-                            <label class="p-4 m-1" for="void-category">
+                            <label class="p-3 p-sm-4 m-1" for="void-category">
                                 {{"ALL_CATEGORIES_BTN" | translate}}
                             </label>
                         </div>
                         <div ng-repeat="category in vm.worksCategoryInfos track by $index" ng-if="category.post_count > 0" class="justify-content-center text-center">
                             <input type="radio" id="{{category.slug}}" name="workCategory" value="{{category.slug}}" ng-model="vm.filters['category_slug']">
-                            <label class="p-4 m-1" for="{{category.slug}}">
+                            <label class="p-3 p-sm-4 m-1" for="{{category.slug}}">
                                 {{category.slug | translate}}
                             </label>
                         </div>
@@ -62,9 +62,9 @@
 
             </div>
           
-            <div ng-if="isIdle()" class="row mx-0 py-5 px-3 px-sm-5 container-card-progetto">
+            <div ng-if="isIdle()" class="row mx-0 py-1 px-3 px-sm-5 container-card-progetto">
                 
-                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-8 col-sm-3 px-0 pt-3 card-progetto">
+                    <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-10 col-sm-3 px-0 pt-3 card-progetto">
                         <a href="#!/works/{{work.slug}}">
                         <div class="row mx-0 pr-2 pr-sm-3">
                             <div class="col-12 px-0 pt-3 mr-3 card-progetto-img" style="background-image: url('{{work.thumbnail_url}}');">
@@ -75,7 +75,7 @@
                         <div class="row mx-0 pr-2 pr-sm-3">
                     
                             <div class="col-12 px-0 mr-3 text-left categoria">
-                                <h5 class="px-0 my-2 my-sm-3 ml-2 ml-sm-3">{{work.category_slug | translate}}</h5>
+                                <h5 class="px-0 my-3 my-sm-3 ml-3 ml-sm-3">{{work.category_slug | translate}}</h5>
                             </div>
                         </div>
     

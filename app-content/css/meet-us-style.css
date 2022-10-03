@@ -141,16 +141,17 @@ text-align: left;
   color: var(--b5blu);
   font-style: normal;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 3rem;
+  line-height: 1em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .sezione-heading-conoscici p{
-  color: var(--b5blu);
   font-style: normal;
-  font-weight: 400;
-  font-size: 0.9rem;
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: var(--b5blu);
 }
 
 
@@ -234,11 +235,10 @@ text-align: left;
   position:relative;
 }
 
-
 .container-card-conoscici .container-nome p{
   font-weight: 600;
-  font-size: 1.3rem;
-letter-spacing: 0.18rem;
+  font-size: 1.7rem;
+letter-spacing: 0.1rem;
 text-transform: uppercase;
 color: var(--b5blu);
 }
@@ -246,8 +246,8 @@ color: var(--b5blu);
 .container-card-conoscici .container-descrizione p{
     color: var(--b5blu);
   font-weight: 400;
-font-size: 0.9rem;
-line-height: 1.3rem;
+font-size: 1.2rem;
+line-height: 1.4232em;
 text-align: left;
 }
 

@@ -566,6 +566,8 @@ color: var(--b5blu);
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
   }
 
   .nav-mobile-item{

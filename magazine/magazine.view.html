@@ -56,10 +56,10 @@
 
 
     <div class="content-container row mx-0 sezione-card-articoli">
-      <div class="col-12 px-0 mb-5">
+      <div class="col-12 px-0 pt-3 pt-sm-0 mb-5">
 
         <div class="row mx-0 px-3 px-sm-5 container-card-articoli">
-          <div ng-repeat="post in category.posts | orderBy:'-posted_at'" class="col-9 col-sm-3 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo">
+          <div ng-repeat="post in category.posts | orderBy:'-posted_at'" class="col-10 col-sm-3 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo">
             <a href="#!/magazine/{{post.slug}}">
             <div class="row mx-0">
               <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{post.thumbnail_url}}');">

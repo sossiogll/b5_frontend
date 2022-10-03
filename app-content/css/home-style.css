@@ -544,8 +544,8 @@ animation-play-state: paused;
         font-style: normal;
         font-weight: 600;
         font-size: 3rem;
-        line-height: 3.5rem;
-        letter-spacing: 0.12em;
+        line-height: 3.3341rem;
+        letter-spacing: 0.3rem;
         text-transform: uppercase;
     }
 
@@ -608,8 +608,8 @@ animation-play-state: paused;
     .titolo-progetto-lista {
         font-style: normal;
         font-weight: 600;
-        font-size: 1.7rem;
-        line-height: 1.9rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
         text-transform: uppercase;
         color: var(--b5blu);
     }
@@ -623,7 +623,7 @@ animation-play-state: paused;
     .luogo-progetto-lista{
         font-style: normal;
         font-weight: 500;
-        font-size: 23px;
+        font-size: 0.8rem;
         color: var(--b5blu);
     }
     
@@ -636,7 +636,7 @@ animation-play-state: paused;
     
     .categoria-progetto-lista-text {
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         color: var(--b5blu);
     }
@@ -653,8 +653,9 @@ animation-play-state: paused;
     .sezione-magazine h2{
         color: var(--b5blu);
         font-weight: 600;
-        font-size: 3.5rem;
-        letter-spacing: 0.2;
+        font-size: 3rem;
+        line-height: 3.3341rem;
+        letter-spacing: 0.3rem;
         text-transform: uppercase;
     }
 
@@ -840,12 +841,13 @@ animation-play-state: paused;
     }
 
     .terza-sezione p,.seconda-sezione p {
-        font-size: 1.2rem;
-        line-height: 1.6;
+        font-size: 1rem;
+        line-height: 1.533rem;
     }
 
     .terza-sezione h2, .seconda-sezione h2 {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
+        line-height: 2.532rem;
     }
 
     .articoloshow-progetti{
