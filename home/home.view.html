@@ -276,7 +276,7 @@
                         <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 py-3">
                                 <div class="col px-0 mx-3">
-                                    <a href="#!/works/{{work.slug}}" class="titolo-progetto-lista">{{work.title}}</a>
+                                    <a href="#!/works/{{work.custom_fields_values['SLUG_ORIGINAL_POST']}}" class="titolo-progetto-lista">{{work.title}}</a>
                                 </div>
                             </div>
             
@@ -286,7 +286,7 @@
                                 </div>
 
                                 <div class="col-7 col-sm-5 px-0 d-table categoria-progetto-lista-box text-center">
-                                    <h3 class="my-0 py-3 d-table-cell align-middle categoria-progetto-lista-text">{{work.category_slug | translate}}</h3>
+                                    <h3 class="my-0 py-3 d-table-cell align-middle categoria-progetto-lista-text">{{work.custom_fields_values['SLUG_ORIGINAL_CATEGORY'] | translate}}</h3>
                                 </div>
                             </div>
                         </div>

@@ -237,6 +237,10 @@
     overflow-x: scroll;
 }
 
+.articoloshow-progetti img{
+    max-width: 100%;
+}
+
 
 
 
@@ -1088,3 +1092,4 @@ animation-play-state: paused;
         stroke-dashoffset: 0;
     }
 }
+
