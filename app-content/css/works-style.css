@@ -31,7 +31,6 @@
 .sezione-lista-categorie label {
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
     text-transform: uppercase;
     color: var(--b5rosso);
     float: left;

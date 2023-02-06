@@ -59,7 +59,7 @@
     
                                 vm.categoriesInfos.push(res.data.data);
 
-                                if(index == Categories.MAGAZINE.length-1 && !isFailed())
+                                if(index == (Categories.MAGAZINE.length-1) && !isFailed())
                                     vm.status = Status.IDLE;
                             }
 
@@ -88,7 +88,7 @@
 
             });
 
-        };
+        }
 
         function updateMetaInformation(){
             $translate('MAGAZINE_TITLE').then(function (pageTitle) {

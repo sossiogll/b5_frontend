@@ -7,7 +7,6 @@
 
     NavController.$inject = ['$http', '$rootScope'];
     function NavController($http, $rootScope){
-        var apiURL = $rootScope.APIUrl;
 
         initController();
 

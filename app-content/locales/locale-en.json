@@ -11,6 +11,8 @@
     "HOME_TITLE" : "Home Page",
     "QUOTE" : "We are the tradition.",
     "AUTHOR_QUOTE" : "Franco Albini",
+    "QUOTE2" : "\"Restoration\" means any intervention aiming at preserving and handing down to the future, facilitating their reading without erasing the traces of their passage through time, works of historical, artistic and environmental interest; it is based on respect for the ancient substance and authentic documentation constituted by these works, serving also as an act of critical interpretation that is not verbal but expressed in the concrete operation. More precisely, as a critical hypothesis and proposition that can always be modified, without irreversibly altering the original",
+    "AUTHOR_QUOTE2" : "Giovanni Carbonara",
     "FIRST_PARAGRAPH_TITLE" : "EMOTIONS BEYOND SKILLS",
     "FIRST_PARAGRAPH" : "B5 srl deals with the restoration of civil and monumental buildings, architectural, structural, urban and detail design. It is not just an engineering company. It is a nerve center made by passion, constant study, self-irony and attention to the future.",
     "SECOND_PARAGRAPH_TITLE" : "PEOPLE: OUR MOST IMPORTANT CAPITAL",
@@ -19,6 +21,7 @@
     "OUR_WORKS" : "Our works",
     "LAST_ARTICLES" : "Last articles",
     "GO_TO_PROJECT_BTN" : "Go to project",
+    "GO_TO_ARTICLE_BTN" : "Go to article",
     "GO_TO_ALL_PROJECTS_BTN" : "See all projects",
     "GO_TO_ALL_ARTICLE_BTN" : "See all articles",
 

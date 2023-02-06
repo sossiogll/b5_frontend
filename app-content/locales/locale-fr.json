@@ -12,6 +12,8 @@
     "HOME_TITLE" : "Page d'accueil",
     "QUOTE" : "Nous sommes la tradition.",
     "AUTHOR_QUOTE" : "Franco Albini",
+    "QUOTE2" : "On entend par \"restauration\" toute intervention visant à préserver et à transmettre à l'avenir des œuvres d'intérêt historique, artistique et environnemental, en les rendant plus lisibles et sans effacer les traces de leur passage dans le temps ; elle se fonde sur le respect de la substance ancienne et de la documentation authentique que constituent ces œuvres, se proposant, en outre, comme un acte d'interprétation critique non verbal mais exprimé dans l'opération concrète. Plus précisément, comme une hypothèse et une proposition critique qui peut toujours être modifiée, sans altérer de manière irréversible l'original",
+    "AUTHOR_QUOTE2" : "Giovanni Carbonara",
     "FIRST_PARAGRAPH_TITLE" : "ÉMOTIONS AU-DELÀ DES COMPÉTENCES",
     "FIRST_PARAGRAPH" : "B5 srl s'occupe de la restauration de bâtiments civils et monumentaux, de la planification architecturale, structurelle, urbaine et de détaille. Depuis 2005, année de sa création, elle travaille sur la relation entre l'ancien et le nouveau, sur la rénovation historique.",
     "SECOND_PARAGRAPH_TITLE" : "LES GENS: NOTRE CAPITAL LE PLUS IMPORTANT",
@@ -20,6 +22,7 @@
     "OUR_WORKS" : "Nos travaux",
     "LAST_ARTICLES" : "Derniers articles",
     "GO_TO_PROJECT_BTN" : "Voir le projet complet",
+    "GO_TO_ARTICLE_BTN" : "Lire l'article",
     "GO_TO_ALL_PROJECTS_BTN" : "Voir tous nos projets",
     "GO_TO_ALL_ARTICLE_BTN" : "Voir tous nos articles",
 

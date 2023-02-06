@@ -28,7 +28,7 @@
                     $("meta[property='og\\description']").attr("content", pageDescrition);
                 });
             });
-        };
+        }
 
 
     }
