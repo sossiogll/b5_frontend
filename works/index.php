@@ -49,7 +49,7 @@
 
     }
 
-    function generateDOM($title, $description, $language, $redirect){
+    function generateDOM($title, $description, $language, $redirect, $imageURL){
 
         ?>
             <html>
@@ -61,6 +61,13 @@
                     <meta name="robots" content="index, follow">
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
                     <meta name="language" content="<?php echo $language ?>">
+                    
+                    <!-- Open Graph / Facebook -->
+                    <meta property="og:type" content="website">
+                    <meta property="og:title" content=" <?php echo $title ?> | B5 - Idee in cammino">
+                    <meta property="og:description" content="<?php echo $description ?>">
+                    <meta property="og:image" content="<?php echo $imageURL ?>">
+
                 </head>
 
                 <body>
@@ -83,7 +90,7 @@
 
         //Settings
         $base_api_url = "https://b5srl.eu/b5_backend/public/api/v1";
-        $base_redirect_url = "https://b5srl.eu/b5_frontend";
+        $base_redirect_url = "https://b5srl.eu";
         $locale_prefix = "app-content/locales/locale-";
         $locale_suffix = ".json";
 
@@ -93,6 +100,7 @@
         $lang = "";
         $slug = "";
         $title = "";
+        $imageURL = "";
         $description = "";
 
         //Init variables
@@ -128,8 +136,8 @@
             $locale_info = file_get_contents("../".$locale_prefix.$lang.$locale_suffix);
             $localization = json_decode($locale_info, true);
 
-            $title = $localization["404_WORKS_TITLE"];
-            $description = $localization["404_WORKS_DESCRIPTION"];
+            $title = $localization["404_MAGAZINE_TITLE"];
+            $description = $localization["404_MAGAZINE_DESCRIPTION"];
             $redirect = $base_redirect_url;
 
         }else{
@@ -137,9 +145,11 @@
             $title = $post->data->title;
             $description = $post->data->summary_content;
             $redirect_url = $redirect_url."/".$slug;
+            $imageURL = $post->data->thumbnail_url;
+
 
         }
         
-        generateDOM($title, $description, $lang, $redirect_url);
+        generateDOM($title, $description, $lang, $redirect_url, $imageURL);
 
     }

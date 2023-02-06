@@ -3,7 +3,8 @@
 
     angular
         .module('app')
-        .controller('HomeController', HomeController);
+        .controller('HomeController', HomeController)
+        .directive('finRepeat', FinRepeat);
 
     HomeController.$inject = ['$scope', '$rootScope', 'HomeSettings', 'PostService', 'FlashService', 'Categories', 'CategoryService', '$translate'];
     function HomeController($scope, $rootScope, HomeSettings, PostService, FlashService, Categories, CategoryService, $translate) {
@@ -33,6 +34,7 @@
             drawSVGOnViewEnter("draw-container-5", "draw_5", "draw_5");
             getHomeWorksArticle();
             getCategoriesInfo();
+            setArticleViewerHeight();
         }
 
 
@@ -137,6 +139,7 @@
 
         function getHomeWorksArticle(){
 
+            $scope.HomeWorksArticleCount = HomeSettings.WORK_ARTICLES.length;
             HomeSettings.WORK_ARTICLES.forEach(postSlug => {
                 
                 PostService.Post(postSlug,
@@ -155,7 +158,6 @@
                             else {
     
                                 vm.workPostsInfos.push(res.data.data);
-
                             }
     
                         }catch (error) {
@@ -177,6 +179,7 @@
                     })
 
             });
+
 
         }
 
@@ -251,6 +254,10 @@
             });
         }
 
+        function setArticleViewerHeight(){
+
+        };
+
         function areWorksInit(){
             return (vm.workPostsInfos != null && vm.workPostsInfos !== undefined && vm.workPostsInfos.length>0)
         };
@@ -260,6 +267,18 @@
         };
 
 
+    }
+
+    FinRepeat.$inject = ['HomeSettings'];
+    function FinRepeat(HomeSettings){
+
+        return function(scope, element, attrs) {
+
+            if(scope.$index == HomeSettings.WORK_ARTICLES.length-1){
+                setTimeout(function() { $("articoloshow-progetti").height($('.box-left-lp').outerHeight())}, 100);
+            }
+
+        };
     }
 
 })();

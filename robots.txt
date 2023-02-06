@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /node_modules
+Disallow: /work-article
+Disallow: /app-content/locales
+Disallow: /app-services
+Disallow: /app-content/css
+Disallow: /magazine-article
+Sitemap: https://b5srl.eu/sitemap.php

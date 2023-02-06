@@ -30,7 +30,7 @@
  .hero  h3 {
     color: var(--b5blu);
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .hero h4 {
@@ -215,7 +215,7 @@
     border-right: 2px solid var(--b5blu);
     border-bottom: 2px solid var(--b5blu);
     color: var(--b5blu);
-    height: 680.65px;
+    /*height: 680.65px;*/
     overflow-y: scroll;
 }
 
@@ -455,9 +455,10 @@ animation-play-state: paused;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 100%;
         width: 100%;
-        margin-top: 50px;
+        max-width: 500px;
+        margin: 100px auto 0 auto;
     }
 
     .disegno2-mobile{

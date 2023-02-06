@@ -11,6 +11,8 @@
     "HOME_TITLE" : "Home",
     "QUOTE" : "La tradizione siamo noi.",
     "AUTHOR_QUOTE" : "Franco Albini",
+    "QUOTE2" : "S’intende per «restauro» qualsiasi intervento volto a conservare e a trasmettere al futuro, facilitandone la lettura e senza cancellarne le tracce del passaggio nel tempo, le opere di interesse storico, artistico e ambientale; esso si fonda sul rispetto della sostanza antica e delle documentazioni autentiche costituite da tali opere, proponendosi, inoltre, come atto d’interpretazione critica non verbale ma espressa nel concreto operare. Più precisamente, come ipotesi critica e proposizione sempre modificabile, senza che per essa si alteri irreversibilmente l’originale.",
+    "AUTHOR_QUOTE2" : "Giovanni Carbonara",
     "FIRST_PARAGRAPH_TITLE" : "EMOZIONI OLTRE LE COMPETENZE",
     "FIRST_PARAGRAPH" : "B5 srl si occupa di restauro di edifici civili e monumentali, di progettazione architettonica, strutturale, urbana e di dettaglio. Non è solo una società di ingegneria. È un centro nevralgico fatto di passione, studio costante, autoironia e attenzione al futuro e agli sviluppi che porta con sé.",
     "SECOND_PARAGRAPH_TITLE" : "LE PERSONE: IL NOSTRO CAPITALE PIÙ IMPORTANTE",
@@ -19,6 +21,7 @@
     "OUR_WORKS" : "I nostri lavori",
     "LAST_ARTICLES" : "Ultimi articoli",
     "GO_TO_PROJECT_BTN" : "Vai al progetto completo",
+    "GO_TO_ARTICLE_BTN" : "Vai all'articolo",
     "GO_TO_ALL_PROJECTS_BTN" : "Vedi tutti i nostri progetti",
     "GO_TO_ALL_ARTICLE_BTN" : "Vedi tutti i nostri articoli",
 
@@ -88,6 +91,7 @@
     "CREDITS" : "Crediti e riconoscimenti",
     "CALL_US_BTN" : "+39 081 55 192 74",
     "EMAIL_US_BTN" : "info@b5srl.it",
+    "SITEMAP" : "Mappa del sito",
 
     "_comment": "---------------------- SHARED ----------------------",
 
