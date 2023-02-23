@@ -57,6 +57,7 @@
             })
             .otherwise({ redirectTo: Settings.DEFAULT_REDIRECT });
 
+        $locationProvider.html5Mode(true);
 
         $translateProvider
             .useStaticFilesLoader({

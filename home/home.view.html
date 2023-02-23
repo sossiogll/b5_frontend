@@ -245,7 +245,7 @@
     <!-- Contenitore button -->
     <div class="content-container row mx-0">
         <div class="col-12 px-0 pt-0 pb-5">
-            <a href="#!/works/{{colosseoArticleSlug}}">
+            <a href="/works/{{colosseoArticleSlug}}">
                 <div class="row mx-0 marquee">
                   <div class="col-12 py-2 px-0">
                       <div class="track">
@@ -295,7 +295,7 @@
                         <div ng-mouseenter="selectProject($index)" class="col-12 px-0">
                             <div class="row mx-0 py-3">
                                 <div class="col px-0 mx-3">
-                                    <a href="#!/works/{{work.custom_fields_values['SLUG_ORIGINAL_POST']}}" class="titolo-progetto-lista">{{work.title}}</a>
+                                    <a href="/works/{{work.custom_fields_values['SLUG_ORIGINAL_POST']}}" class="titolo-progetto-lista">{{work.title}}</a>
                                 </div>
                             </div>
             
@@ -329,7 +329,7 @@
         <div class="col-12 px-0">
             <div class="row mx-0">
                 <div class="col-12 px-0 py-3">
-                    <a href="#!/works">
+                    <a href="/works">
                         <div class="row mx-0 marquee">
                           <div class="col-12 py-2 px-0">
                               <div class="track">
@@ -503,7 +503,7 @@
                 <div class="row mx-0 pl-3 pl-sm-5 pb-5 pt-3 pt-sm-5 d-flex flex-row flex-nowrap row-scorrevole-mag">
                    
                     <div  ng-repeat="work in vm.magazinePostsInfos | orderBy:'-posted_at'"  class="col-10 col-lg-3 col-sm-5 px-0 mr-3 mr-sm-4 pt-0 pt-sm-2 card-articolo ng-scope">
-                        <a href="#!/magazine/{{work.slug}}">
+                        <a href="/magazine/{{work.slug}}">
                             <div class="row mx-0 ">
                                 <div class="col px-3 pt-3 mx-3 mt-3 card-articolo-img" style="background-image: url('{{work.thumbnail_url}}');">
                                 </div>
@@ -536,7 +536,7 @@
 
                             <div class="row mx-0">
                                 <div class="col-12 px-0 pt-0 pt-sm-3 marquee-container">
-                                    <a href="#!/magazine/{{work.slug}}">
+                                    <a href="/magazine/{{work.slug}}">
                                         <div class="row mx-0 marquee-blu marquee-card-articolo">
                                             <div class="col-12 py-2 px-0">
                                                 <div class="track-blu">
@@ -572,7 +572,7 @@
             <!-- Contenitore button -->
             <div class="content-container row mx-0">
                 <div class="col-12 px-0 pt-0 pb-5">
-                    <a href="#!/magazine">
+                    <a href="/magazine">
                         <div class="row mx-0 marquee">
                           <div class="col-12 py-2 px-0">
                               <div class="track">

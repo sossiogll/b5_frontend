@@ -63,42 +63,42 @@ function main(){
         
         //Aggiunta lavori
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/works');
+        $url->addChild("loc", 'https://b5srl.eu/works');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'monthly');
         $url->addChild("priority", '0.8');
         
         //Aggiunta magazine
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/magazine');
+        $url->addChild("loc", 'https://b5srl.eu/magazine');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'monthly');
         $url->addChild("priority", '0.8');
         
         //Aggiunta meet us
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/meet-us');
+        $url->addChild("loc", 'https://b5srl.eu/meet-us');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'monthly');
         $url->addChild("priority", '0.8');
         
         //Aggiunta privacy policy
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/privacy-policy');
+        $url->addChild("loc", 'https://b5srl.eu/privacy-policy');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'monthly');
         $url->addChild("priority", '0.8');
         
         //Aggiunta cookie policy
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/cookie-policy');
+        $url->addChild("loc", 'https://b5srl.eu/cookie-policy');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'monthly');
         $url->addChild("priority", '0.8');
         
         //Aggiunta crediti
         $url = $urlset->addChild('url');
-        $url->addChild("loc", 'https://b5srl.eu/#!/credits');
+        $url->addChild("loc", 'https://b5srl.eu/credits');
         $url->addChild("lastmod", date("Y-m-d"));
         $url->addChild("changefreq", 'yearly');
         $url->addChild("priority", '0.5');

@@ -65,7 +65,7 @@
             <div ng-if="isIdle()" class="row mx-0 py-1 px-3 px-sm-5 container-card-progetto">
                 
                     <div  ng-repeat="work in vm.worksInfos | filter:vm.filters | orderBy:'-posted_at'" class="col-10 col-sm-3 px-0 pt-3 card-progetto">
-                        <a href="#!/works/{{work.slug}}">
+                        <a href="/works/{{work.slug}}">
                         <div class="row mx-0 pr-2 pr-sm-3">
                             <div class="col-12 px-0 pt-3 mr-3 card-progetto-img" style="background-image: url('{{work.thumbnail_url}}');">
                             </div>

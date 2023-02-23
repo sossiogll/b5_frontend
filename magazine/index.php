@@ -96,7 +96,7 @@
 
         //Local variables
         $api_url = $base_api_url."/posts";
-        $redirect_url = $base_redirect_url."/#!/magazine";
+        $redirect_url = $base_redirect_url."/magazine";
         $lang = "";
         $slug = "";
         $title = "";
